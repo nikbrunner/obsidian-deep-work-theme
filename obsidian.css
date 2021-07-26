@@ -86,8 +86,8 @@
 
   --default-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
     Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  /* FIX why no direct editor-font? */
-  --my-editor-font: 'SF Mono', monospace;
+  --editor-font: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+    Liberation Mono, monospace;
 
   --border-radius: 6px;
 }
@@ -248,17 +248,11 @@ pre {
 
 /* Fonts */
 .markdown-source-view {
-  --editor-font: var(--my-editor-font);
-  --header-font: var(--my-editor-font);
-
-  font-family: var(--my-editor-font);
+  font-family: var(--editor-font);
 }
 
 .markdown-preview-view {
-  --default-font: var(--my-preview-font);
-  --header-font: var(--my-preview-font);
-
-  font-family: var(--my-preview-font);
+  font-family: var(--default-font);
 }
 
 /* UI */
