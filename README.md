@@ -1,5 +1,5 @@
-# Obsidian GitHub Theme
-A light and dark theme for [Obsidian](https://obsidian.md) inspired by modern GitHub.
+# Obsidian Deep Work Theme
+A light and dark theme for [Obsidian](https://obsidian.md) inspired by the modern GitHub colors.
 
 ## Preview
 ![](screenshot.png)
