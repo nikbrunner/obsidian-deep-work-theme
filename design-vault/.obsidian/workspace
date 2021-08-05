@@ -1,0 +1,93 @@
+{
+  "main": {
+    "id": "9efa4998a819fb63",
+    "type": "split",
+    "children": [
+      {
+        "id": "34429da6e672556f",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Here's what every React Developer needs to know about TypeScript.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e1600cac63c236ed",
+    "type": "split",
+    "children": [
+      {
+        "id": "ac54ee282f999f29",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "08090606a21bffe7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c896c26918a93a5b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6375b6e227c1ee89",
+    "type": "split",
+    "children": [
+      {
+        "id": "76d4dbd64ed7a5f4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8d08759a038b4f01",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Here's what every React Developer needs to know about TypeScript.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "34429da6e672556f",
+  "lastOpenFiles": [
+    "Untitled.md"
+  ]
+}
