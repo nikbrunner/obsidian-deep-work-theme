@@ -399,3 +399,17 @@ pre {
   white-space: normal;
   width: auto;
 }
+
+/* titlebar */
+.titlebar-inner {
+  background: var(--background-primary);
+  color: var(--text-normal);
+}
+
+.titlebar-text {
+  top: 3px;
+}
+
+.titlebar-button {
+  opacity: 1;
+}
