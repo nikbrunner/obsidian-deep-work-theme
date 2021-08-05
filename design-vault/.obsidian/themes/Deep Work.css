@@ -1,7 +1,6 @@
 :root {
   --color-black: #010409;
   --color-white: #f7f9fc;
-
   --color-gray-0: #f0f6fc;
   --color-gray-1: #c9d1d9;
   --color-gray-2: #b1bac4;
@@ -12,7 +11,6 @@
   --color-gray-7: #21262d;
   --color-gray-8: #161b22;
   --color-gray-9: #0d1117;
-
   --color-blue-0: #cae8ff;
   --color-blue-1: #a5d6ff;
   --color-blue-2: #79c0ff;
@@ -23,7 +21,6 @@
   --color-blue-7: #0d419d;
   --color-blue-8: #0c2d6b;
   --color-blue-9: #051d4d;
-
   --color-green-0: #aff5b4;
   --color-green-1: #7ee787;
   --color-green-2: #56d364;
@@ -34,7 +31,6 @@
   --color-green-7: #0f5323;
   --color-green-8: #033a16;
   --color-green-9: #04260f;
-
   --color-yellow-0: #f8e3a1;
   --color-yellow-1: #f2cc60;
   --color-yellow-2: #e3b341;
@@ -45,7 +41,6 @@
   --color-yellow-7: #693e00;
   --color-yellow-8: #4b2900;
   --color-yellow-9: #341a00;
-
   --color-orange-0: #ffdfb6;
   --color-orange-1: #ffc680;
   --color-orange-2: #ffa657;
@@ -56,7 +51,6 @@
   --color-orange-7: #762d0a;
   --color-orange-8: #5a1e02;
   --color-orange-9: #3d1300;
-
   --color-red-0: #ffdcd7;
   --color-red-1: #ffc1ba;
   --color-red-2: #ffa198;
@@ -67,7 +61,6 @@
   --color-red-7: #8e1519;
   --color-red-8: #67060c;
   --color-red-9: #490202;
-
   --color-purple-0: #eddeff;
   --color-purple-1: #e2c5ff;
   --color-purple-2: #d2a8ff;
@@ -78,7 +71,6 @@
   --color-purple-7: #553098;
   --color-purple-8: #3c1e70;
   --color-purple-9: #271052;
-
   --color-pink-0: #ffdaec;
   --color-pink-1: #ffbedd;
   --color-pink-2: #ff9bce;
@@ -89,14 +81,11 @@
   --color-pink-7: #7d2457;
   --color-pink-8: #5e103e;
   --color-pink-9: #42062a;
-
   --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
-
   --default-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
     Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   --editor-font: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
     Liberation Mono, monospace;
-
   --border-radius: 6px;
 }
 
@@ -365,39 +354,23 @@ pre {
 }
 
 .button-default.white {
-  background: linear-gradient(
-    45deg,
-    var(--color-gray-1),
-    var(--color-gray-2)
-  );
+  background: linear-gradient(45deg, var(--color-gray-1), var(--color-gray-2));
   border: 1px solid var(--color-gray-1) !important;
   color: var(--color-gray-8);
 }
 
 .button-default.green {
-  background: linear-gradient(
-    45deg,
-    var(--color-green-3),
-    var(--color-green-4)
-  );
+  background: linear-gradient(45deg, var(--color-green-3), var(--color-green-4));
   border: 1px solid var(--color-green-2) !important;
 }
 
 .button-default.blue {
-  background: linear-gradient(
-    45deg,
-    var(--color-blue-3),
-    var(--color-blue-4)
-  );
+  background: linear-gradient(45deg, var(--color-blue-3), var(--color-blue-4));
   border: 1px solid var(--color-blue-2) !important;
 }
 
 .button-default.purple {
-  background: linear-gradient(
-    45deg,
-    var(--color-purple-3),
-    var(--color-purple-4)
-  );
+  background: linear-gradient(45deg, var(--color-purple-3), var(--color-purple-4));
   border: 1px solid var(--color-purple-2) !important;
 }
 
