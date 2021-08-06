@@ -392,6 +392,10 @@ pre {
 }
 
 /* titlebar */
+.titlebar {
+  border-bottom: 1px solid var(--background-secondary-alt);
+}
+
 .titlebar-inner {
   background: var(--background-primary);
   color: var(--text-normal);
