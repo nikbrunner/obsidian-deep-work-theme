@@ -7,6 +7,9 @@ A light and dark theme for [Obsidian](https://obsidian.md) inspired by the moder
 ## Development Stage
 Although this theme is in a very early development, it is very usable for most usecases.
 
+## Future plans
+- A dark dimmed option via a dedicated PlugIn
+
 ## Fonts
 The font-family declarations are taken directly from GitHub.
 
