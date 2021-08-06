@@ -4,10 +4,10 @@
   "description": "A theme for Obsidian inspired by the modern GitHub colors",
   "main": "index.js",
   "scripts": {
-    "format:src": "prettier --config .prettierrc --write \"{src}/**/*.{css,scss}\"",
+    "format:dev": "prettier --config .prettierrc --write \"{src}/**/*.{css,scss}\"",
     "format:build": "prettier --config .prettierrc --write obsidian.css",
-    "watch:dw": "sass --watch --no-source-map src/obsidian.scss design-vault/.obsidian/themes/Deep\\ Work.css",
-    "build:dw": "sass --no-source-map src/obsidian.scss obsidian.css && npm run format:build"
+    "dev": "sass --watch --no-source-map src/obsidian.scss design-vault/.obsidian/themes/Deep\\ Work.css",
+    "build": "sass --no-source-map src/obsidian.scss obsidian.css && npm run format:build"
   },
   "repository": {
     "type": "git",
