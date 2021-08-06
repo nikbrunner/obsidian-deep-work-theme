@@ -1,0 +1,54 @@
+@use "sass:list";
+
+@mixin buttons($view-mode) {
+  @if not list.index($view-modes, $view-mode) {
+    @error "#{$view-mode} is not a valid side. Expected one of #{$view-modes}.";
+  }
+
+  @if $view-mode == "preview" {
+    .button-default {
+      box-shadow: none;
+
+      &:hover {
+        background-color: inherit;
+      }
+
+      &.white {
+        background: linear-gradient(
+          45deg,
+          var(--color-gray-1),
+          var(--color-gray-2)
+        );
+        border: 1px solid var(--color-gray-1);
+        color: var(--color-gray-8);
+      }
+
+      &.green {
+        background: linear-gradient(
+          45deg,
+          var(--color-green-3),
+          var(--color-green-4)
+        );
+        border: 1px solid var(--color-green-2);
+      }
+
+      &.blue {
+        background: linear-gradient(
+          45deg,
+          var(--color-blue-3),
+          var(--color-blue-4)
+        );
+        border: 1px solid var(--color-blue-2);
+      }
+
+      &.purple {
+        background: linear-gradient(
+          45deg,
+          var(--color-purple-3),
+          var(--color-purple-4)
+        );
+        border: 1px solid var(--color-purple-2);
+      }
+    }
+  }
+}

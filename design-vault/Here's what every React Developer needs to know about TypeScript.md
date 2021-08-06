@@ -27,6 +27,8 @@ If you like programming games, try [PhaserJS](https://phaser.io/) you be able to
 
 Also be sure to check out [The Official Handbook of TS](https://www.typescriptlang.org/docs/handbook/intro.html) with tons of useful documentation and examples.
 
+[[What is Stoicism?|Stoic]]
+
 ## Why ESLint, Prettier and Husky
 
 On the boilerplates I use Airbnb's ESLint rules, Prettier's recommended rules and Husky's pre-commits actions, this will be very useful especially in a team environment where you need everyone to follow the same style of code, but you can also benefit as a solo developer or as a learner.
@@ -39,12 +41,12 @@ I found that for junior profiles or people who are just starting out with JS or 
 
 [TypeScript](https://www.typescriptlang.org/) or TS is an open source language developed and maintained by Microsoft, TS is also:
 
-- A multi-paradigm language (like JavaScript).
-- An alternative to JavaScript (more precisely a superset)
-- Allows the use of static types
-- Extra features (generics, interfaces, tuples, etc which will be explained in detail below)
-- Allows for gradual adoption*.
-- Can be used for front-end and back-end development (just like JS)
+- [ ] A multi-paradigm language (like JavaScript).
+- [ ] An alternative to JavaScript (more precisely a superset)
+- [ ] Allows the use of static types
+- [ ] Extra features (generics, interfaces, tuples, etc which will be explained in detail below)
+- [ ] Allows for gradual adoption*.
+- [ ] Can be used for front-end and back-end development (just like JS)
 
 *You can turn an existing project into a TS project by changing the files one by one, it's not a big bang change.
 

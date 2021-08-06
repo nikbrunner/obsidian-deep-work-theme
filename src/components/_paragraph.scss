@@ -1,0 +1,12 @@
+@use "sass:list";
+
+@mixin paragraph($view-mode) {
+  @if not list.index($view-modes, $view-mode) {
+    @error "#{$view-mode} is not a valid side. Expected one of #{$view-modes}.";
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+  }
+}

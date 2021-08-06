@@ -1,0 +1,17 @@
+@use "sass:list";
+
+@mixin external-link($view-mode) {
+  @if not list.index($view-modes, $view-mode) {
+    @error "#{$view-mode} is not a valid side. Expected one of #{$view-modes}.";
+  }
+
+  .external-link {
+    font-weight: 600;
+    text-decoration: none;
+    background-position-y: 60%;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

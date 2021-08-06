@@ -1,0 +1,8 @@
+@import "../components";
+
+$view-mode: source;
+
+body div.markdown-source-view {
+  @include cursor($view-mode);
+  @include active-line($view-mode);
+}

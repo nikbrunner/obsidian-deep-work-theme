@@ -1,0 +1,27 @@
+@use "sass:list";
+
+@mixin task-list($view-mode) {
+  @if not list.index($view-modes, $view-mode) {
+    @error "#{$view-mode} is not a valid side. Expected one of #{$view-modes}.";
+  }
+
+  @if $view-mode == "preview" {
+    ul.contains-task-list {
+      .task-list-item {
+        text-decoration: none;
+
+        &-checkbox {
+          width: 16px;
+          height: 16px;
+          filter: hue-rotate(0);
+        }
+
+        &.is-checked {
+          a {
+            color: var(--color-blue-7);
+          }
+        }
+      }
+    }
+  }
+}

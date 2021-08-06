@@ -81,12 +81,6 @@
   --color-pink-7: #7d2457;
   --color-pink-8: #5e103e;
   --color-pink-9: #42062a;
-  --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
-  --default-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-    sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  --editor-font: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-    Liberation Mono, monospace;
-  --border-radius: 6px;
 }
 
 .theme-dark {
@@ -125,7 +119,9 @@
   --scrollbar-bg: rgba(255, 255, 255, 0.05);
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
   --highlight-mix-blend-mode: lighten;
-  --cursor-color: var(--color-blue-3);
+  --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
+  --cursor-bg: var(--color-green-3);
+  --active-line-bg: var(--color-gray-8);
 }
 
 .theme-light {
@@ -164,68 +160,22 @@
   --scrollbar-bg: rgba(255, 255, 255, 0.05);
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
   --highlight-mix-blend-mode: lighten;
-  --cursor-color: var(--color-blue-4);
+  --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
+  --cursor-bg: var(--color-blue-4);
+  --active-line-bg: var(--color-gray-0);
 }
 
-/* Typography */
-body {
-  line-height: 1.5;
-  word-wrap: break-word;
+:root {
+  --border-radius: 6px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 0;
+:root {
+  --default-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  --editor-font: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+    Liberation Mono, monospace;
 }
 
-h1 {
-  padding-bottom: 0.3em;
-}
-
-h1,
-h2 {
-  font-weight: 600;
-  border-bottom: 1px solid var(--background-secondary-alt);
-}
-
-h2 {
-  padding-bottom: 0.3em;
-}
-
-h3,
-h4 {
-  font-weight: 600;
-}
-
-h5,
-h6 {
-  font-weight: 600;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0.6rem;
-}
-
-blockquote {
-  margin: 0;
-}
-
-dd {
-  margin-left: 0;
-}
-
-pre {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/* Fonts */
 .markdown-source-view {
   font-family: var(--editor-font);
 }
@@ -234,54 +184,78 @@ pre {
   font-family: var(--default-font);
 }
 
-/* UI */
-.dropdown {
+body body {
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body h1 {
+  padding-bottom: 0.3em;
+}
+body h1,
+body h2 {
+  font-weight: 600;
+  border-bottom: 1px solid var(--background-secondary-alt);
+}
+body h2 {
+  padding-bottom: 0.3em;
+}
+body h3,
+body h4 {
+  font-weight: 600;
+}
+body h5,
+body h6 {
+  font-weight: 600;
+}
+body p {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+body .titlebar {
+  border-bottom: 1px solid var(--background-secondary-alt);
+}
+body .titlebar-inner {
+  background: var(--background-primary);
+  color: var(--text-normal);
+}
+body .titlebar-text {
+  top: 3px;
+}
+body .titlebar-button {
+  opacity: 1;
+}
+body .dropdown {
   filter: hue-rotate(250deg) brightness(215%);
 }
-
-.cm-fat-cursor .CodeMirror-cursor {
-  background: var(--cursor-color);
-}
-
-.markdown-preview-view .task-list-item-checkbox {
-  width: 16px;
-  height: 16px;
-  filter: hue-rotate(0);
-}
-
-.markdown-preview-view ul > li.task-list-item.is-checked {
-  text-decoration: none;
-}
-
-.markdown-preview-view ul > li.task-list-item.is-checked a {
-  color: var(--color-blue-7);
-}
-
-.markdown-preview-view .internal-link {
+body .internal-link {
   font-weight: 600;
   color: var(--text-accent);
   text-decoration: none;
 }
-
-.markdown-preview-view .internal-link:hover {
+body .internal-link:hover {
   text-decoration: underline;
 }
-
-.markdown-preview-view .external-link {
+body .external-link {
   font-weight: 600;
   text-decoration: none;
   background-position-y: 60%;
 }
-
-.markdown-preview-view .external-link:hover {
+body .external-link:hover {
   text-decoration: underline;
 }
-
-.suggestion-container {
+body .suggestion-container {
   border-radius: var(--border-radius);
 }
-
-.tag {
+body .tag {
   background: var(--color-topic-tag-bg);
   color: var(--color-blue-3);
   border-radius: 2em;
@@ -289,45 +263,33 @@ pre {
   padding: 3px 10px 5px;
   text-decoration: none;
 }
-
-.admonition {
-  box-shadow: none !important;
+body [data-type=file-explorer] .nav-files-container {
+  padding: 1rem;
+}
+body [data-type=file-explorer] .nav-files-container .nav-file-title {
+  white-space: normal;
+  width: auto;
+}
+body [data-type=file-explorer] .nav-files-container .nav-file-title.is-active {
+  border-left: 5px solid var(--interactive-accent);
+}
+body [data-type=file-explorer] .nav-files-container .nav-folder-title {
+  white-space: normal;
+  width: auto;
 }
 
-.theme-dark .CodeMirror-activeline {
-  background: var(--color-gray-8);
+body div.markdown-preview-view ul.contains-task-list .task-list-item {
+  text-decoration: none;
 }
-
-.theme-light .CodeMirror-activeline {
-  background: var(--color-gray-0);
+body div.markdown-preview-view ul.contains-task-list .task-list-item-checkbox {
+  width: 16px;
+  height: 16px;
+  filter: hue-rotate(0);
 }
-
-/* Inline Code */
-.markdown-preview-view code {
-  color: var(--text-normal);
-  font-family: var(--font-monospace);
-  background-color: var(--background-secondary-alt);
-  border-radius: 4px;
-  padding: 2px 4px;
-  font-size: 0.85em;
+body div.markdown-preview-view ul.contains-task-list .task-list-item.is-checked a {
+  color: var(--color-blue-7);
 }
-
-/* Embedded */
-.markdown-preview-view .markdown-embed,
-.markdown-preview-view .file-embed {
-  border: none;
-  border-radius: 5px;
-}
-
-.markdown-embed .markdown-preview-view {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  border-left: 10px solid var(--text-accent);
-  border-radius: 5px;
-  background: var(--background-secondary);
-}
-
-.markdown-preview-view blockquote {
+body div.markdown-preview-view blockquote {
   background: var(--background-primary-alt);
   color: var(--text-normal);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -338,61 +300,68 @@ pre {
   padding: 2rem;
   margin-inline-start: 0;
   margin-inline-end: 0;
+  margin: 0;
   margin-bottom: 1rem;
 }
-
-.markdown-embed-link,
-.file-embed-link {
+body div.markdown-preview-view code {
+  color: var(--text-normal);
+  font-family: var(--font-monospace);
+  background-color: var(--background-secondary-alt);
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 0.85em;
+}
+body div.markdown-preview-view .markdown-embed {
+  border: none;
+  border-radius: 5px;
+}
+body div.markdown-preview-view .markdown-embed .markdown-preview-view {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-left: 10px solid var(--text-accent);
+  border-radius: 5px;
+  background: var(--background-secondary);
+}
+body div.markdown-preview-view .markdown-embed .markdown-embed-link {
   top: 2rem;
 }
-
-/* Buttons */
-.button-default {
-  box-shadow: none !important;
+body div.markdown-preview-view .file-embed {
+  border: none;
+  border-radius: 5px;
 }
-
-.button-default:hover {
+body div.markdown-preview-view .file-embed .file-embed-link {
+  top: 2rem;
+}
+body div.markdown-preview-view .admonition {
+  box-shadow: none;
+}
+body div.markdown-preview-view .button-default {
+  box-shadow: none;
+}
+body div.markdown-preview-view .button-default:hover {
   background-color: inherit;
 }
-
-.button-default.white {
+body div.markdown-preview-view .button-default.white {
   background: linear-gradient(45deg, var(--color-gray-1), var(--color-gray-2));
-  border: 1px solid var(--color-gray-1) !important;
+  border: 1px solid var(--color-gray-1);
   color: var(--color-gray-8);
 }
-
-.button-default.green {
+body div.markdown-preview-view .button-default.green {
   background: linear-gradient(45deg, var(--color-green-3), var(--color-green-4));
-  border: 1px solid var(--color-green-2) !important;
+  border: 1px solid var(--color-green-2);
 }
-
-.button-default.blue {
+body div.markdown-preview-view .button-default.blue {
   background: linear-gradient(45deg, var(--color-blue-3), var(--color-blue-4));
-  border: 1px solid var(--color-blue-2) !important;
+  border: 1px solid var(--color-blue-2);
 }
-
-.button-default.purple {
+body div.markdown-preview-view .button-default.purple {
   background: linear-gradient(45deg, var(--color-purple-3), var(--color-purple-4));
-  border: 1px solid var(--color-purple-2) !important;
+  border: 1px solid var(--color-purple-2);
 }
 
-/* Wrap long nav text and some paddings */
-.nav-file-title,
-.nav-folder-title {
-  white-space: normal;
-  width: auto;
+body div.markdown-source-view .cm-fat-cursor .CodeMirror-cursor {
+  background: var(--cursor-bg);
 }
-
-/* titlebar */
-.titlebar-inner {
-  background: var(--background-primary);
-  color: var(--text-normal);
-}
-
-.titlebar-text {
-  top: 3px;
-}
-
-.titlebar-button {
-  opacity: 1;
+body div.markdown-source-view .CodeMirror-activeline {
+  background: var(--active-line-bg);
 }

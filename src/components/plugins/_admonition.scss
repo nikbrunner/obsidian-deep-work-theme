@@ -1,0 +1,13 @@
+@use "sass:list";
+
+@mixin admonition($view-mode) {
+  @if not list.index($view-modes, $view-mode) {
+    @error "#{$view-mode} is not a valid side. Expected one of #{$view-modes}.";
+  }
+
+  @if $view-mode == "preview" {
+    .admonition {
+      box-shadow: none;
+    }
+  }
+}

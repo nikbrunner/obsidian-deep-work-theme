@@ -1,0 +1,16 @@
+@use "sass:list";
+
+@mixin tag($view-mode) {
+  @if not list.index($view-modes, $view-mode) {
+    @error "#{$view-mode} is not a valid side. Expected one of #{$view-modes}.";
+  }
+
+  .tag {
+    background: var(--color-topic-tag-bg);
+    color: var(--color-blue-3);
+    border-radius: 2em;
+    font-size: 0.75rem;
+    padding: 3px 10px 5px;
+    text-decoration: none;
+  }
+}

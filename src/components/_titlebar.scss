@@ -1,0 +1,24 @@
+@use "sass:list";
+
+@mixin titlebar($view-mode) {
+  @if not list.index($view-modes, $view-mode) {
+    @error "#{$view-mode} is not a valid side. Expected one of #{$view-modes}.";
+  }
+
+  .titlebar {
+    border-bottom: 1px solid var(--background-secondary-alt);
+
+    &-inner {
+      background: var(--background-primary);
+      color: var(--text-normal);
+    }
+
+    &-text {
+      top: 3px;
+    }
+
+    &-button {
+      opacity: 1;
+    }
+  }
+}
