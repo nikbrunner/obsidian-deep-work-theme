@@ -125,6 +125,7 @@
   --scrollbar-bg: rgba(255, 255, 255, 0.05);
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
   --highlight-mix-blend-mode: lighten;
+  --cursor-color: var(--color-green-3);
 }
 
 .theme-light {
@@ -163,6 +164,7 @@
   --scrollbar-bg: rgba(255, 255, 255, 0.05);
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
   --highlight-mix-blend-mode: lighten;
+  --cursor-color: var(--color-blue-4);
 }
 
 /* Typography */
@@ -238,7 +240,7 @@ pre {
 }
 
 .cm-fat-cursor .CodeMirror-cursor {
-  background: var(--color-green-3);
+  background: var(--cursor-color);
 }
 
 .markdown-preview-view .task-list-item-checkbox {
