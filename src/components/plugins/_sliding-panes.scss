@@ -1,0 +1,10 @@
+@include ui-component {
+  &.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
+    transition: transition(box-shadow);
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.05) !important;
+
+    &.mod-active {
+      box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.15) !important;
+    }
+  }
+}

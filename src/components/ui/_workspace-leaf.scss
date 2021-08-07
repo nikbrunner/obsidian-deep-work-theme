@@ -1,0 +1,7 @@
+@include ui-component {
+  .workspace-leaf {
+    &.mod-active {
+      box-shadow: none;
+    }
+  }
+}

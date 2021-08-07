@@ -230,6 +230,10 @@ body .titlebar-button {
   opacity: 1;
 }
 
+body .workspace-leaf.mod-active {
+  box-shadow: none;
+}
+
 body .markdown-source-view .CodeMirror .CodeMirror-activeline {
   background: var(--active-line-bg);
 }
@@ -384,4 +388,12 @@ body .markdown-preview-view .button-default.blue {
 body .markdown-preview-view .button-default.purple {
   background: linear-gradient(45deg, var(--color-purple-3), var(--color-purple-4));
   border: 1px solid var(--color-purple-2);
+}
+
+body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
+  transition: box-shadow 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.05) !important;
+}
+body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf.mod-active {
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.15) !important;
 }

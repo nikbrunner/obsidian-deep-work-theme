@@ -2,6 +2,7 @@
 @import "ui/file-explorer";
 @import "ui/suggestion-container";
 @import "ui/titlebar";
+@import "ui/workspace-leaf";
 
 @import "editor/active-line";
 @import "editor/blockquote";
@@ -18,3 +19,4 @@
 
 @import "plugins/admonition";
 @import "plugins/buttons";
+@import "plugins/sliding-panes";
