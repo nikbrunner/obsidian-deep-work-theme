@@ -1,32 +1,35 @@
 @use "sass:list";
 
-@mixin wrap-title-and-folder-names {
-  white-space: normal;
-  width: auto;
-}
-
 @mixin file-explorer($view-mode) {
   @if not list.index($view-modes, $view-mode) {
     @error "#{$view-mode} is not a valid side. Expected one of #{$view-modes}.";
   }
 
-  [data-type="file-explorer"] {
+  $component-namespace: "[data-type='file-explorer']";
+  $border-width: 5px;
+
+  #{$component-namespace} {
     .nav-files-container {
       padding: 1rem;
 
-      .nav-file {
-        &-title {
-          @include wrap-title-and-folder-names();
+      .nav-folder-title,
+      .nav-file-title {
+        @include wrap-title-and-folder-names();
 
-          &.is-active {
-            border-left: 5px solid var(--interactive-accent);
-          }
+        border-left: border($border-width, transparent);
+        transition: transition(background-color);
+        margin-bottom: 0.25rem;
+
+        &:hover {
+          border-left: border($border-width, var(--interactive-hover));
         }
       }
 
-      .nav-folder {
+      .nav-file {
         &-title {
-          @include wrap-title-and-folder-names();
+          &.is-active {
+            border-left: border($border-width, var(--interactive-accent));
+          }
         }
       }
     }

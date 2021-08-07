@@ -1,4 +1,8 @@
 :root {
+  --border-radius: 6px;
+}
+
+:root {
   --color-black: #010409;
   --color-white: #f7f9fc;
   --color-gray-0: #f0f6fc;
@@ -110,7 +114,7 @@
   --text-selection: rgba(23, 48, 77, 0.99);
   --text-on-accent: var(--color-gray-8);
   --interactive-normal: var(--color-gray-7);
-  --interactive-hover: var(--color-gray-7);
+  --interactive-hover: var(--color-gray-5);
   --interactive-accent: var(--color-green-4);
   --interactive-accent-rgb: 46, 160, 67;
   --interactive-accent-hover: var(--color-green-3);
@@ -151,7 +155,7 @@
   --text-selection: rgba(0, 89, 255, 0.1);
   --text-on-accent: var(--color-gray-8);
   --interactive-normal: var(--color-gray-7);
-  --interactive-hover: var(--color-gray-7);
+  --interactive-hover: var(--color-gray-3);
   --interactive-accent: var(--color-blue-5);
   --interactive-accent-rgb: 31, 111, 235;
   --interactive-accent-hover: var(--color-green-3);
@@ -163,10 +167,6 @@
   --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
   --cursor-bg: var(--color-blue-4);
   --active-line-bg: var(--color-gray-0);
-}
-
-:root {
-  --border-radius: 6px;
 }
 
 :root {
@@ -266,19 +266,23 @@ body .tag {
 body [data-type="file-explorer"] .nav-files-container {
   padding: 1rem;
 }
+body [data-type="file-explorer"] .nav-files-container .nav-folder-title,
 body [data-type="file-explorer"] .nav-files-container .nav-file-title {
   white-space: normal;
   width: auto;
+  border-left: 5px solid transparent;
+  transition: background-color 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  margin-bottom: 0.25rem;
+}
+body [data-type="file-explorer"] .nav-files-container .nav-folder-title:hover,
+body [data-type="file-explorer"] .nav-files-container .nav-file-title:hover {
+  border-left: 5px solid var(--interactive-hover);
 }
 body
   [data-type="file-explorer"]
   .nav-files-container
   .nav-file-title.is-active {
   border-left: 5px solid var(--interactive-accent);
-}
-body [data-type="file-explorer"] .nav-files-container .nav-folder-title {
-  white-space: normal;
-  width: auto;
 }
 
 body div.markdown-preview-view ul.contains-task-list .task-list-item {
