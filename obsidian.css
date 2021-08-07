@@ -233,8 +233,12 @@ body .titlebar-button {
   opacity: 1;
 }
 
-body .workspace-leaf.mod-active {
-  box-shadow: none;
+body .workspace-leaf .view-header {
+  transition: border-bottom 1s cubic-bezier(0.075, 0.82, 0.165, 1),
+    border-right 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+body .workspace-leaf .view-header-title {
+  transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 body .markdown-source-view .CodeMirror .CodeMirror-activeline {

@@ -1,7 +1,12 @@
 @include ui-component {
   .workspace-leaf {
-    &.mod-active {
-      box-shadow: none;
+    .view-header {
+      transition: transition(border-bottom, $transition-speed-slow),
+        transition(border-right, $transition-speed-slow);
+
+      &-title {
+        transition: transition(color, $transition-speed-slow);
+      }
     }
   }
 }
