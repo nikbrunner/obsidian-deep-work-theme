@@ -1,14 +1,15 @@
 @include ui-component {
   .titlebar {
     border-bottom: 1px solid var(--background-secondary-alt);
+    padding-top: 0px !important;
 
     &-inner {
-      background: var(--background-primary);
+      background: var(--background-secondary-alt);
       color: var(--text-normal);
     }
 
     &-text {
-      top: 1px;
+      top: 3px;
     }
 
     &-button {

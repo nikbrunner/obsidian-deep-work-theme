@@ -218,13 +218,14 @@ body .suggestion-container {
 
 body .titlebar {
   border-bottom: 1px solid var(--background-secondary-alt);
+  padding-top: 0px !important;
 }
 body .titlebar-inner {
-  background: var(--background-primary);
+  background: var(--background-secondary-alt);
   color: var(--text-normal);
 }
 body .titlebar-text {
-  top: 1px;
+  top: 3px;
 }
 body .titlebar-button {
   opacity: 1;
