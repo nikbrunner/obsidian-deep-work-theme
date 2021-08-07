@@ -1,0 +1,16 @@
+@include editor-preview-component {
+  blockquote {
+    background: var(--background-primary-alt);
+    color: var(--text-normal);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    border-radius: 0.5rem;
+    border: initial;
+    border-left-width: initial;
+    padding: 2rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}

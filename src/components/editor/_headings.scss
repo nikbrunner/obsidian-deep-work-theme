@@ -1,10 +1,4 @@
-@use "sass:list";
-
-@mixin headings($view-mode) {
-  @if not list.index($view-modes, $view-mode) {
-    @error "#{$view-mode} is not a valid side. Expected one of #{$view-modes}.";
-  }
-
+@include editor-preview-component {
   h1,
   h2,
   h3,

@@ -1,0 +1,10 @@
+@include editor-preview-component {
+  .file-embed {
+    border: none;
+    border-radius: 5px;
+
+    .file-embed-link {
+      top: 2rem;
+    }
+  }
+}

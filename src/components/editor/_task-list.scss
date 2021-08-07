@@ -1,0 +1,19 @@
+@include editor-preview-component {
+  ul.contains-task-list {
+    .task-list-item {
+      text-decoration: none;
+
+      &-checkbox {
+        width: 16px;
+        height: 16px;
+        filter: hue-rotate(0);
+      }
+
+      &.is-checked {
+        a {
+          color: var(--color-blue-7);
+        }
+      }
+    }
+  }
+}

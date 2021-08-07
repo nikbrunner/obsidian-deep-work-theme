@@ -1,0 +1,17 @@
+@mixin ui-component {
+  body {
+    @content;
+  }
+}
+
+@mixin editor-preview-component {
+  body .markdown-preview-view {
+    @content;
+  }
+}
+
+@mixin editor-source-component {
+  body .markdown-source-view .CodeMirror {
+    @content;
+  }
+}

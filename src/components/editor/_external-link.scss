@@ -1,0 +1,11 @@
+@include editor-preview-component {
+  .external-link {
+    font-weight: 600;
+    text-decoration: none;
+    background-position-y: 60%;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
