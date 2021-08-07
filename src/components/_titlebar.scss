@@ -5,7 +5,9 @@
     @error "#{$view-mode} is not a valid side. Expected one of #{$view-modes}.";
   }
 
-  .titlebar {
+  $component-namespace: ".titlebar";
+
+  #{$component-namespace} {
     border-bottom: 1px solid var(--background-secondary-alt);
 
     &-inner {
@@ -14,7 +16,7 @@
     }
 
     &-text {
-      top: 3px;
+      top: 1px;
     }
 
     &-button {

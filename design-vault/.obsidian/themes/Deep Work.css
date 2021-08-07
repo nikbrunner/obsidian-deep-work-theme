@@ -228,7 +228,7 @@ body .titlebar-inner {
   color: var(--text-normal);
 }
 body .titlebar-text {
-  top: 3px;
+  top: 1px;
 }
 body .titlebar-button {
   opacity: 1;
