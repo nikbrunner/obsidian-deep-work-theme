@@ -90,7 +90,12 @@
   --background-secondary-alt: var(--color-gray-7);
   --background-modifier-border: var(--color-gray-7);
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+  --background-modifier-form-field-highlighted: rgba(
+    0,
+    0,
+    0,
+    0.22
+  );
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-success: var(--color-green-4);
   --background-modifier-error: var(--color-red-6);
@@ -131,7 +136,12 @@
   --background-secondary-alt: var(--color-gray-1);
   --background-modifier-border: var(--color-gray-1);
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
-  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+  --background-modifier-form-field-highlighted: rgba(
+    0,
+    0,
+    0,
+    0.22
+  );
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-success: var(--color-green-4);
   --background-modifier-error: var(--color-red-6);
@@ -171,10 +181,11 @@ body {
 }
 
 :root {
-  --default-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-    sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  --editor-font: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-    Liberation Mono, monospace;
+  --default-font: -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica, Arial, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji;
+  --editor-font: ui-monospace, SFMono-Regular, SF Mono, Menlo,
+    Consolas, Liberation Mono, monospace;
 }
 
 .markdown-source-view {
@@ -192,18 +203,31 @@ body .dropdown {
 body [data-type="file-explorer"] .nav-files-container {
   padding: 1rem;
 }
-body [data-type="file-explorer"] .nav-files-container .nav-folder-title,
-body [data-type="file-explorer"] .nav-files-container .nav-file-title {
+body
+  [data-type="file-explorer"]
+  .nav-files-container
+  .nav-folder-title,
+body
+  [data-type="file-explorer"]
+  .nav-files-container
+  .nav-file-title {
   white-space: normal;
   width: auto;
   border-left: 5px solid transparent;
-  transition: background-color 0.75s cubic-bezier(0.075, 0.82, 0.165, 1),
+  transition: background-color 0.75s
+      cubic-bezier(0.075, 0.82, 0.165, 1),
     border-left 0.75s cubic-bezier(0.075, 0.82, 0.165, 1),
     color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   margin-bottom: 0.25rem;
 }
-body [data-type="file-explorer"] .nav-files-container .nav-folder-title:hover,
-body [data-type="file-explorer"] .nav-files-container .nav-file-title:hover {
+body
+  [data-type="file-explorer"]
+  .nav-files-container
+  .nav-folder-title:hover,
+body
+  [data-type="file-explorer"]
+  .nav-files-container
+  .nav-file-title:hover {
   border-left: 5px solid var(--interactive-hover);
 }
 body
@@ -233,7 +257,8 @@ body .titlebar-button {
 }
 
 body .workspace-leaf .view-header {
-  transition: border-bottom 1s cubic-bezier(0.075, 0.82, 0.165, 1),
+  transition: border-bottom 1s
+      cubic-bezier(0.075, 0.82, 0.165, 1),
     border-right 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 body .workspace-leaf .view-header-title {
@@ -323,14 +348,20 @@ body .markdown-preview-view .markdown-embed {
   border: none;
   border-radius: 4px;
 }
-body .markdown-preview-view .markdown-embed .markdown-preview-view {
+body
+  .markdown-preview-view
+  .markdown-embed
+  .markdown-preview-view {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   border-left: 10px solid var(--text-accent);
   border-radius: 4px;
   background: var(--background-secondary);
 }
-body .markdown-preview-view .markdown-embed .markdown-embed-link {
+body
+  .markdown-preview-view
+  .markdown-embed
+  .markdown-embed-link {
   top: 2rem;
 }
 
@@ -347,17 +378,27 @@ body .markdown-preview-view .tag {
   text-decoration: none;
 }
 
-body .markdown-preview-view ul.contains-task-list .task-list-item {
+body
+  .markdown-preview-view
+  ul.contains-task-list
+  .task-list-item {
   text-decoration: none;
 }
-body .markdown-preview-view ul.contains-task-list .task-list-item-checkbox {
+body
+  .markdown-preview-view
+  ul.contains-task-list
+  .task-list-item-checkbox {
   width: 16px;
   height: 16px;
   top: 2px;
   filter: hue-rotate(0);
   margin-right: calc((1rem / 2) * 1);
 }
-body .markdown-preview-view ul.contains-task-list .task-list-item.is-checked a {
+body
+  .markdown-preview-view
+  ul.contains-task-list
+  .task-list-item.is-checked
+  a {
   color: var(--color-blue-7);
 }
 
@@ -372,7 +413,11 @@ body .markdown-preview-view .button-default:hover {
   background-color: inherit;
 }
 body .markdown-preview-view .button-default.white {
-  background: linear-gradient(45deg, var(--color-gray-1), var(--color-gray-2));
+  background: linear-gradient(
+    45deg,
+    var(--color-gray-1),
+    var(--color-gray-2)
+  );
   border: 1px solid var(--color-gray-1);
   color: var(--color-gray-8);
 }
@@ -385,7 +430,11 @@ body .markdown-preview-view .button-default.green {
   border: 1px solid var(--color-green-2);
 }
 body .markdown-preview-view .button-default.blue {
-  background: linear-gradient(45deg, var(--color-blue-3), var(--color-blue-4));
+  background: linear-gradient(
+    45deg,
+    var(--color-blue-3),
+    var(--color-blue-4)
+  );
   border: 1px solid var(--color-blue-2);
 }
 body .markdown-preview-view .button-default.purple {
@@ -397,8 +446,12 @@ body .markdown-preview-view .button-default.purple {
   border: 1px solid var(--color-purple-2);
 }
 
-body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
-  transition: box-shadow 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+body.plugin-sliding-panes-stacking
+  .workspace
+  > .mod-root
+  > .workspace-leaf {
+  transition: box-shadow 0.75s
+    cubic-bezier(0.075, 0.82, 0.165, 1);
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.05) !important;
 }
 body.plugin-sliding-panes-stacking
