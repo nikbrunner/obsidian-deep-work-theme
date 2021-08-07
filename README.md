@@ -5,10 +5,11 @@ A light and dark theme for [Obsidian](https://obsidian.md) inspired by the moder
 ![](screenshot.png)
 
 ## Development Stage
-Although this theme is in a very early development, it is very usable for most usecases.
+Although this theme is in a very early development, it is very usable.
 
 ## Future plans
 - A dark dimmed option via a dedicated PlugIn
+- A `publish.css`
 
 ## Fonts
 The font-family declarations are taken directly from GitHub.
@@ -28,7 +29,4 @@ The font-family declarations are taken directly from GitHub.
 - Calendar
 - Buttons
 - Admonition
-
-## Todo
-- [ ] Refactor structure with SCSS
-- [ ] `publish.css`
+- Sliding Panes
