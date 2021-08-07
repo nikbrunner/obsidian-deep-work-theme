@@ -3,7 +3,7 @@
   h2 {
     font-weight: 600;
     line-height: $line-height-s;
-    padding-bottom: 0.25em;
+    padding-bottom: $space-s;
     border-bottom: 1px solid var(--background-secondary-alt);
   }
 

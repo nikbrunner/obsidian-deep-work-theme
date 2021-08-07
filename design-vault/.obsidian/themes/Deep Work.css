@@ -284,7 +284,7 @@ body .markdown-preview-view h1,
 body .markdown-preview-view h2 {
   font-weight: 600;
   line-height: 1.25;
-  padding-bottom: 0.25em;
+  padding-bottom: calc((1rem / 2) * 1);
   border-bottom: 1px solid var(--background-secondary-alt);
 }
 body .markdown-preview-view h3,
