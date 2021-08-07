@@ -216,10 +216,14 @@ Once you have installed TypeScript on your system or with any of the other optio
 
 Let's test the compiler with the minimum configuration:
 
+#### Steps
+
 - Create a new empty folder
 - Place an `index.html` with the basic HTML5 structure inside.
 - Create an empty `index.ts` file at the same level as `index.html`.
 - Open a terminal and type `tsc --init` (assuming you have installed global typescript) this will create for you a `tsconfig.json` (we will look at this file in detail in the next section).
+
+##### Example
 
 You will have something like this:
 
@@ -228,6 +232,8 @@ You will have something like this:
 - index.ts
 - tsconfig.json
 ```
+
+###### Another one
 
 ```html
 <!DOCTYPE html>

@@ -1,26 +1,9 @@
 @include editor-preview-component {
   h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  h1 {
-    padding-bottom: 0.3em;
-  }
-
-  h1,
   h2 {
     font-weight: 600;
+    padding-bottom: 0.25em;
     border-bottom: 1px solid var(--background-secondary-alt);
-  }
-
-  h2 {
-    padding-bottom: 0.3em;
   }
 
   h3,
@@ -28,8 +11,13 @@
     font-weight: 600;
   }
 
-  h5,
-  h6 {
+  h5 {
     font-weight: 600;
+    font-style: italic;
+  }
+
+  h6 {
+    font-weight: 400;
+    font-style: italic;
   }
 }
