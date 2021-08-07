@@ -31,4 +31,4 @@ The font-family declarations are taken directly from GitHub.
 
 ## Todo
 - [ ] Refactor structure with SCSS
-- [ ] Section for UI Elements
+- [ ] `publish.css`
