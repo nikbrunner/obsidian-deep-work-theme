@@ -1,0 +1,18 @@
+@include ui-component {
+  .titlebar {
+    border-bottom: 1px solid var(--background-secondary-alt);
+
+    &-inner {
+      background: var(--background-primary);
+      color: var(--text-normal);
+    }
+
+    &-text {
+      top: 1px;
+    }
+
+    &-button {
+      opacity: 1;
+    }
+  }
+}

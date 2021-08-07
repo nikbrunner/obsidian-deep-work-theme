@@ -1,3 +1,8 @@
+body {
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
 :root {
   --border-radius: 6px;
 }
@@ -184,85 +189,10 @@
   font-family: var(--default-font);
 }
 
-body body {
-  line-height: 1.5;
-  word-wrap: break-word;
-}
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-body h1 {
-  padding-bottom: 0.3em;
-}
-body h1,
-body h2 {
-  font-weight: 600;
-  border-bottom: 1px solid var(--background-secondary-alt);
-}
-body h2 {
-  padding-bottom: 0.3em;
-}
-body h3,
-body h4 {
-  font-weight: 600;
-}
-body h5,
-body h6 {
-  font-weight: 600;
-}
-body p {
-  margin-top: 0;
-  margin-bottom: 0.6rem;
-}
-body .titlebar {
-  border-bottom: 1px solid var(--background-secondary-alt);
-}
-body .titlebar-inner {
-  background: var(--background-primary);
-  color: var(--text-normal);
-}
-body .titlebar-text {
-  top: 1px;
-}
-body .titlebar-button {
-  opacity: 1;
-}
 body .dropdown {
   filter: hue-rotate(250deg) brightness(215%);
 }
-body .internal-link {
-  font-weight: 600;
-  color: var(--text-accent);
-  text-decoration: none;
-}
-body .internal-link:hover {
-  text-decoration: underline;
-}
-body .external-link {
-  font-weight: 600;
-  text-decoration: none;
-  background-position-y: 60%;
-}
-body .external-link:hover {
-  text-decoration: underline;
-}
-body .suggestion-container {
-  border-radius: var(--border-radius);
-}
-body .tag {
-  background: var(--color-topic-tag-bg);
-  color: var(--color-blue-3);
-  border-radius: 2em;
-  font-size: 0.75rem;
-  padding: 3px 10px 5px;
-  text-decoration: none;
-}
+
 body [data-type=file-explorer] .nav-files-container {
   padding: 1rem;
 }
@@ -282,18 +212,29 @@ body [data-type=file-explorer] .nav-files-container .nav-file-title.is-active {
   border-left: 5px solid var(--interactive-accent);
 }
 
-body div.markdown-preview-view ul.contains-task-list .task-list-item {
-  text-decoration: none;
+body .suggestion-container {
+  border-radius: var(--border-radius);
 }
-body div.markdown-preview-view ul.contains-task-list .task-list-item-checkbox {
-  width: 16px;
-  height: 16px;
-  filter: hue-rotate(0);
+
+body .titlebar {
+  border-bottom: 1px solid var(--background-secondary-alt);
 }
-body div.markdown-preview-view ul.contains-task-list .task-list-item.is-checked a {
-  color: var(--color-blue-7);
+body .titlebar-inner {
+  background: var(--background-primary);
+  color: var(--text-normal);
 }
-body div.markdown-preview-view blockquote {
+body .titlebar-text {
+  top: 1px;
+}
+body .titlebar-button {
+  opacity: 1;
+}
+
+body .markdown-source-view .CodeMirror .CodeMirror-activeline {
+  background: var(--active-line-bg);
+}
+
+body .markdown-preview-view blockquote {
   background: var(--background-primary-alt);
   color: var(--text-normal);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -307,7 +248,8 @@ body div.markdown-preview-view blockquote {
   margin: 0;
   margin-bottom: 1rem;
 }
-body div.markdown-preview-view code {
+
+body .markdown-preview-view code {
   color: var(--text-normal);
   font-family: var(--font-monospace);
   background-color: var(--background-secondary-alt);
@@ -315,57 +257,131 @@ body div.markdown-preview-view code {
   padding: 2px 4px;
   font-size: 0.85em;
 }
-body div.markdown-preview-view .markdown-embed {
+
+body .markdown-source-view .CodeMirror .CodeMirror-cursor {
+  background: var(--cursor-bg);
+}
+
+body .markdown-preview-view .external-link {
+  font-weight: 600;
+  text-decoration: none;
+  background-position-y: 60%;
+}
+body .markdown-preview-view .external-link:hover {
+  text-decoration: underline;
+}
+
+body .markdown-preview-view .file-embed {
   border: none;
   border-radius: 5px;
 }
-body div.markdown-preview-view .markdown-embed .markdown-preview-view {
+body .markdown-preview-view .file-embed .file-embed-link {
+  top: 2rem;
+}
+
+body .markdown-preview-view h1,
+body .markdown-preview-view h2,
+body .markdown-preview-view h3,
+body .markdown-preview-view h4,
+body .markdown-preview-view h5,
+body .markdown-preview-view h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body .markdown-preview-view h1 {
+  padding-bottom: 0.3em;
+}
+body .markdown-preview-view h1,
+body .markdown-preview-view h2 {
+  font-weight: 600;
+  border-bottom: 1px solid var(--background-secondary-alt);
+}
+body .markdown-preview-view h2 {
+  padding-bottom: 0.3em;
+}
+body .markdown-preview-view h3,
+body .markdown-preview-view h4 {
+  font-weight: 600;
+}
+body .markdown-preview-view h5,
+body .markdown-preview-view h6 {
+  font-weight: 600;
+}
+
+body .markdown-preview-view .internal-link {
+  font-weight: 600;
+  color: var(--text-accent);
+  text-decoration: none;
+}
+body .markdown-preview-view .internal-link:hover {
+  text-decoration: underline;
+}
+
+body .markdown-preview-view .markdown-embed {
+  border: none;
+  border-radius: 5px;
+}
+body .markdown-preview-view .markdown-embed .markdown-preview-view {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   border-left: 10px solid var(--text-accent);
   border-radius: 5px;
   background: var(--background-secondary);
 }
-body div.markdown-preview-view .markdown-embed .markdown-embed-link {
+body .markdown-preview-view .markdown-embed .markdown-embed-link {
   top: 2rem;
 }
-body div.markdown-preview-view .file-embed {
-  border: none;
-  border-radius: 5px;
+
+body .markdown-preview-view p {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
 }
-body div.markdown-preview-view .file-embed .file-embed-link {
-  top: 2rem;
+
+body .markdown-preview-view .tag {
+  background: var(--color-topic-tag-bg);
+  color: var(--color-blue-3);
+  border-radius: 2em;
+  font-size: 0.75rem;
+  padding: 3px 10px 5px;
+  text-decoration: none;
 }
-body div.markdown-preview-view .admonition {
+
+body .markdown-preview-view ul.contains-task-list .task-list-item {
+  text-decoration: none;
+}
+body .markdown-preview-view ul.contains-task-list .task-list-item-checkbox {
+  width: 16px;
+  height: 16px;
+  filter: hue-rotate(0);
+}
+body .markdown-preview-view ul.contains-task-list .task-list-item.is-checked a {
+  color: var(--color-blue-7);
+}
+
+body .markdown-preview-view .admonition {
   box-shadow: none;
 }
-body div.markdown-preview-view .button-default {
+
+body .markdown-preview-view .button-default {
   box-shadow: none;
 }
-body div.markdown-preview-view .button-default:hover {
+body .markdown-preview-view .button-default:hover {
   background-color: inherit;
 }
-body div.markdown-preview-view .button-default.white {
+body .markdown-preview-view .button-default.white {
   background: linear-gradient(45deg, var(--color-gray-1), var(--color-gray-2));
   border: 1px solid var(--color-gray-1);
   color: var(--color-gray-8);
 }
-body div.markdown-preview-view .button-default.green {
+body .markdown-preview-view .button-default.green {
   background: linear-gradient(45deg, var(--color-green-3), var(--color-green-4));
   border: 1px solid var(--color-green-2);
 }
-body div.markdown-preview-view .button-default.blue {
+body .markdown-preview-view .button-default.blue {
   background: linear-gradient(45deg, var(--color-blue-3), var(--color-blue-4));
   border: 1px solid var(--color-blue-2);
 }
-body div.markdown-preview-view .button-default.purple {
+body .markdown-preview-view .button-default.purple {
   background: linear-gradient(45deg, var(--color-purple-3), var(--color-purple-4));
   border: 1px solid var(--color-purple-2);
-}
-
-body div.markdown-source-view .cm-fat-cursor .CodeMirror-cursor {
-  background: var(--cursor-bg);
-}
-body div.markdown-source-view .CodeMirror-activeline {
-  background: var(--active-line-bg);
 }

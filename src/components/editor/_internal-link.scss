@@ -1,0 +1,11 @@
+@include editor-preview-component {
+  .internal-link {
+    font-weight: 600;
+    color: var(--text-accent);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

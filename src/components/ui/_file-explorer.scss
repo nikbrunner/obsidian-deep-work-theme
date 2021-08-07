@@ -1,14 +1,7 @@
-@use "sass:list";
+@include ui-component {
+  [data-type="file-explorer"] {
+    $border-width: 5px;
 
-@mixin file-explorer($view-mode) {
-  @if not list.index($view-modes, $view-mode) {
-    @error "#{$view-mode} is not a valid side. Expected one of #{$view-modes}.";
-  }
-
-  $component-namespace: "[data-type='file-explorer']";
-  $border-width: 5px;
-
-  #{$component-namespace} {
     .nav-files-container {
       padding: 1rem;
 

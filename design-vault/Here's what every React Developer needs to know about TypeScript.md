@@ -1,5 +1,7 @@
 # Here's what every React Developer needs to know about TypeScript
 
+#typescript
+
 [Here's what every React Developer needs to know about TypeScript - Part 1](https://www.reddit.com/r/reactjs/comments/nn1y6x/heres_what_every_react_developer_needs_to_know/)
 
 [https://blog.dastasoft.com/posts/heres-what-every-react-developer-needs-to-know-about-typescript](https://blog.dastasoft.com/posts/heres-what-every-react-developer-needs-to-know-about-typescript)
