@@ -1,16 +1,15 @@
 @include editor-preview-component {
   blockquote {
+    padding: $space $space-xl;
+    margin: 0 0 $space 0;
+
     background: var(--background-primary-alt);
     color: var(--text-normal);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     font-style: italic;
+    line-height: $line-height-l;
+
     border-radius: $border-radius-default;
-    border: initial;
-    border-left-width: initial;
-    padding: 2rem;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    margin: 0;
-    margin-bottom: 1rem;
+    border-width: 1px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   }
 }

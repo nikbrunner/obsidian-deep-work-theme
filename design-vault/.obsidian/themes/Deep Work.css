@@ -1,8 +1,3 @@
-body {
-  line-height: 1.5;
-  word-wrap: break-word;
-}
-
 :root {
   --color-black: #010409;
   --color-white: #f7f9fc;
@@ -170,6 +165,11 @@ body {
   --active-line-bg: var(--color-gray-0);
 }
 
+body {
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
 :root {
   --default-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     sans-serif, Apple Color Emoji, Segoe UI Emoji;
@@ -239,18 +239,15 @@ body .markdown-source-view .CodeMirror .CodeMirror-activeline {
 }
 
 body .markdown-preview-view blockquote {
+  padding: calc(1rem * 1) calc((1rem * 4) * 1);
+  margin: 0 0 calc(1rem * 1) 0;
   background: var(--background-primary-alt);
   color: var(--text-normal);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   font-style: italic;
+  line-height: 2;
   border-radius: 6px;
-  border: initial;
-  border-left-width: initial;
-  padding: 2rem;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  margin: 0;
-  margin-bottom: 1rem;
+  border-width: 1px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 body .markdown-preview-view code {
@@ -286,6 +283,7 @@ body .markdown-preview-view .file-embed .file-embed-link {
 body .markdown-preview-view h1,
 body .markdown-preview-view h2 {
   font-weight: 600;
+  line-height: 1.25;
   padding-bottom: 0.25em;
   border-bottom: 1px solid var(--background-secondary-alt);
 }
@@ -327,8 +325,7 @@ body .markdown-preview-view .markdown-embed .markdown-embed-link {
 }
 
 body .markdown-preview-view p {
-  margin-top: 0;
-  margin-bottom: 0.6rem;
+  line-height: 1.5;
 }
 
 body .markdown-preview-view .tag {

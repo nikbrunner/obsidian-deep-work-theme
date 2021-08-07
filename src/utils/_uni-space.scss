@@ -1,0 +1,10 @@
+$space-factor: 1rem;
+$space-expansion: 1;
+
+$space-xxs: calc((#{$space-factor} / 8) * #{$space-expansion});
+$space-xs: calc((#{$space-factor} / 4) * #{$space-expansion});
+$space-s: calc((#{$space-factor} / 2) * #{$space-expansion});
+$space: calc(#{$space-factor} * #{$space-expansion});
+$space-l: calc((#{$space-factor} * 2) * #{$space-expansion});
+$space-xl: calc((#{$space-factor} * 4) * #{$space-expansion});
+$space-xxl: calc((#{$space-factor} * 8) * #{$space-expansion});
