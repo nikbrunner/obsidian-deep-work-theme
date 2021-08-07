@@ -309,6 +309,10 @@ body .markdown-preview-view .internal-link:hover {
   text-decoration: underline;
 }
 
+body .markdown-preview-view ul li {
+  margin-bottom: calc((1rem / 2) * 1);
+}
+
 body .markdown-preview-view .markdown-embed {
   border: none;
   border-radius: 4px;
@@ -343,7 +347,9 @@ body .markdown-preview-view ul.contains-task-list .task-list-item {
 body .markdown-preview-view ul.contains-task-list .task-list-item-checkbox {
   width: 16px;
   height: 16px;
+  top: 2px;
   filter: hue-rotate(0);
+  margin-right: calc((1rem / 2) * 1);
 }
 body .markdown-preview-view ul.contains-task-list .task-list-item.is-checked a {
   color: var(--color-blue-7);

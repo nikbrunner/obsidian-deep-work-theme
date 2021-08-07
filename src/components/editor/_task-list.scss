@@ -4,9 +4,14 @@
       text-decoration: none;
 
       &-checkbox {
-        width: 16px;
-        height: 16px;
+        $size: 16px;
+
+        width: $size;
+        height: $size;
+
+        top: 2px;
         filter: hue-rotate(0);
+        margin-right: $space-s;
       }
 
       &.is-checked {
