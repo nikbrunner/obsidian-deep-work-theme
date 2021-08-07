@@ -197,7 +197,7 @@ body [data-type=file-explorer] .nav-files-container .nav-file-title {
   white-space: normal;
   width: auto;
   border-left: 5px solid transparent;
-  transition: background-color 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: background-color 0.75s cubic-bezier(0.075, 0.82, 0.165, 1), border-left 0.75s cubic-bezier(0.075, 0.82, 0.165, 1), color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   margin-bottom: 0.25rem;
 }
 body [data-type=file-explorer] .nav-files-container .nav-folder-title:hover,
