@@ -1,13 +1,15 @@
 @include editor-preview-component {
+  $border-radius: $border-radius-s;
+
   .markdown-embed {
     border: none;
-    border-radius: 5px;
+    border-radius: $border-radius;
 
     .markdown-preview-view {
       padding-left: 1.5rem;
       padding-right: 1.5rem;
       border-left: 10px solid var(--text-accent);
-      border-radius: 5px;
+      border-radius: $border-radius;
       background: var(--background-secondary);
     }
 

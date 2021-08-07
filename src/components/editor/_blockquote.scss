@@ -4,7 +4,7 @@
     color: var(--text-normal);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     font-style: italic;
-    border-radius: 0.5rem;
+    border-radius: $border-radius-default;
     border: initial;
     border-left-width: initial;
     padding: 2rem;

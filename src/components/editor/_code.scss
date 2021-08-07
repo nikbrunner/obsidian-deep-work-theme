@@ -3,7 +3,7 @@
     color: var(--text-normal);
     font-family: var(--font-monospace);
     background-color: var(--background-secondary-alt);
-    border-radius: 4px;
+    border-radius: $border-radius-s;
     padding: 2px 4px;
     font-size: 0.85em;
   }

@@ -1,7 +1,14 @@
 $view-modes: base, source, preview;
 
+// border
+$border-radius-s: 4px;
+$border-radius-default: 6px;
+$border-radius-l: 12px;
+
 $border-style-default: solid;
 
+// transitions
 $transition-speed-default: 0.75s;
 $transition-speed-slow: 1s;
+
 $transition-ease-default: cubic-bezier(0.075, 0.82, 0.165, 1);

@@ -2,14 +2,9 @@
   .tag {
     background: var(--color-topic-tag-bg);
     color: var(--color-blue-3);
-    border-radius: 2em;
+    border-radius: $border-radius-l;
     font-size: 0.75rem;
     padding: 3px 10px 5px;
     text-decoration: none;
-  }
-}
-
-@include editor-source-component {
-  .cm-hashtag {
   }
 }

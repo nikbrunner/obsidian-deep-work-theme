@@ -1,7 +1,7 @@
 @include editor-preview-component {
   .file-embed {
     border: none;
-    border-radius: 5px;
+    border-radius: $border-radius-s;
 
     .file-embed-link {
       top: 2rem;

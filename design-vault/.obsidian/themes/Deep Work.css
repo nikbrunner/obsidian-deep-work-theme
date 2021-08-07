@@ -4,10 +4,6 @@ body {
 }
 
 :root {
-  --border-radius: 6px;
-}
-
-:root {
   --color-black: #010409;
   --color-white: #f7f9fc;
   --color-gray-0: #f0f6fc;
@@ -213,7 +209,7 @@ body [data-type=file-explorer] .nav-files-container .nav-file-title.is-active {
 }
 
 body .suggestion-container {
-  border-radius: var(--border-radius);
+  border-radius: 6px;
 }
 
 body .titlebar {
@@ -247,7 +243,7 @@ body .markdown-preview-view blockquote {
   color: var(--text-normal);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   font-style: italic;
-  border-radius: 0.5rem;
+  border-radius: 6px;
   border: initial;
   border-left-width: initial;
   padding: 2rem;
@@ -281,7 +277,7 @@ body .markdown-preview-view .external-link:hover {
 
 body .markdown-preview-view .file-embed {
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 body .markdown-preview-view .file-embed .file-embed-link {
   top: 2rem;
@@ -317,13 +313,13 @@ body .markdown-preview-view .internal-link:hover {
 
 body .markdown-preview-view .markdown-embed {
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 body .markdown-preview-view .markdown-embed .markdown-preview-view {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   border-left: 10px solid var(--text-accent);
-  border-radius: 5px;
+  border-radius: 4px;
   background: var(--background-secondary);
 }
 body .markdown-preview-view .markdown-embed .markdown-embed-link {
@@ -338,7 +334,7 @@ body .markdown-preview-view p {
 body .markdown-preview-view .tag {
   background: var(--color-topic-tag-bg);
   color: var(--color-blue-3);
-  border-radius: 2em;
+  border-radius: 12px;
   font-size: 0.75rem;
   padding: 3px 10px 5px;
   text-decoration: none;
