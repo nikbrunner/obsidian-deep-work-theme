@@ -101,7 +101,7 @@
   --background-modifier-error: var(--color-red-6);
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-error-hover: var(--color-red-6);
-  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --background-modifier-cover: rgba(0, 0, 0, 0.1);
   --text-accent: var(--color-blue-4);
   --text-accent-hover: var(--color-blue-3);
   --text-normal: var(--color-gray-1);
@@ -147,7 +147,7 @@
   --background-modifier-error: var(--color-red-6);
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-error-hover: var(--color-red-6);
-  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --background-modifier-cover: rgba(0, 0, 0, 0.1);
   --text-accent: var(--color-blue-5);
   --text-accent-hover: var(--color-blue-4);
   --text-normal: var(--color-gray-8);
@@ -263,6 +263,17 @@ body .workspace-leaf .view-header {
 }
 body .workspace-leaf .view-header-title {
   transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+body .modal {
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+body .modal-bg {
+  backdrop-filter: blur(10px);
+}
+body .modal .vertical-tabs-container .vertical-tab-header {
+  flex: 0 0 300px;
 }
 
 body .markdown-source-view .CodeMirror .CodeMirror-activeline {

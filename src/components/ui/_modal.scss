@@ -1,0 +1,16 @@
+@include ui-component {
+  .modal {
+    border-radius: $border-radius-xl;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    &-bg {
+      backdrop-filter: blur(10px);
+    }
+
+    .vertical-tabs-container {
+      .vertical-tab-header {
+        flex: 0 0 300px;
+      }
+    }
+  }
+}
