@@ -254,6 +254,12 @@ body .modal-bg {
 body .modal .vertical-tabs-container .vertical-tab-header {
   flex: 0 0 300px;
 }
+body .modal .community-plugin-search {
+  border-radius: 18px 0 0 18px;
+}
+body .modal .community-plugin-details {
+  border-radius: 0 18px 18px 0;
+}
 
 body .markdown-source-view .CodeMirror .CodeMirror-activeline {
   background: var(--active-line-bg);

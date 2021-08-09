@@ -12,5 +12,15 @@
         flex: 0 0 300px;
       }
     }
+
+    .community-plugin {
+      &-search {
+        border-radius: $border-radius-xl 0 0 $border-radius-xl;
+      }
+
+      &-details {
+        border-radius: 0 $border-radius-xl $border-radius-xl 0;
+      }
+    }
   }
 }
