@@ -89,6 +89,7 @@
   --background-secondary: var(--color-gray-8);
   --background-secondary-alt: var(--color-gray-7);
   --background-modifier-border: var(--color-gray-7);
+  --background-modifier-border-alt: var(--color-yellow-4);
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
   --background-modifier-form-field-highlighted: rgba(
     0,
@@ -135,6 +136,7 @@
   --background-secondary: var(--color-gray-0);
   --background-secondary-alt: var(--color-gray-1);
   --background-modifier-border: var(--color-gray-1);
+  --background-modifier-border-alt: var(--color-gray-1);
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
   --background-modifier-form-field-highlighted: rgba(
     0,
@@ -280,6 +282,13 @@ body .modal .community-plugin-search {
 }
 body .modal .community-plugin-details {
   border-radius: 0 18px 18px 0;
+}
+
+body .frontmatter-container {
+  border: 1px solid var(--background-modifier-border-alt);
+  background-color: var(--background-primary);
+  border-radius: 8px;
+  padding: calc((1rem * 2) * 1) calc(1rem * 1);
 }
 
 body .markdown-source-view .CodeMirror .CodeMirror-activeline {

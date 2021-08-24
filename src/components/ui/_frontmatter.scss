@@ -1,0 +1,10 @@
+@include ui-component {
+  .frontmatter {
+    &-container {
+      border: border(1px, var(--background-modifier-border-alt));
+      background-color: var(--background-primary);
+      border-radius: $border-radius-m;
+      padding: $space-l $space;
+    }
+  }
+}
