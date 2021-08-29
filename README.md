@@ -4,18 +4,16 @@
 ![](https://img.shields.io/github/issues/nikbrunner/obsidian-deep-work-theme)
 ![](https://img.shields.io/github/license/nikbrunner/obsidian-deep-work-theme)
 
+> A light and dark theme for [Obsidian](https://obsidian.md) inspired by the modern GitHub colors.
 
-A light and dark theme for [Obsidian](https://obsidian.md) inspired by the modern GitHub colors.
-
-## Preview
+## Screenshots
 ![](screenshot.png)
+![](images/editor_dual.png)
+![](images/settings_dual.png)
 
-## Development Stage
-Although this theme is in a very early development, it is very usable.
-
-## Future plans
-- A dark dimmed option via a dedicated PlugIn
-- A `publish.css`
+## Roadmap
+- Dimmed, dark option to be enabled via a dedicated future PlugIn
+- `publish.css`
 
 ## Fonts
 The font-family declarations are taken directly from GitHub.
