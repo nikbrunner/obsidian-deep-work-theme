@@ -1,4 +1,10 @@
 # Obsidian Deep Work Theme
+![](https://img.shields.io/github/stars/nikbrunner/obsidian-deep-work-theme)
+![](https://img.shields.io/github/forks/nikbrunner/obsidian-deep-work-theme)
+![](https://img.shields.io/github/issues/nikbrunner/obsidian-deep-work-theme)
+![](https://img.shields.io/github/license/nikbrunner/obsidian-deep-work-theme)
+
+
 A light and dark theme for [Obsidian](https://obsidian.md) inspired by the modern GitHub colors.
 
 ## Preview
