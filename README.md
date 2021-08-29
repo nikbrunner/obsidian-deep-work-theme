@@ -11,6 +11,9 @@
 ![](images/editor_dual.png)
 ![](images/settings_dual.png)
 
+## Mobile
+The theme is hardly different from the default theme except for the colors, so it works well on mobile too!
+
 ## Roadmap
 - Dimmed, dark option to be enabled via a dedicated future PlugIn
 - `publish.css`
