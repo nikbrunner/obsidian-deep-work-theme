@@ -1,6 +1,6 @@
 {
   "name": "obsidian-deep-work-theme",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "A theme for Obsidian inspired by the modern GitHub colors",
   "main": "src/Deep Work.scss",
   "scripts": {
