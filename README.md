@@ -14,6 +14,10 @@
 ## Mobile
 The theme is hardly different from the default theme except for the colors, so it works well on mobile too!
 
+## Install
+- **Recommended**: You can install this theme very simply by downloading it from the Community Themes Finder from the [Obisidian](https://obsidian.md) settings. This also works on mobile.
+- **Manuall**: You can download or clone this repository, rename the `obsidian.css` file to `Deep Work.css` and place it in your hidden `.obsidian/themes/` folder.
+
 ## Roadmap
 - Dimmed, dark option to be enabled via a dedicated future PlugIn
 - `publish.css`
