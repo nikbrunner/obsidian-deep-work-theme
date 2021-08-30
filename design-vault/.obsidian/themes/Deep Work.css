@@ -263,6 +263,9 @@ body .modal {
   border-radius: 18px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
+body .modal .prompt-results {
+  padding: calc((1rem * 2) * 1);
+}
 body .modal-bg {
   backdrop-filter: blur(10px);
 }
@@ -274,6 +277,35 @@ body .modal .community-plugin-search {
 }
 body .modal .community-plugin-details {
   border-radius: 0 18px 18px 0;
+}
+
+body .prompt {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+body .prompt-input {
+  background-color: var(--background-primary-alt);
+  margin-bottom: calc(1rem * 1);
+}
+body .prompt-results {
+  padding: calc(1rem * 1);
+}
+body .prompt-results .suggestion-item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  border-left: 5px solid transparent;
+  border-radius: 6px;
+  transition: border-left 0.25s cubic-bezier(0.075, 0.82, 0.165, 1), background-color 0.75s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+body .prompt-results .suggestion-item .suggestion-hotkey {
+  margin-left: auto;
+}
+body .prompt-results .suggestion-item.is-selected {
+  background-color: var(--background-secondary-alt);
+  color: var(--interactive-accent);
+  border-left: 5px solid var(--interactive-hover);
 }
 
 body .frontmatter-container {

@@ -1,0 +1,53 @@
+@include ui-component {
+  $border-width: 5px;
+
+  .prompt {
+    box-shadow: $box-shadow-modal;
+
+    &-input {
+      background-color: var(--background-primary-alt);
+      margin-bottom: $space;
+    }
+
+    &-results {
+      padding: $space;
+
+      .suggestion {
+        &-item {
+          // Center everything in suggestion element
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: flex-start;
+          align-items: center;
+          align-content: center;
+
+          border-left: border($border-width, transparent);
+          border-radius: $border-radius-default;
+          transition: transition(
+              border-left,
+              $transition-speed-fast
+            ),
+            transition(
+              background-color,
+              $transition-speed-default
+            ),
+            transition(color, $transition-speed-default);
+
+          // Put hotkey to the right
+          .suggestion-hotkey {
+            margin-left: auto;
+          }
+
+          &.is-selected {
+            background-color: var(--background-secondary-alt);
+            color: var(--interactive-accent);
+            border-left: border(
+              $border-width,
+              var(--interactive-hover)
+            );
+          }
+        }
+      }
+    }
+  }
+}

@@ -10,6 +10,8 @@ $border-radius-xl: 18px;
 $border-style-default: solid;
 
 // transitions
+$transition-speed-fast: 0.25s;
+$transition-speed-mid: 0.5s;
 $transition-speed-default: 0.75s;
 $transition-speed-slow: 1s;
 
@@ -20,3 +22,5 @@ $line-height-xs: 1;
 $line-height-s: 1.25;
 $line-height-default: 1.5;
 $line-height-l: 2;
+
+$box-shadow-modal: 0 10px 30px rgba(0, 0, 0, 0.25);
