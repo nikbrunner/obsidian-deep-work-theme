@@ -183,6 +183,7 @@ body {
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar {
   -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 
 :root {
