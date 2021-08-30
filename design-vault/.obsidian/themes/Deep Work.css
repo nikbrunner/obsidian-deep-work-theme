@@ -243,10 +243,16 @@ body .titlebar-button {
 }
 
 body .workspace-leaf .view-header {
-  transition: border-bottom 1s cubic-bezier(0.075, 0.82, 0.165, 1), border-right 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: border-bottom 1s cubic-bezier(0.075, 0.82, 0.165, 1), background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 body .workspace-leaf .view-header-title {
   transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+body .workspace-leaf.mod-active .view-header {
+  background-color: var(--background-primary);
+}
+body .workspace-leaf.mod-active .view-header-title-container::before, body .workspace-leaf.mod-active .view-header-title-container::after {
+  background: none !important;
 }
 
 body .modal {
