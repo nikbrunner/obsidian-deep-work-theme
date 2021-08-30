@@ -2,7 +2,7 @@
   --color-black: #010409;
   --color-white: #f7f9fc;
 
-  --color-gray-0: #f0f6fc;
+  --color-gray-0: #e1e7ee;
   --color-gray-1: #c9d1d9;
   --color-gray-2: #b1bac4;
   --color-gray-3: #8b949e;
@@ -128,9 +128,9 @@
   --interactive-accent-rgb: 46, 160, 67;
   --interactive-accent-hover: var(--color-green-3);
   --interactive-success: var(--color-green-5);
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-  --scrollbar-bg: rgba(255, 255, 255, 0.05);
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --scrollbar-active-thumb-bg: var(--text-accent);
+  --scrollbar-bg: var(--background-primary);
+  --scrollbar-thumb-bg: var(--background-primary-alt);
   --highlight-mix-blend-mode: lighten;
   --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
   --cursor-bg: var(--color-green-3);
@@ -174,9 +174,9 @@
   --interactive-accent-rgb: 31, 111, 235;
   --interactive-accent-hover: var(--color-green-3);
   --interactive-success: var(--color-green-5);
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-  --scrollbar-bg: rgba(255, 255, 255, 0.05);
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --scrollbar-active-thumb-bg: var(--text-accent);
+  --scrollbar-bg: var(--background-primary);
+  --scrollbar-thumb-bg: var(--background-primary-alt);
   --highlight-mix-blend-mode: lighten;
   --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
   --cursor-bg: var(--color-blue-4);

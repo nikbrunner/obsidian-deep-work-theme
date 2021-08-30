@@ -2,3 +2,8 @@ body {
   line-height: $line-height-default;
   word-wrap: break-word;
 }
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar {
+  -webkit-border-radius: $border-radius-s;
+}

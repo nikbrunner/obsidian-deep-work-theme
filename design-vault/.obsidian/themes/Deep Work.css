@@ -1,7 +1,7 @@
 :root {
   --color-black: #010409;
   --color-white: #f7f9fc;
-  --color-gray-0: #f0f6fc;
+  --color-gray-0: #e1e7ee;
   --color-gray-1: #c9d1d9;
   --color-gray-2: #b1bac4;
   --color-gray-3: #8b949e;
@@ -89,7 +89,6 @@
   --background-secondary: var(--color-gray-8);
   --background-secondary-alt: var(--color-gray-7);
   --background-modifier-border: var(--color-gray-7);
-  --background-modifier-border-alt: var(--color-yellow-4);
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
   --background-modifier-form-field-highlighted: rgba(
     0,
@@ -121,9 +120,9 @@
   --interactive-accent-rgb: 46, 160, 67;
   --interactive-accent-hover: var(--color-green-3);
   --interactive-success: var(--color-green-5);
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-  --scrollbar-bg: rgba(255, 255, 255, 0.05);
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --scrollbar-active-thumb-bg: var(--text-accent);
+  --scrollbar-bg: var(--background-primary);
+  --scrollbar-thumb-bg: var(--background-primary-alt);
   --highlight-mix-blend-mode: lighten;
   --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
   --cursor-bg: var(--color-green-3);
@@ -136,7 +135,6 @@
   --background-secondary: var(--color-gray-0);
   --background-secondary-alt: var(--color-gray-1);
   --background-modifier-border: var(--color-gray-1);
-  --background-modifier-border-alt: var(--color-gray-1);
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
   --background-modifier-form-field-highlighted: rgba(
     0,
@@ -168,9 +166,9 @@
   --interactive-accent-rgb: 31, 111, 235;
   --interactive-accent-hover: var(--color-green-3);
   --interactive-success: var(--color-green-5);
-  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
-  --scrollbar-bg: rgba(255, 255, 255, 0.05);
-  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --scrollbar-active-thumb-bg: var(--text-accent);
+  --scrollbar-bg: var(--background-primary);
+  --scrollbar-thumb-bg: var(--background-primary-alt);
   --highlight-mix-blend-mode: lighten;
   --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
   --cursor-bg: var(--color-blue-4);
@@ -180,6 +178,11 @@
 body {
   line-height: 1.5;
   word-wrap: break-word;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar {
+  -webkit-border-radius: 4px;
 }
 
 :root {
@@ -264,8 +267,8 @@ body .modal .community-plugin-details {
 }
 
 body .frontmatter-container {
-  border: 1px solid var(--background-modifier-border-alt);
-  background-color: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  background-color: var(--background-secondary);
   border-radius: 8px;
   padding: calc((1rem * 2) * 1) calc(1rem * 1);
 }
