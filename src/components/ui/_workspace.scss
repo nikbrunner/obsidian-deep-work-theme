@@ -1,0 +1,37 @@
+@include ui-component {
+  .workspace {
+    &-split {
+      &.mod-vertical {
+        .workspace-leaf-resize-handle {
+          top: 0px;
+        }
+      }
+    }
+
+    &-leaf {
+      .view-header {
+        transition: transition(
+            border-bottom,
+            $transition-speed-slow
+          ),
+          transition(background-color, $transition-speed-slow);
+
+        &-title {
+          transition: transition(color, $transition-speed-slow);
+        }
+      }
+
+      &.mod-active .view-header {
+        background-color: var(--background-primary);
+
+        &-title {
+          // Blend out the gradients in the headers
+          &-container::before,
+          &-container::after {
+            background: none !important;
+          }
+        }
+      }
+    }
+  }
+}

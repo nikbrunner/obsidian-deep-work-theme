@@ -261,6 +261,11 @@ body .titlebar-button {
   opacity: 1;
 }
 
+body
+  .workspace-split.mod-vertical
+  .workspace-leaf-resize-handle {
+  top: 0px;
+}
 body .workspace-leaf .view-header {
   transition: border-bottom 1s
       cubic-bezier(0.075, 0.82, 0.165, 1),
