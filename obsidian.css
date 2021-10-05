@@ -341,6 +341,9 @@ body .frontmatter-container {
   border-radius: 8px;
   padding: calc((1rem * 2) * 1) calc(1rem * 1);
 }
+body .frontmatter code[class*="language-"] {
+  padding: initial;
+}
 
 body .markdown-source-view .CodeMirror .CodeMirror-activeline {
   background: var(--active-line-bg);
