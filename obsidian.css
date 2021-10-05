@@ -160,7 +160,7 @@
   --text-highlight-bg-active: rgba(0, 89, 255, 0.4);
   --text-selection: rgba(0, 89, 255, 0.1);
   --text-on-accent: var(--color-gray-8);
-  --interactive-normal: var(--color-gray-7);
+  --interactive-normal: var(--color-gray-0);
   --interactive-hover: var(--color-gray-3);
   --interactive-accent: var(--color-blue-5);
   --interactive-accent-rgb: 31, 111, 235;
