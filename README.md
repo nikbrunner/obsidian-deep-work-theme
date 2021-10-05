@@ -41,3 +41,4 @@ The font-family declarations are taken directly from GitHub.
 - Buttons
 - Admonition
 - Sliding Panes
+- Todoist
