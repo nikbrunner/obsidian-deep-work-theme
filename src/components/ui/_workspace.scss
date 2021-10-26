@@ -1,13 +1,5 @@
 @include ui-component {
   .workspace {
-    &-split {
-      &.mod-vertical {
-        .workspace-leaf-resize-handle {
-          top: 0px;
-        }
-      }
-    }
-
     &-leaf {
       .view-header {
         transition: transition(
