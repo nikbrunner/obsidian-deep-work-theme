@@ -1,5 +1,5 @@
-# Obsidian Deep Work Theme
 <div>
+  <h1 align=center>Obsidian Deep Work Theme</h1>
   <p align="center">
     <img src="https://img.shields.io/github/stars/nikbrunner/obsidian-deep-work-theme"/>
     <img src="https://img.shields.io/github/forks/nikbrunner/obsidian-deep-work-theme"/>
