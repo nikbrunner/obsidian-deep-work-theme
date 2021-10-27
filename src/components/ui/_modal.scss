@@ -7,6 +7,14 @@
       padding: $space-l;
     }
 
+    &.mod-settings {
+      max-width: $modal-max-width;
+    }
+
+    &.mod-community-theme {
+      max-width: $modal-max-width;
+    }
+
     &-bg {
       backdrop-filter: blur(10px);
     }

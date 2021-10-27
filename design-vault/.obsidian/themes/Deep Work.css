@@ -263,6 +263,12 @@ body .modal {
 body .modal .prompt-results {
   padding: calc((1rem * 2) * 1);
 }
+body .modal.mod-settings {
+  max-width: 1440px;
+}
+body .modal.mod-community-theme {
+  max-width: 1440px;
+}
 body .modal-bg {
   backdrop-filter: blur(10px);
 }
