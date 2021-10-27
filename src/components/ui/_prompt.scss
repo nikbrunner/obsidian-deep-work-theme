@@ -1,12 +1,20 @@
 @include ui-component {
   $border-width: 5px;
+  $border-radius: $border-radius-xl;
 
   .prompt {
     box-shadow: $box-shadow-modal;
+    border-radius: $border-radius;
+    padding: $space-l;
 
     &-input {
       background-color: var(--background-primary-alt);
+      border-radius: $border-radius;
       margin-bottom: $space;
+      padding: $space !important;
+      height: initial;
+      font-size: 1.15rem;
+      flex-shrink: 0;
     }
 
     &-results {
@@ -37,7 +45,7 @@
             color: var(--interactive-accent);
             border-left: border(
               $border-width,
-              var(--interactive-hover)
+              var(--interactive-accent)
             );
           }
         }

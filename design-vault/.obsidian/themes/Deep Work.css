@@ -282,10 +282,17 @@ body .modal .community-plugin-details {
 
 body .prompt {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+  padding: calc((1rem * 2) * 1);
 }
 body .prompt-input {
   background-color: var(--background-primary-alt);
+  border-radius: 18px;
   margin-bottom: calc(1rem * 1);
+  padding: calc(1rem * 1) !important;
+  height: initial;
+  font-size: 1.15rem;
+  flex-shrink: 0;
 }
 body .prompt-results {
   padding: calc(1rem * 1);
@@ -302,7 +309,7 @@ body .prompt-results .suggestion-item .suggestion-hotkey {
 body .prompt-results .suggestion-item.is-selected {
   background-color: var(--background-secondary-alt);
   color: var(--interactive-accent);
-  border-left: 5px solid var(--interactive-hover);
+  border-left: 5px solid var(--interactive-accent);
 }
 
 body .frontmatter-container {
