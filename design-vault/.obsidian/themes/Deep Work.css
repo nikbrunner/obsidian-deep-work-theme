@@ -89,12 +89,9 @@
   --background-secondary: var(--color-gray-8);
   --background-secondary-alt: var(--color-gray-7);
   --background-modifier-border: var(--color-gray-7);
-  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
-  --background-modifier-form-field-highlighted: rgba(
-    0,
-    0,
-    0,
-    0.22
+  --background-modifier-form-field: var(--color-gray-8);
+  --background-modifier-form-field-highlighted: var(
+    --color-gray-8
   );
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-success: var(--color-green-4);
@@ -135,12 +132,9 @@
   --background-secondary: var(--color-gray-0);
   --background-secondary-alt: var(--color-gray-1);
   --background-modifier-border: var(--color-gray-1);
-  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
-  --background-modifier-form-field-highlighted: rgba(
-    0,
-    0,
-    0,
-    0.22
+  --background-modifier-form-field: var(--color-gray-0);
+  --background-modifier-form-field-highlighted: var(
+    --color-gray-0
   );
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-success: var(--color-green-4);
@@ -159,12 +153,12 @@
   --text-highlight-bg: rgba(35, 196, 29, 0.4);
   --text-highlight-bg-active: rgba(0, 89, 255, 0.4);
   --text-selection: rgba(0, 89, 255, 0.1);
-  --text-on-accent: var(--color-gray-8);
+  --text-on-accent: var(--color-white);
   --interactive-normal: var(--color-gray-0);
   --interactive-hover: var(--color-gray-3);
   --interactive-accent: var(--color-blue-5);
   --interactive-accent-rgb: 31, 111, 235;
-  --interactive-accent-hover: var(--color-green-3);
+  --interactive-accent-hover: var(--color-blue-4);
   --interactive-success: var(--color-green-5);
   --scrollbar-active-thumb-bg: var(--text-accent);
   --scrollbar-bg: var(--background-primary);
@@ -202,7 +196,11 @@ body {
 }
 
 body .dropdown {
-  filter: hue-rotate(250deg) brightness(215%);
+  border-width: 2px;
+  border-color: var(--background-modifier-border);
+  border-radius: 12px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOTIuNCIgaGVpZ2h0PSIyOTIuNCI+PHBhdGggZmlsbD0iIzAwMCIgZD0iTTI4NyA2OS40YTE3LjYgMTcuNiAwIDAgMC0xMy01LjRIMTguNGMtNSAwLTkuMyAxLjgtMTIuOSA1LjRBMTcuNiAxNy42IDAgMCAwIDAgODIuMmMwIDUgMS44IDkuMyA1LjQgMTIuOWwxMjggMTI3LjljMy42IDMuNiA3LjggNS40IDEyLjggNS40czkuMi0xLjggMTIuOC01LjRMMjg3IDk1YzMuNS0zLjUgNS40LTcuOCA1LjQtMTIuOCAwLTUtMS45LTkuMi01LjUtMTIuOHoiLz48L3N2Zz4=);
+  cursor: pointer;
 }
 
 body [data-type=file-explorer] .nav-files-container {
@@ -315,6 +313,20 @@ body .frontmatter-container {
 }
 body .frontmatter code[class*=language-] {
   padding: initial;
+}
+
+body button {
+  border-radius: 8px;
+}
+
+body input[type=text],
+body input[type=search],
+body input[type=email],
+body input[type=password],
+body input[type=number] {
+  border-width: 2px;
+  border-radius: 12px;
+  padding: calc(1rem * 1) calc((1rem * 2) * 1) calc(1rem * 1) calc(1rem * 1);
 }
 
 body .markdown-source-view .CodeMirror .CodeMirror-activeline {

@@ -97,12 +97,9 @@
   --background-secondary: var(--color-gray-8);
   --background-secondary-alt: var(--color-gray-7);
   --background-modifier-border: var(--color-gray-7);
-  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
-  --background-modifier-form-field-highlighted: rgba(
-    0,
-    0,
-    0,
-    0.22
+  --background-modifier-form-field: var(--color-gray-8);
+  --background-modifier-form-field-highlighted: var(
+    --color-gray-8
   );
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-success: var(--color-green-4);
@@ -143,12 +140,9 @@
   --background-secondary: var(--color-gray-0);
   --background-secondary-alt: var(--color-gray-1);
   --background-modifier-border: var(--color-gray-1);
-  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
-  --background-modifier-form-field-highlighted: rgba(
-    0,
-    0,
-    0,
-    0.22
+  --background-modifier-form-field: var(--color-gray-0);
+  --background-modifier-form-field-highlighted: var(
+    --color-gray-0
   );
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-success: var(--color-green-4);
@@ -167,12 +161,12 @@
   --text-highlight-bg: rgba(35, 196, 29, 0.4);
   --text-highlight-bg-active: rgba(0, 89, 255, 0.4);
   --text-selection: rgba(0, 89, 255, 0.1);
-  --text-on-accent: var(--color-gray-8);
+  --text-on-accent: var(--color-white);
   --interactive-normal: var(--color-gray-0);
   --interactive-hover: var(--color-gray-3);
   --interactive-accent: var(--color-blue-5);
   --interactive-accent-rgb: 31, 111, 235;
-  --interactive-accent-hover: var(--color-green-3);
+  --interactive-accent-hover: var(--color-blue-4);
   --interactive-success: var(--color-green-5);
   --scrollbar-active-thumb-bg: var(--text-accent);
   --scrollbar-bg: var(--background-primary);
