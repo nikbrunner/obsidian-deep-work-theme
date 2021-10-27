@@ -1,10 +1,21 @@
 # Obsidian Deep Work Theme
-![](https://img.shields.io/github/stars/nikbrunner/obsidian-deep-work-theme)
-![](https://img.shields.io/github/forks/nikbrunner/obsidian-deep-work-theme)
-![](https://img.shields.io/github/issues/nikbrunner/obsidian-deep-work-theme)
-![](https://img.shields.io/github/license/nikbrunner/obsidian-deep-work-theme)
+<div>
+  <p align="center">
+    <img src="https://img.shields.io/github/stars/nikbrunner/obsidian-deep-work-theme"/>
+    <img src="https://img.shields.io/github/forks/nikbrunner/obsidian-deep-work-theme"/>
+    <img src="https://img.shields.io/github/issues/nikbrunner/obsidian-deep-work-theme"/>
+    <img src="https://img.shields.io/github/license/nikbrunner/obsidian-deep-work-theme"/>
+  </p>
 
-> A light and dark theme for [Obsidian](https://obsidian.md) inspired by the modern GitHub colors.
+  <p align="center">A light and dark theme for <a href="https://obsidian.md">Obsidian</a> inspired by the modern GitHub colors.</p>
+
+  <p align="center">
+    <a href="https://www.buymeacoffee.com/nikbrunner" target="_blank">
+     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50" width="auto" style="">
+    </a>
+  </p>
+</div>
+
 
 ## Screenshots
 ![](screenshot.png)
