@@ -1,0 +1,12 @@
+@include ui-component {
+  $height: 24px;
+
+  .setting-item {
+    .setting-hotkey {
+      border-radius: $border-radius-m;
+      padding: $space-xxs $space;
+      min-height: $height;
+      line-height: $height;
+    }
+  }
+}

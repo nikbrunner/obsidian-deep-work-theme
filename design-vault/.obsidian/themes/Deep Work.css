@@ -329,6 +329,13 @@ body input[type=number] {
   padding: calc(1rem * 1) calc((1rem * 2) * 1) calc(1rem * 1) calc(1rem * 1);
 }
 
+body .setting-item .setting-hotkey {
+  border-radius: 8px;
+  padding: calc((1rem / 8) * 1) calc(1rem * 1);
+  min-height: 24px;
+  line-height: 24px;
+}
+
 body .markdown-source-view .CodeMirror .CodeMirror-activeline {
   background: var(--active-line-bg);
 }
