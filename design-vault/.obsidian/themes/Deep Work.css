@@ -107,8 +107,8 @@
   --text-faint: var(--color-gray-4);
   --text-error: var(--color-red-4);
   --text-error-hover: var(--color-red-5);
-  --text-highlight-bg: rgba(35, 196, 29, 0.4);
-  --text-highlight-bg-active: rgba(0, 89, 255, 0.4);
+  --text-highlight-bg: rgba(0, 63, 179, 0.75);
+  --text-highlight-bg-active: rgba(0, 123, 255, 0.15);
   --text-selection: rgba(23, 48, 77, 0.99);
   --text-on-accent: var(--color-gray-8);
   --interactive-normal: var(--color-gray-7);
@@ -120,7 +120,7 @@
   --scrollbar-active-thumb-bg: var(--text-accent);
   --scrollbar-bg: var(--background-primary);
   --scrollbar-thumb-bg: var(--background-primary-alt);
-  --highlight-mix-blend-mode: lighten;
+  --highlight-mix-blend-mode: screen;
   --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
   --cursor-bg: var(--color-green-3);
   --active-line-bg: var(--color-gray-8);
@@ -150,8 +150,8 @@
   --text-faint: var(--color-gray-4);
   --text-error: var(--color-red-4);
   --text-error-hover: var(--color-red-5);
-  --text-highlight-bg: rgba(35, 196, 29, 0.4);
-  --text-highlight-bg-active: rgba(0, 89, 255, 0.4);
+  --text-highlight-bg: rgba(0, 89, 255, 0.2);
+  --text-highlight-bg-active: rgba(0, 89, 255, 0.05);
   --text-selection: rgba(0, 89, 255, 0.1);
   --text-on-accent: var(--color-white);
   --interactive-normal: var(--color-gray-0);
@@ -163,7 +163,7 @@
   --scrollbar-active-thumb-bg: var(--text-accent);
   --scrollbar-bg: var(--background-primary);
   --scrollbar-thumb-bg: var(--background-primary-alt);
-  --highlight-mix-blend-mode: lighten;
+  --highlight-mix-blend-mode: normal;
   --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
   --cursor-bg: var(--color-blue-4);
   --active-line-bg: var(--color-gray-0);
@@ -462,6 +462,10 @@ body .markdown-preview-view ul.contains-task-list .task-list-item-checkbox {
 }
 body .markdown-preview-view ul.contains-task-list .task-list-item.is-checked a {
   color: var(--color-blue-7);
+}
+
+body .markdown-preview-view .search-highlight > div.is-active {
+  border-bottom: 2px dashed var(--color-blue-3);
 }
 
 body .markdown-preview-view .admonition {
