@@ -453,6 +453,30 @@ body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf.mod-
   border-width: 2px;
 }
 
+.obsidian42-jump-to-date.flatpickr-calendar {
+  background-color: var(--background-primary);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+.obsidian42-jump-to-date .flatpickr-months * {
+  color: var(--text-normal);
+}
+.obsidian42-jump-to-date .flatpickr-weekdays * {
+  color: var(--text-normal);
+}
+.obsidian42-jump-to-date .flatpickr-days .dayContainer {
+  padding: calc(1rem * 1);
+  border-radius: 12px;
+}
+.obsidian42-jump-to-date .flatpickr-days .dayContainer .flatpickr-day {
+  color: var(--text-normal);
+  border: 1px solid var(--background-secondary);
+  border-radius: 4px !important;
+}
+.obsidian42-jump-to-date .flatpickr-days .dayContainer .flatpickr-day:focus {
+  background-color: var(--background-secondary);
+}
+
 .theme-dark {
   --background-primary: var(--color-gray-9);
   --background-primary-alt: var(--color-gray-8);

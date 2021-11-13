@@ -1,0 +1,40 @@
+.obsidian42-jump-to-date {
+  $border-radius: $border-radius-l;
+
+  &.flatpickr-calendar {
+    background-color: var(--background-primary);
+    box-shadow: $box-shadow-kanban;
+    border-radius: $border-radius;
+  }
+
+  .flatpickr {
+    &-months {
+      * {
+        color: var(--text-normal);
+      }
+    }
+
+    &-weekdays * {
+      color: var(--text-normal);
+    }
+
+    &-days {
+      .dayContainer {
+        padding: $space;
+        border-radius: $border-radius;
+
+        .flatpickr {
+          &-day {
+            color: var(--text-normal);
+            border: border(1px, var(--background-secondary));
+            border-radius: $border-radius-s !important;
+
+            &:focus {
+              background-color: var(--background-secondary);
+            }
+          }
+        }
+      }
+    }
+  }
+}
