@@ -422,7 +422,7 @@ body .markdown-preview-view p {
   line-height: 1.5;
 }
 
-body .markdown-preview-view .tag {
+body .markdown-preview-view .tag:not(.token) {
   background: var(--color-topic-tag-bg);
   color: var(--color-blue-3);
   border-radius: 12px;
