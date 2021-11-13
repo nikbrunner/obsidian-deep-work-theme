@@ -1,0 +1,42 @@
+.theme-light {
+  --background-primary: var(--color-white);
+  --background-primary-alt: var(--color-gray-0);
+  --background-secondary: var(--color-gray-0);
+  --background-secondary-alt: var(--color-gray-1);
+  --background-modifier-border: var(--color-gray-1);
+  --background-modifier-form-field: var(--color-gray-0);
+  --background-modifier-form-field-highlighted: var(
+    --color-gray-0
+  );
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: var(--color-green-4);
+  --background-modifier-error: var(--color-red-6);
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: var(--color-red-6);
+  --background-modifier-cover: rgba(0, 0, 0, 0.1);
+  --text-accent: var(--color-blue-5);
+  --text-accent-hover: var(--color-blue-4);
+  --text-normal: var(--color-gray-8);
+  --text-muted: var(--color-gray-4);
+  --text-muted-rgb: 153, 153, 153;
+  --text-faint: var(--color-gray-4);
+  --text-error: var(--color-red-4);
+  --text-error-hover: var(--color-red-5);
+  --text-highlight-bg: rgba(0, 89, 255, 0.2);
+  --text-highlight-bg-active: rgba(0, 89, 255, 0.05);
+  --text-selection: rgba(0, 89, 255, 0.1);
+  --text-on-accent: var(--color-white);
+  --interactive-normal: var(--color-gray-0);
+  --interactive-hover: var(--color-gray-3);
+  --interactive-accent: var(--color-blue-5);
+  --interactive-accent-rgb: 31, 111, 235;
+  --interactive-accent-hover: var(--color-blue-4);
+  --interactive-success: var(--color-green-5);
+  --scrollbar-active-thumb-bg: var(--text-accent);
+  --scrollbar-bg: var(--background-primary);
+  --scrollbar-thumb-bg: var(--background-primary-alt);
+  --highlight-mix-blend-mode: normal;
+  --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
+  --cursor-bg: var(--color-blue-4);
+  --active-line-bg: var(--color-gray-0);
+}
