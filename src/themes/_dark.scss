@@ -38,5 +38,5 @@
   --highlight-mix-blend-mode: screen;
   --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
   --cursor-bg: var(--color-green-3);
-  --active-line-bg: var(--color-gray-8);
+  --active-line-bg: rgba(var(--text-muted-rgb), 0.1);
 }

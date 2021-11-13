@@ -465,7 +465,7 @@ body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf.mod-
   --highlight-mix-blend-mode: screen;
   --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
   --cursor-bg: var(--color-green-3);
-  --active-line-bg: var(--color-gray-8);
+  --active-line-bg: rgba(var(--text-muted-rgb), 0.1);
 }
 
 .theme-light {
@@ -508,5 +508,5 @@ body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf.mod-
   --highlight-mix-blend-mode: normal;
   --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
   --cursor-bg: var(--color-blue-4);
-  --active-line-bg: var(--color-gray-0);
+  --active-line-bg: rgba(var(--text-muted-rgb), 0.25);
 }
