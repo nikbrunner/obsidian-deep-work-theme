@@ -1,0 +1,30 @@
+.workspace-leaf {
+  $border-radius: $border-radius-m;
+
+  .kanban-plugin {
+    background-color: var(--background-primary);
+
+    &__lane {
+      border-radius: $border-radius;
+      box-shadow: $box-shadow-kanban;
+    }
+
+    &__item {
+      border-radius: $border-radius;
+
+      &-title-wrapper {
+        padding: $space-s $space;
+      }
+
+      &-form {
+        textarea {
+          border-radius: $border-radius;
+
+          &:focus {
+            border-width: 2px;
+          }
+        }
+      }
+    }
+  }
+}

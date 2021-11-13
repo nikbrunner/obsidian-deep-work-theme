@@ -502,6 +502,26 @@ body.plugin-sliding-panes-stacking
   box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.15) !important;
 }
 
+.workspace-leaf .kanban-plugin {
+  background-color: var(--background-primary);
+}
+.workspace-leaf .kanban-plugin__lane {
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+.workspace-leaf .kanban-plugin__item {
+  border-radius: 8px;
+}
+.workspace-leaf .kanban-plugin__item-title-wrapper {
+  padding: calc((1rem / 2) * 1) calc(1rem * 1);
+}
+.workspace-leaf .kanban-plugin__item-form textarea {
+  border-radius: 8px;
+}
+.workspace-leaf .kanban-plugin__item-form textarea:focus {
+  border-width: 2px;
+}
+
 .theme-dark {
   --background-primary: var(--color-gray-9);
   --background-primary-alt: var(--color-gray-8);
