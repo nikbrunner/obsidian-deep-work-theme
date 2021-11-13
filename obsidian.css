@@ -312,6 +312,46 @@ body .markdown-preview-view code {
   padding: 2px 4px;
   font-size: 0.85em;
 }
+body .markdown-preview-view pre[class*="language-"] {
+  border-radius: 12px;
+  background-color: var(--background-secondary);
+  padding: calc((1rem * 2) * 1) calc(1rem * 1);
+}
+body
+  .markdown-preview-view
+  pre[class*="language-"]
+  ::-webkit-scrollbar {
+  background-color: var(--background-secondary-alt);
+  height: 5px;
+}
+body
+  .markdown-preview-view
+  pre[class*="language-"]
+  ::-webkit-scrollbar-thumb {
+  background-color: var(--background-primary);
+}
+body
+  .markdown-preview-view
+  pre[class*="language-"]
+  .copy-code-button {
+  background-color: var(--background-secondary-alt);
+}
+body
+  .markdown-preview-view
+  pre[class*="language-"]
+  .copy-code-button:hover {
+  transition: background-color 0.75s
+      cubic-bezier(0.075, 0.82, 0.165, 1),
+    color 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+body
+  .markdown-preview-view
+  pre[class*="language-"]
+  *:not(.copy-code-button, ::-webkit-scrollbar) {
+  background-color: transparent !important;
+}
 
 body .markdown-source-view .CodeMirror .HyperMD-codeblock {
   color: var(--text-code);
@@ -597,7 +637,7 @@ body.plugin-sliding-panes-stacking
   --text-accent: var(--color-blue-4);
   --text-accent-hover: var(--color-blue-3);
   --text-normal: var(--color-gray-1);
-  --text-code: var(--color-gray-2);
+  --text-code: var(--color-gray-1);
   --text-muted: var(--color-gray-4);
   --text-muted-rgb: 153, 153, 153;
   --text-faint: var(--color-gray-4);
@@ -641,7 +681,7 @@ body.plugin-sliding-panes-stacking
   --text-accent: var(--color-blue-5);
   --text-accent-hover: var(--color-blue-4);
   --text-normal: var(--color-gray-8);
-  --text-code: var(--color-gray-8);
+  --text-code: var(--color-gray-7);
   --text-muted: var(--color-gray-4);
   --text-muted-rgb: 153, 153, 153;
   --text-faint: var(--color-gray-4);
