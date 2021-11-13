@@ -1,6 +1,11 @@
+@mixin code-color {
+  color: var(--text-accent);
+}
+
 @include editor-preview-component {
   code {
-    color: var(--text-normal);
+    @include code-color();
+
     font-family: var(--font-monospace);
     background-color: var(--background-secondary-alt);
     border-radius: $border-radius-s;
@@ -11,12 +16,20 @@
 
 @include editor-source-component {
   .HyperMD-codeblock {
-    color: var(--text-accent);
+    @include code-color();
   }
 
-  .cm {
-    &-inline-code {
-      color: var(--text-accent);
-    }
+  .cm-inline-code {
+    @include code-color();
+  }
+}
+
+@include editor-live-preview-component {
+  .HyperMD-codeblock {
+    @include code-color();
+  }
+
+  .cm-inline-code {
+    @include code-color();
   }
 }

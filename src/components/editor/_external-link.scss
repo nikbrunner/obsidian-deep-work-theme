@@ -15,3 +15,9 @@
     font-weight: $font-weight-bold;
   }
 }
+
+@include editor-live-preview-component {
+  .cm-link {
+    font-weight: $font-weight-bold;
+  }
+}

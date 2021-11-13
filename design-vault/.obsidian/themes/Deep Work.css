@@ -275,7 +275,7 @@ body .markdown-preview-view blockquote {
 }
 
 body .markdown-preview-view code {
-  color: var(--text-normal);
+  color: var(--text-accent);
   font-family: var(--font-monospace);
   background-color: var(--background-secondary-alt);
   border-radius: 4px;
@@ -287,6 +287,13 @@ body .markdown-source-view .CodeMirror .HyperMD-codeblock {
   color: var(--text-accent);
 }
 body .markdown-source-view .CodeMirror .cm-inline-code {
+  color: var(--text-accent);
+}
+
+body .markdown-source-view.mod-cm6 .HyperMD-codeblock {
+  color: var(--text-accent);
+}
+body .markdown-source-view.mod-cm6 .cm-inline-code {
   color: var(--text-accent);
 }
 
@@ -304,6 +311,10 @@ body .markdown-preview-view .external-link:hover {
 }
 
 body .markdown-source-view .CodeMirror .cm-link {
+  font-weight: 700;
+}
+
+body .markdown-source-view.mod-cm6 .cm-link {
   font-weight: 700;
 }
 
@@ -348,6 +359,10 @@ body .markdown-source-view .CodeMirror .cm-hmd-internal-link {
   font-weight: 700;
 }
 
+body .markdown-source-view.mod-cm6 .cm-hmd-internal-link {
+  font-weight: 700;
+}
+
 body .markdown-preview-view ul li {
   margin-bottom: calc((1rem / 2) * 1);
 }
@@ -386,12 +401,22 @@ body .markdown-preview-view ul.contains-task-list .task-list-item {
 body .markdown-preview-view ul.contains-task-list .task-list-item-checkbox {
   width: 16px;
   height: 16px;
-  top: 2px;
   filter: hue-rotate(0);
   margin-right: calc((1rem / 2) * 1);
+  position: relative;
+  top: 2px;
 }
 body .markdown-preview-view ul.contains-task-list .task-list-item.is-checked a {
   color: var(--color-blue-7);
+}
+
+body .markdown-source-view.mod-cm6 .task-list-item-checkbox {
+  width: 16px;
+  height: 16px;
+  filter: hue-rotate(0);
+  margin-right: calc((1rem / 2) * 1);
+  position: relative;
+  top: -2px;
 }
 
 body .markdown-preview-view .search-highlight > div.is-active {
