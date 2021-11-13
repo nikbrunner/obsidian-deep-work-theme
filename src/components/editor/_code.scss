@@ -8,3 +8,11 @@
     font-size: 0.85em;
   }
 }
+
+@include editor-source-component {
+  .cm {
+    &-inline-code {
+      color: var(--text-accent);
+    }
+  }
+}

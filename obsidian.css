@@ -398,6 +398,10 @@ body .markdown-preview-view code {
   font-size: 0.85em;
 }
 
+body .markdown-source-view .CodeMirror .cm-inline-code {
+  color: var(--text-accent);
+}
+
 body .markdown-source-view .CodeMirror .CodeMirror-cursor {
   background: var(--cursor-bg);
 }
