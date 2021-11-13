@@ -302,6 +302,10 @@ body .markdown-preview-view .external-link:hover {
   text-decoration: underline;
 }
 
+body .markdown-source-view .CodeMirror .cm-link {
+  font-weight: 700;
+}
+
 body .markdown-preview-view .file-embed {
   border: none;
   border-radius: 4px;
@@ -337,6 +341,10 @@ body .markdown-preview-view .internal-link {
 }
 body .markdown-preview-view .internal-link:hover {
   text-decoration: underline;
+}
+
+body .markdown-source-view .CodeMirror .cm-hmd-internal-link {
+  font-weight: 700;
 }
 
 body .markdown-preview-view ul li {

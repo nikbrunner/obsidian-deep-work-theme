@@ -9,3 +9,9 @@
     }
   }
 }
+
+@include editor-source-component {
+  .cm-hmd-internal-link {
+    font-weight: $font-weight-bold;
+  }
+}
