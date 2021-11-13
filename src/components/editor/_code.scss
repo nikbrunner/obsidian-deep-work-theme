@@ -1,5 +1,5 @@
 @mixin code-color {
-  color: var(--text-accent);
+  color: var(--text-code);
 }
 
 @include editor-preview-component {

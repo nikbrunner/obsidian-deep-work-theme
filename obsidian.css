@@ -305,7 +305,7 @@ body .markdown-preview-view blockquote {
 }
 
 body .markdown-preview-view code {
-  color: var(--text-accent);
+  color: var(--text-code);
   font-family: var(--font-monospace);
   background-color: var(--background-secondary-alt);
   border-radius: 4px;
@@ -314,17 +314,17 @@ body .markdown-preview-view code {
 }
 
 body .markdown-source-view .CodeMirror .HyperMD-codeblock {
-  color: var(--text-accent);
+  color: var(--text-code);
 }
 body .markdown-source-view .CodeMirror .cm-inline-code {
-  color: var(--text-accent);
+  color: var(--text-code);
 }
 
 body .markdown-source-view.mod-cm6 .HyperMD-codeblock {
-  color: var(--text-accent);
+  color: var(--text-code);
 }
 body .markdown-source-view.mod-cm6 .cm-inline-code {
-  color: var(--text-accent);
+  color: var(--text-code);
 }
 
 body .markdown-source-view .CodeMirror .CodeMirror-cursor {
@@ -597,6 +597,7 @@ body.plugin-sliding-panes-stacking
   --text-accent: var(--color-blue-4);
   --text-accent-hover: var(--color-blue-3);
   --text-normal: var(--color-gray-1);
+  --text-code: var(--color-gray-2);
   --text-muted: var(--color-gray-4);
   --text-muted-rgb: 153, 153, 153;
   --text-faint: var(--color-gray-4);
@@ -640,6 +641,7 @@ body.plugin-sliding-panes-stacking
   --text-accent: var(--color-blue-5);
   --text-accent-hover: var(--color-blue-4);
   --text-normal: var(--color-gray-8);
+  --text-code: var(--color-gray-8);
   --text-muted: var(--color-gray-4);
   --text-muted-rgb: 153, 153, 153;
   --text-faint: var(--color-gray-4);
