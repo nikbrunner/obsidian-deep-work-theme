@@ -239,6 +239,7 @@ body .prompt-results {
 }
 body .prompt-results .suggestion-item {
   border-left: 5px solid transparent;
+  padding-left: inherit;
   border-radius: 6px;
   transition: border-left 0.25s
       cubic-bezier(0.075, 0.82, 0.165, 1),
