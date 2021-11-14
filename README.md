@@ -53,3 +53,5 @@ The font-family declarations are taken directly from GitHub.
 - Admonition
 - Sliding Panes
 - Todoist
+- Jump-To-Date
+- Kanban

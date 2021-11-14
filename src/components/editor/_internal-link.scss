@@ -9,3 +9,15 @@
     }
   }
 }
+
+@include editor-source-component {
+  .cm-hmd-internal-link {
+    font-weight: $font-weight-bold;
+  }
+}
+
+@include editor-live-preview-component {
+  .cm-hmd-internal-link {
+    font-weight: $font-weight-bold;
+  }
+}

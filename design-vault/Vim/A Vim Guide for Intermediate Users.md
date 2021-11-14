@@ -35,6 +35,11 @@ In fact, a buffer can have three different states:
 - *hidden* - The buffer is not displayed, but it exists and the file is still open.
 - *inactive* - The buffer is not displayed and *empty*. It’s not linked to any file.
 
+## This is a Todo List
+- [ ] This is one todo
+- [ ] A second todo
+- [x] A completed todo
+
 The content of a file in a hidden buffer is not directly visible in Vim. At that point, you might wonder: how do we know that this buffer is still open, if we can’t see it?
 
 To see all opened buffered, we can look at the *buffer list*. You can use the command `:buffers` to display it. Each line contains:
@@ -183,6 +188,10 @@ You can use mapping commands for every Vim mode:
 It might sound confusing to have different mappings for different modes, but it’s actually very easy to remember, thanks to our muscle memory.
 
 Let’s try an example together by mapping `w` to `dd`. By default, `dd` delete a line, and `w` is a motion to move your cursor from word to word.
+
+Also this is very important
+
+- THis is a bullet list with a link to [[What is Stoicism?]]
 
 1. Run the command `:nmap w dd`
 2. Try to hit the keystroke `dd`. It will delete a line.

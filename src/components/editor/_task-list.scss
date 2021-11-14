@@ -1,17 +1,23 @@
+@mixin checkbox-style {
+  $size: 16px;
+
+  width: $size;
+  height: $size;
+
+  filter: hue-rotate(0);
+  margin-right: $space-s;
+}
+
 @include editor-preview-component {
   ul.contains-task-list {
     .task-list-item {
       text-decoration: none;
 
       &-checkbox {
-        $size: 16px;
+        @include checkbox-style();
 
-        width: $size;
-        height: $size;
-
+        position: relative;
         top: 2px;
-        filter: hue-rotate(0);
-        margin-right: $space-s;
       }
 
       &.is-checked {
@@ -20,5 +26,13 @@
         }
       }
     }
+  }
+}
+@include editor-live-preview-component {
+  .task-list-item-checkbox {
+    @include checkbox-style();
+
+    position: relative;
+    top: -2px;
   }
 }

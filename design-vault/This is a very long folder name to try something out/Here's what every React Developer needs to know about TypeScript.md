@@ -15,7 +15,7 @@ created: 12312
 
 If you've been using React for a while, you'll have noticed some cases where the freedom and wild nature of JavaScript works against you (and not because of JS 😄), especially if you're working in a team. **You may not know it, but you need TypeScript or at least, you need to test it**.
 
-Let me be clear, I love JavaScript and the freedom it provides, for a long time I was "against" TypeScript.
+Let me be clear, I love JavaScript and the freedom it provides, for a long time I was "against" [[TypeScript]].
 
 So I want to go on a journey together, figuring out if TypeScript is worth using or TS is only for people who don't know how to code properly (this was an inside joke in my team a time ago!).
 

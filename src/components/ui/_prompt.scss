@@ -23,6 +23,7 @@
       .suggestion {
         &-item {
           border-left: border($border-width, transparent);
+          padding-left: inherit;
           border-radius: $border-radius-default;
           transition: transition(
               border-left,

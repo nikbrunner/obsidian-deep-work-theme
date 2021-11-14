@@ -2,7 +2,7 @@
 
 ```todoist
 {
-"name": "My Tasks",
-"filter": "today | overdue"
+	"name": "My Tasks",
+	"filter": "today | overdue"
 }
 ```

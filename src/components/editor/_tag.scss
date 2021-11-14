@@ -1,5 +1,5 @@
 @include editor-preview-component {
-  .tag {
+  .tag:not(.token) {
     background: var(--color-topic-tag-bg);
     color: var(--color-blue-3);
     border-radius: $border-radius-l;
