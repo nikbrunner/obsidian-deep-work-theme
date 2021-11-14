@@ -1,6 +1,6 @@
 {
   "vimMode": true,
   "showFrontmatter": true,
-  "livePreview": true,
+  "livePreview": false,
   "emacsyKeys": false
 }

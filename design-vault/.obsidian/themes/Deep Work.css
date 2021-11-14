@@ -294,6 +294,9 @@ body .markdown-preview-view pre[class*=language-] ::-webkit-scrollbar {
 body .markdown-preview-view pre[class*=language-] ::-webkit-scrollbar-thumb {
   background-color: var(--background-primary);
 }
+body .markdown-preview-view pre[class*=language-] *:not(.copy-code-button) {
+  background-color: transparent !important;
+}
 body .markdown-preview-view pre[class*=language-] .copy-code-button {
   background-color: var(--background-secondary-alt);
 }
@@ -301,9 +304,6 @@ body .markdown-preview-view pre[class*=language-] .copy-code-button:hover {
   transition: background-color 0.75s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
   background-color: var(--interactive-accent);
   color: var(--text-on-accent);
-}
-body .markdown-preview-view pre[class*=language-] *:not(.copy-code-button, ::-webkit-scrollbar) {
-  background-color: transparent !important;
 }
 
 body .markdown-source-view .CodeMirror .HyperMD-codeblock {

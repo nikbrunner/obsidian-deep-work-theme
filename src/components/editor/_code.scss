@@ -39,6 +39,10 @@
       }
     }
 
+    *:not(.copy-code-button) {
+      background-color: transparent !important;
+    }
+
     .copy-code-button {
       background-color: var(--background-secondary-alt);
 
@@ -48,10 +52,6 @@
         background-color: var(--interactive-accent);
         color: var(--text-on-accent);
       }
-    }
-
-    *:not(.copy-code-button, ::-webkit-scrollbar) {
-      background-color: transparent !important;
     }
   }
 }
