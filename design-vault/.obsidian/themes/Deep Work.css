@@ -284,12 +284,14 @@ body .markdown-preview-view pre[class*=language-] {
   border-radius: 12px;
   background-color: var(--background-secondary);
 }
-body .markdown-preview-view pre[class*=language-] ::-webkit-scrollbar {
+body .markdown-preview-view pre[class*=language-]::-webkit-scrollbar {
   background-color: var(--background-secondary-alt);
-  height: 5px;
+  border-radius: 0 0 12px 12px;
+  height: 15px;
 }
-body .markdown-preview-view pre[class*=language-] ::-webkit-scrollbar-thumb {
-  background-color: var(--background-primary);
+body .markdown-preview-view pre[class*=language-]::-webkit-scrollbar-thumb {
+  background-color: var(--background-secondary);
+  border-radius: 0 0 12px 12px;
 }
 body .markdown-preview-view pre[class*=language-] *:not(.copy-code-button) {
   background-color: transparent !important;

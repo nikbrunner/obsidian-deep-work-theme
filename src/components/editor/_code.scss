@@ -28,12 +28,14 @@
     border-radius: $border-radius-l;
     background-color: var(--background-secondary);
 
-    ::-webkit-scrollbar {
+    &::-webkit-scrollbar {
       background-color: var(--background-secondary-alt);
-      height: 5px;
+      border-radius: 0 0 $border-radius-l $border-radius-l;
+      height: 15px;
 
       &-thumb {
-        background-color: var(--background-primary);
+        background-color: var(--background-secondary);
+        border-radius: 0 0 $border-radius-l $border-radius-l;
       }
     }
 

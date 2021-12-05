@@ -316,16 +316,16 @@ body .markdown-preview-view pre[class*="language-"] {
 }
 body
   .markdown-preview-view
-  pre[class*="language-"]
-  ::-webkit-scrollbar {
+  pre[class*="language-"]::-webkit-scrollbar {
   background-color: var(--background-secondary-alt);
-  height: 5px;
+  border-radius: 0 0 12px 12px;
+  height: 15px;
 }
 body
   .markdown-preview-view
-  pre[class*="language-"]
-  ::-webkit-scrollbar-thumb {
-  background-color: var(--background-primary);
+  pre[class*="language-"]::-webkit-scrollbar-thumb {
+  background-color: var(--background-secondary);
+  border-radius: 0 0 12px 12px;
 }
 body
   .markdown-preview-view
