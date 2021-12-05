@@ -60,7 +60,6 @@ console.log(isCounterAlt);
 ```
 
 ## `isEnumValue()`
-### Description
 
 ### Example
 ```ts
@@ -90,4 +89,14 @@ const checkCurrency = (currency: any): Currency => {
 // Although req.query.currency on runtime could be anything,
 // query is part of the enum, it also returns the correct type after it
 const currency = req.query.currency && checkCurrency(req.query.currency);  
+```
+
+## Diff
+Here is some `inline` code.
+
+```diff
++ function sum(a, b) {
++ }
++ const a = 10;  
+- const a = 5;
 ```

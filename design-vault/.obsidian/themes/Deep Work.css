@@ -278,13 +278,11 @@ body .markdown-preview-view code {
   font-family: var(--font-monospace);
   background-color: var(--background-secondary-alt);
   border-radius: 4px;
-  padding: 2px 4px;
   font-size: 0.85em;
 }
 body .markdown-preview-view pre[class*=language-] {
   border-radius: 12px;
   background-color: var(--background-secondary);
-  padding: calc((1rem * 2) * 1) calc(1rem * 1);
 }
 body .markdown-preview-view pre[class*=language-] ::-webkit-scrollbar {
   background-color: var(--background-secondary-alt);

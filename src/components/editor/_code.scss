@@ -21,14 +21,12 @@
     font-family: var(--font-monospace);
     background-color: var(--background-secondary-alt);
     border-radius: $border-radius-s;
-    padding: 2px 4px;
     font-size: 0.85em;
   }
 
   pre[class*="language-"] {
     border-radius: $border-radius-l;
     background-color: var(--background-secondary);
-    padding: $space-l $space;
 
     ::-webkit-scrollbar {
       background-color: var(--background-secondary-alt);
