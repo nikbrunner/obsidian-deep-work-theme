@@ -34,14 +34,14 @@ $checked-svg: 'data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox
     .task-list-item {
       text-decoration: none;
       color: var(--text-normal);
-      transition: transition(color);
+      transition: transition(color), transition(filter);
 
       &.is-checked {
         color: var(--text-muted);
 
         .internal-link,
         .external-link {
-          filter: brightness(0.5);
+          filter: opacity(0.5);
         }
       }
 

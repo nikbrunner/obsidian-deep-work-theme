@@ -502,7 +502,8 @@ body
   .task-list-item {
   text-decoration: none;
   color: var(--text-normal);
-  transition: color 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: color 0.75s cubic-bezier(0.075, 0.82, 0.165, 1),
+    filter 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 body
   .markdown-preview-view
@@ -520,7 +521,7 @@ body
   ul.contains-task-list
   .task-list-item.is-checked
   .external-link {
-  filter: brightness(0.5);
+  filter: opacity(0.5);
 }
 body
   .markdown-preview-view
