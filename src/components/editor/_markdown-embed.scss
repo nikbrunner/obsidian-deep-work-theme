@@ -1,20 +1,84 @@
+@mixin left-border-style {
+  background: linear-gradient(
+    to bottom,
+    var(--text-accent-hover) 0%,
+    var(--text-accent) 100%
+  );
+
+  border-radius: $border-radius-l 0 0 $border-radius-l;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 10px;
+}
+
 @include editor-preview-component {
-  $border-radius: $border-radius-s;
+  $border-radius: $border-radius-l;
 
   .markdown-embed {
-    border: none;
     border-radius: $border-radius;
+    border: none;
+    padding: 0;
+    box-shadow: $box-shadow-embed;
+    transition: transition(box-shadow);
+
+    &:hover {
+      box-shadow: $box-shadow-embed-hover;
+    }
+
+    &:before {
+      @include left-border-style;
+    }
+
+    .markdown-embed-content {
+      &::-webkit-scrollbar,
+      &::-webkit-scrollbar-thumb {
+        border-radius: 0 $border-radius $border-radius 0;
+      }
+
+      &::-webkit-scrollbar {
+        background: linear-gradient(
+          to bottom,
+          var(--background-secondary) 0%,
+          var(--background-primary) 100%
+        );
+      }
+    }
 
     .markdown-preview-view {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-      border-left: 10px solid var(--text-accent);
+      padding-right: $space;
       border-radius: $border-radius;
-      background: var(--background-secondary);
+
+      .markdown-preview-sizer {
+        max-width: 90%;
+      }
     }
 
     .markdown-embed-link {
-      top: 2rem;
+      top: $space-l;
+    }
+  }
+}
+
+@include editor-live-preview-component {
+  $border-radius: $border-radius-l;
+
+  // Hide border in live preview because the toggle arrows are get displaced,
+  // when I try to vertically space out the elements.
+  // When I hide the border it doesn't look as bad.
+  .markdown-embed {
+    padding: $space-l 0 $space-l $space-l;
+    border: none;
+
+    .markdown-preview-view {
+      padding-right: 40px;
+    }
+
+    .markdown-embed-link {
+      top: $space-l;
     }
   }
 }

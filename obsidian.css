@@ -463,24 +463,88 @@ body .markdown-source-view.mod-cm6 .cm-hmd-internal-link {
 }
 
 body .markdown-preview-view .markdown-embed {
+  border-radius: 12px;
   border: none;
-  border-radius: 4px;
+  padding: 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.75s
+    cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+body .markdown-preview-view .markdown-embed:hover {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+body .markdown-preview-view .markdown-embed:before {
+  background: linear-gradient(
+    to bottom,
+    var(--text-accent-hover) 0%,
+    var(--text-accent) 100%
+  );
+  border-radius: 12px 0 0 12px;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 10px;
+}
+body
+  .markdown-preview-view
+  .markdown-embed
+  .markdown-embed-content::-webkit-scrollbar,
+body
+  .markdown-preview-view
+  .markdown-embed
+  .markdown-embed-content::-webkit-scrollbar-thumb {
+  border-radius: 0 12px 12px 0;
+}
+body
+  .markdown-preview-view
+  .markdown-embed
+  .markdown-embed-content::-webkit-scrollbar {
+  background: linear-gradient(
+    to bottom,
+    var(--background-secondary) 0%,
+    var(--background-primary) 100%
+  );
 }
 body
   .markdown-preview-view
   .markdown-embed
   .markdown-preview-view {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  border-left: 10px solid var(--text-accent);
-  border-radius: 4px;
-  background: var(--background-secondary);
+  padding-right: calc(1rem * 1);
+  border-radius: 12px;
+}
+body
+  .markdown-preview-view
+  .markdown-embed
+  .markdown-preview-view
+  .markdown-preview-sizer {
+  max-width: 90%;
 }
 body
   .markdown-preview-view
   .markdown-embed
   .markdown-embed-link {
-  top: 2rem;
+  top: calc((1rem * 2) * 1);
+}
+
+body .markdown-source-view.mod-cm6 .markdown-embed {
+  padding: calc((1rem * 2) * 1) 0 calc((1rem * 2) * 1)
+    calc((1rem * 2) * 1);
+  border: none;
+}
+body
+  .markdown-source-view.mod-cm6
+  .markdown-embed
+  .markdown-preview-view {
+  padding-right: 40px;
+}
+body
+  .markdown-source-view.mod-cm6
+  .markdown-embed
+  .markdown-embed-link {
+  top: calc((1rem * 2) * 1);
 }
 
 body .markdown-preview-view p {
