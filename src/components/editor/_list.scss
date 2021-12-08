@@ -1,6 +1,46 @@
-@include editor-preview-component {
-  ul {
-    li {
+@mixin indent-guide-style($left) {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: $left;
+
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    var(--background-secondary-alt) 25%,
+    var(--background-secondary-alt) 75%,
+    transparent 100%
+  );
+}
+
+@mixin sub-list-before-selector {
+  ul,
+  ol {
+    &::before {
+      @content;
     }
   }
 }
+
+@include editor-preview-component {
+  ul,
+  ol {
+    position: relative;
+
+    @include sub-list-before-selector {
+      @include indent-guide-style(-1em);
+    }
+
+    // Adjust horizontal position for indent guide for task lists
+    &.contains-task-list {
+      @include sub-list-before-selector {
+        @include indent-guide-style(-0.8em);
+      }
+    }
+  }
+}
+
+// TODO Implement indent list guides for source code view

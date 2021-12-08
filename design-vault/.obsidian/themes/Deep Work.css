@@ -417,6 +417,35 @@ body .markdown-source-view.mod-cm6 .cm-hmd-internal-link {
   font-weight: 700;
 }
 
+body .markdown-preview-view ul,
+body .markdown-preview-view ol {
+  position: relative;
+}
+body .markdown-preview-view ul ul::before,
+body .markdown-preview-view ul ol::before,
+body .markdown-preview-view ol ul::before,
+body .markdown-preview-view ol ol::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1em;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent 0%, var(--background-secondary-alt) 25%, var(--background-secondary-alt) 75%, transparent 100%);
+}
+body .markdown-preview-view ul.contains-task-list ul::before,
+body .markdown-preview-view ul.contains-task-list ol::before,
+body .markdown-preview-view ol.contains-task-list ul::before,
+body .markdown-preview-view ol.contains-task-list ol::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -0.8em;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent 0%, var(--background-secondary-alt) 25%, var(--background-secondary-alt) 75%, transparent 100%);
+}
+
 body .markdown-preview-view .markdown-embed {
   border-radius: 12px;
   border: none;

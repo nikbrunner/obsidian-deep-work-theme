@@ -7,6 +7,8 @@
 	- [x] Nested Three
 	- [ ] Something with an [external link](https://google.com)
 	- [x] [[What is Stoicism?]]
+		- [ ] Even more nesting
+		- [ ] More Nesting
 
 ## A normal list
 - Hello
@@ -14,6 +16,20 @@
 - Lemon
 	- Bread
 	- Nuts
+- A second nested list
+	- Some sublisting
+		- Even more sublisting
+
+## A numbered list
+1. One
+2. Two
+3. Three
+	1. One
+	2. Two
+	3. Three
+		1. One
+		2. Two
+		3. Three
 
 ## An H2 List
 Some text
