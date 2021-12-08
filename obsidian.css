@@ -393,24 +393,56 @@ body .markdown-preview-view .file-embed .file-embed-link {
   top: 2rem;
 }
 
-body .markdown-preview-view h1,
-body .markdown-preview-view h2 {
+body .markdown-preview-view h1 {
+  border-bottom: 1px solid var(--background-secondary-alt);
   font-weight: 600;
   line-height: 1.25;
   padding-bottom: calc((1rem / 2) * 1);
-  border-bottom: 1px solid var(--background-secondary-alt);
 }
-body .markdown-preview-view h3,
+body .markdown-preview-view h2 {
+  border-bottom: 1px solid var(--background-secondary-alt);
+  font-weight: 600;
+  line-height: 1.25;
+  padding-bottom: calc((1rem / 2) * 1);
+}
+body .markdown-preview-view h3 {
+  font-weight: 600;
+}
 body .markdown-preview-view h4 {
   font-weight: 600;
 }
 body .markdown-preview-view h5 {
-  font-weight: 600;
   font-style: italic;
 }
 body .markdown-preview-view h6 {
-  font-weight: 400;
   font-style: italic;
+  font-weight: 400;
+}
+
+body .markdown-source-view.mod-cm6 .HyperMD-header-1 {
+  border-bottom: 1px solid var(--background-secondary-alt);
+  font-weight: 600;
+  line-height: 1.25;
+  padding-bottom: calc((1rem / 2) * 1);
+}
+body .markdown-source-view.mod-cm6 .HyperMD-header-2 {
+  border-bottom: 1px solid var(--background-secondary-alt);
+  font-weight: 600;
+  line-height: 1.25;
+  padding-bottom: calc((1rem / 2) * 1);
+}
+body .markdown-source-view.mod-cm6 .HyperMD-header-3 {
+  font-weight: 600;
+}
+body .markdown-source-view.mod-cm6 .HyperMD-header-4 {
+  font-weight: 600;
+}
+body .markdown-source-view.mod-cm6 .HyperMD-header-5 {
+  font-style: italic;
+}
+body .markdown-source-view.mod-cm6 .HyperMD-header-6 {
+  font-style: italic;
+  font-weight: 400;
 }
 
 body .markdown-preview-view .internal-link {

@@ -1,24 +1,80 @@
+@mixin h1Style {
+  border-bottom: 1px solid var(--background-secondary-alt);
+  font-weight: 600;
+  line-height: $line-height-s;
+  padding-bottom: $space-s;
+}
+
+@mixin h2Style {
+  @include h1Style;
+}
+
+@mixin h3Style {
+  font-weight: 600;
+}
+
+@mixin h4Style {
+  @include h3Style;
+}
+
+@mixin h5Style {
+  font-style: italic;
+}
+
+@mixin h6Style {
+  @include h5Style;
+
+  font-weight: 400;
+}
+
 @include editor-preview-component {
-  h1,
-  h2 {
-    font-weight: 600;
-    line-height: $line-height-s;
-    padding-bottom: $space-s;
-    border-bottom: 1px solid var(--background-secondary-alt);
+  h1 {
+    @include h1Style;
   }
 
-  h3,
+  h2 {
+    @include h2Style;
+  }
+
+  h3 {
+    @include h3Style;
+  }
+
   h4 {
-    font-weight: 600;
+    @include h4Style;
   }
 
   h5 {
-    font-weight: 600;
-    font-style: italic;
+    @include h5Style;
   }
 
   h6 {
-    font-weight: 400;
-    font-style: italic;
+    @include h6Style;
+  }
+}
+
+@include editor-live-preview-component {
+  .HyperMD-header-1 {
+    @include h1Style;
+  }
+
+  .HyperMD-header-2 {
+    @include h2Style;
+  }
+
+  .HyperMD-header-3 {
+    @include h3Style;
+  }
+
+  .HyperMD-header-4 {
+    @include h4Style;
+  }
+
+  .HyperMD-header-5 {
+    @include h5Style;
+  }
+
+  .HyperMD-header-6 {
+    @include h6Style;
   }
 }
