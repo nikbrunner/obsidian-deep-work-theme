@@ -1,8 +1,9 @@
 {
   "vimMode": true,
   "showFrontmatter": true,
-  "livePreview": false,
+  "livePreview": true,
   "emacsyKeys": false,
   "foldIndent": true,
-  "foldHeading": true
+  "foldHeading": true,
+  "legacyEditor": false
 }
