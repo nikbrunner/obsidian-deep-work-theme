@@ -2,13 +2,15 @@
 - [x] One
 - [x] Two
 - [ ] Three
-	- [x] Nested One
+	- [ ] Nested One
 	- [x] Nested Two
 	- [x] Nested Three
 	- [ ] Something with an [external link](https://google.com)
-	- [x] [[What is Stoicism?]]
-		- [ ] Even more nesting
-		- [ ] More Nesting
+	- [ ] [[What is Stoicism?]]
+		- [x] Even more nesting
+		- [x] More Nesting
+			- [x] Hello
+			- [ ] There
 
 ## A normal list
 - Hello

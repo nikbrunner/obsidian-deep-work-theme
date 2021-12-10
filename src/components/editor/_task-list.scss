@@ -1,3 +1,7 @@
+$selector-task-list-item-reading-mode: ".task-list-item";
+$selector-task-list-item-source-mode: ".HyperMD-task-line";
+$selector-task-list-item-checkbox: ".task-list-item-checkbox";
+
 $checked-svg: 'data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>';
 
 @mixin checkbox-style-unchecked {
@@ -21,7 +25,7 @@ $checked-svg: 'data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox
 }
 
 @mixin checkbox-style-checked {
-  border: 1px solid var(--text-accent-hover);
+  border: 2px solid var(--text-accent-hover);
   background-color: var(--text-accent);
   background-position: 50% 45%;
   background-size: 68%;
@@ -31,7 +35,8 @@ $checked-svg: 'data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox
 
 @include editor-preview-component {
   ul.contains-task-list {
-    .task-list-item {
+    #{$selector-task-list-item-reading-mode} {
+      // dont strikethrough the task line
       text-decoration: none;
       color: var(--text-normal);
       transition: transition(color), transition(filter);
@@ -57,21 +62,37 @@ $checked-svg: 'data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox
 }
 
 @include editor-live-preview-component {
-  $checked-selector: '[data-task~="x"]';
+  $checked-animation-speed: $transition-speed-mid;
 
-  // In the LivePreview every string which is is "checked" gets this data attribute
-  #{$checked-selector} {
-    filter: brightness(0.5);
-  }
+  #{$selector-task-list-item-source-mode} {
+    // dont strikethrough the task line
+    text-decoration: none !important;
+    transition: transition(color), transition(filter);
 
-  .task-list-item-checkbox {
-    @include checkbox-style-unchecked();
+    #{$selector-task-list-item-checkbox} {
+      @include checkbox-style-unchecked();
 
-    &#{$checked-selector} {
-      @include checkbox-style-checked();
+      // correct the position of checkbox
+      position: relative;
+      top: -1px;
     }
 
-    position: relative;
-    top: initial;
+    &[data-task~="x"] {
+      // normalize the color to prevent double dimming effect from native app css
+      color: var(--text-normal);
+
+      // dimm everything except the checkbox
+      *:not(#{$selector-task-list-item-checkbox}) {
+        filter: opacity(0.75);
+        animation: bounceIn $checked-animation-speed;
+      }
+
+      // style the checked checkbox
+      #{$selector-task-list-item-checkbox} {
+        @include checkbox-style-checked();
+
+        animation: bounceIn $checked-animation-speed;
+      }
+    }
   }
 }
