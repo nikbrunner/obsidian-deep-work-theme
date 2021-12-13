@@ -19,14 +19,32 @@ $selector-status-bar: ".status-bar";
     color: var(--text-normal);
 
     border-radius: $border-radius-l $border-radius-l 0 0;
-    border: border(1px, var(--background-secondary));
+    border: {
+      top: border(1px, var(--background-secondary));
+      right: border(1px, var(--background-secondary));
+      left: border(1px, var(--background-secondary));
+      bottom: none;
+    }
     user-select: none;
     font-size: 14px;
+    line-height: 1;
     gap: $space;
     padding: $space-xs $space;
 
-    &-item {
+    &-item,
+    &-item-segment {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
+      line-height: 1;
       padding: 0;
+
+      svg {
+        // remove little space below icon
+        display: block;
+      }
     }
   }
 }
