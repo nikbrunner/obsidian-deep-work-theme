@@ -85,14 +85,11 @@ $checked-svg: 'data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox
       // dimm everything except the checkbox
       *:not(#{$selector-task-list-item-checkbox}) {
         filter: opacity(0.75);
-        animation: bounceIn $checked-animation-speed;
       }
 
       // style the checked checkbox
       #{$selector-task-list-item-checkbox} {
         @include checkbox-style-checked();
-
-        animation: bounceIn $checked-animation-speed;
       }
     }
   }

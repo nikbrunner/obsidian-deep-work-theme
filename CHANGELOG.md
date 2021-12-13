@@ -13,6 +13,7 @@ I did not start a Changelog up until now, so please excuse the missing updates b
 ## 2021.12.13 - Little Fixes
 
 - Fix Task List Jumpiness - [#48](https://github.com/nikbrunner/obsidian-deep-work-theme/issues/48)
+- Remove checkbox animation - [#50](https://github.com/nikbrunner/obsidian-deep-work-theme/issues/50)
 
 ## 2021.12.12 - Statusbar
 
