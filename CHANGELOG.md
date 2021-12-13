@@ -3,9 +3,9 @@
 - [Changelog](#changelog)
   - [Description](#description)
   - [2021.12.13 - Little Fixes](#20211213---little-fixes)
-  - [1.8.1 - Statusbar](#181---statusbar)
-    - [1.8.2 - Statusbar fixes](#182---statusbar-fixes)
-  - [1.8.0 - Checkboxes](#180---checkboxes)
+  - [2021.12.12 - Statusbar](#20211212---statusbar)
+    - [Statusbar fixes](#statusbar-fixes)
+  - [2021.12.10 - Checkboxes](#20211210---checkboxes)
 
 ## Description
 I did not start a Changelog up until now, so please excuse the missing updates before `1.8.0`.
@@ -14,7 +14,7 @@ I did not start a Changelog up until now, so please excuse the missing updates b
 
 - Fix Task List Jumpiness - [#48](https://github.com/nikbrunner/obsidian-deep-work-theme/issues/48)
 
-## 1.8.1 - Statusbar
+## 2021.12.12 - Statusbar
 
 ![](images/2.0/status-bar.png)
 
@@ -26,12 +26,12 @@ Restyled the status-bar
 
 Related issue: [#25](https://github.com/nikbrunner/obsidian-deep-work-theme/issues/25)
 
-### 1.8.2 - Statusbar fixes
+### Statusbar fixes
 
 - Fixes [#43](https://github.com/nikbrunner/obsidian-deep-work-theme/issues/43)
 - Removed bottom border
 
-## 1.8.0 - Checkboxes
+## 2021.12.10 - Checkboxes
 
 ![](images/2.0/checkboxes.png)
 
