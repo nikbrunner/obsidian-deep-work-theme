@@ -27,6 +27,7 @@ $selector-status-bar: ".status-bar";
     }
     user-select: none;
     font-size: 14px;
+    font-family: var(--editor-font);
     line-height: 1;
     gap: $space;
     padding: $space-xs $space;

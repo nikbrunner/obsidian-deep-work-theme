@@ -343,6 +343,7 @@ body .status-bar {
   border-bottom: none;
   user-select: none;
   font-size: 14px;
+  font-family: var(--editor-font);
   line-height: 1;
   gap: calc(1rem * 1);
   padding: calc((1rem / 4) * 1) calc(1rem * 1);
