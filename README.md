@@ -25,6 +25,9 @@
 ## Mobile
 The theme is hardly different from the default theme except for the colors, so it works well on mobile too!
 
+## Changes
+For recent changes please take a look at the [Changelog](CHANGELOG.md).
+
 ## Roadmap
 - Dimmed, dark option to be enabled via a dedicated future PlugIn
 - `publish.css`
