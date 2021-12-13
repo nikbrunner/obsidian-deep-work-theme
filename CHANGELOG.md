@@ -1,20 +1,13 @@
 # Changelog
 
 - [Changelog](#changelog)
+  - [Description](#description)
+  - [1.8.1 - Statusbar](#181---statusbar)
+    - [1.8.2 - Statusbar fixes](#182---statusbar-fixes)
+  - [1.8.0 - Checkboxes](#180---checkboxes)
 
 ## Description
 I did not start a Changelog up until now, so please excuse the missing updates before `1.8.0`.
-
-## 1.8.0 - Checkboxes
-
-![](images/2.0/checkboxes.png)
-
-- Inspired by GitHub Design
-- Clean and minimalistic
-- Rounded edges
-- A little animation to have a little fun crossing things off
-
-Related issue: [#23](https://github.com/nikbrunner/obsidian-deep-work-theme/issues/23)
 
 ## 1.8.1 - Statusbar
 
@@ -32,3 +25,14 @@ Related issue: [#25](https://github.com/nikbrunner/obsidian-deep-work-theme/issu
 
 - Fixes [#43](https://github.com/nikbrunner/obsidian-deep-work-theme/issues/43)
 - Removed bottom border
+
+## 1.8.0 - Checkboxes
+
+![](images/2.0/checkboxes.png)
+
+- Inspired by GitHub Design
+- Clean and minimalistic
+- Rounded edges
+- A little animation to have a little fun crossing things off
+
+Related issue: [#23](https://github.com/nikbrunner/obsidian-deep-work-theme/issues/23)
