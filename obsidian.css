@@ -337,14 +337,28 @@ body .status-bar {
   background-color: var(--background-primary);
   color: var(--text-normal);
   border-radius: 12px 12px 0 0;
-  border: 1px solid var(--background-secondary);
+  border-top: 1px solid var(--background-secondary);
+  border-right: 1px solid var(--background-secondary);
+  border-left: 1px solid var(--background-secondary);
+  border-bottom: none;
   user-select: none;
   font-size: 14px;
+  line-height: 1;
   gap: calc(1rem * 1);
   padding: calc((1rem / 4) * 1) calc(1rem * 1);
 }
-body .status-bar-item {
+body .status-bar-item,
+body .status-bar-item-segment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  line-height: 1;
   padding: 0;
+}
+body .status-bar-item svg,
+body .status-bar-item-segment svg {
+  display: block;
 }
 
 body .markdown-source-view .CodeMirror .CodeMirror-activeline {
