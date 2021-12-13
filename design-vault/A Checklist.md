@@ -5,11 +5,11 @@
 	- [ ] Nested One
 	- [x] Nested Two
 	- [x] Nested Three
-	- [ ] Something with an [external link](https://google.com)
+	- [x] Something with an [external link](https://google.com)
 	- [ ] [[What is Stoicism?]]
-		- [x] Even more nesting
+		- [ ] Even more nesting
 		- [x] More Nesting
-			- [x] Hello
+			- [ ] Hello
 			- [ ] There
 
 ## A normal list

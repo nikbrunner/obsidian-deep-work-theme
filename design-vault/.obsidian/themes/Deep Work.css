@@ -589,6 +589,7 @@ body .markdown-preview-view ul.contains-task-list .task-list-item-checkbox {
   height: 16px;
   filter: none;
   line-height: 0;
+  margin: 0;
   margin-right: calc((1rem / 2) * 1);
   appearance: none;
   background-color: transparent;
@@ -617,6 +618,7 @@ body .markdown-source-view.mod-cm6 .HyperMD-task-line .task-list-item-checkbox {
   height: 16px;
   filter: none;
   line-height: 0;
+  margin: 0;
   margin-right: calc((1rem / 2) * 1);
   appearance: none;
   background-color: transparent;
