@@ -18,7 +18,7 @@ $checked-svg: 'data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox
   margin-right: $space-s;
 
   appearance: none;
-  background-color: transparent;
+  background-color: var(--color-white);
   transition: transition(background-color);
   border-radius: 30%;
   border: 2px solid var(--text-muted);

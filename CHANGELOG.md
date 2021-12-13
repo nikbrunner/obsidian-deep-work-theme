@@ -14,6 +14,7 @@ I did not start a Changelog up until now, so please excuse the missing updates b
 
 - Fix Task List Jumpiness - [#48](https://github.com/nikbrunner/obsidian-deep-work-theme/issues/48)
 - Remove checkbox animation - [#50](https://github.com/nikbrunner/obsidian-deep-work-theme/issues/50)
+- Made unchecked checkbox color white
 
 ## 2021.12.12 - Statusbar
 

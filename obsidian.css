@@ -715,7 +715,7 @@ body
   margin: 0;
   margin-right: calc((1rem / 2) * 1);
   appearance: none;
-  background-color: transparent;
+  background-color: var(--color-white);
   transition: background-color 0.75s
     cubic-bezier(0.075, 0.82, 0.165, 1);
   border-radius: 30%;
@@ -752,7 +752,7 @@ body
   margin: 0;
   margin-right: calc((1rem / 2) * 1);
   appearance: none;
-  background-color: transparent;
+  background-color: var(--color-white);
   transition: background-color 0.75s
     cubic-bezier(0.075, 0.82, 0.165, 1);
   border-radius: 30%;
