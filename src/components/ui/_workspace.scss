@@ -1,7 +1,15 @@
 @include ui-component {
   .workspace {
     &-leaf {
+      background-color: var(--background-primary);
+
+      &-resize-handle {
+        background-color: var(--background-primary);
+      }
+
       .view-header {
+        background-color: var(--background-primary);
+
         transition: transition(
             border-bottom,
             $transition-speed-slow
@@ -21,6 +29,49 @@
           &-container::before,
           &-container::after {
             background: none !important;
+          }
+        }
+      }
+    }
+
+    &-ribbon {
+      background-color: var(--background-primary);
+    }
+
+    &-tabs {
+      background-color: var(--background-primary);
+
+      .workspace-leaf {
+        background-color: var(--background-primary);
+      }
+
+      .workspace {
+        &-tab {
+          &-container {
+            &-before.is-before-active,
+            &-after.is-after-active {
+              background-color: var(--background-primary);
+            }
+          }
+
+          &-header {
+            &-container {
+              background-color: var(--background-primary);
+            }
+
+            &.is-before-active {
+              background-color: var(--background-primary);
+            }
+
+            &.is-after-active {
+              background-color: var(--background-primary);
+            }
+
+            &-inner {
+              background-color: var(
+                --background-primary
+              ) !important;
+            }
           }
         }
       }

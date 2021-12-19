@@ -176,10 +176,10 @@ body {
 }
 
 body .titlebar {
-  height: 27px !important;
+  padding-top: 0px !important;
 }
 body .titlebar-inner {
-  background: var(--background-secondary-alt);
+  background: var(--background-primary);
   color: var(--text-normal);
 }
 body .titlebar-text {
@@ -192,7 +192,14 @@ body .titlebar-button {
   opacity: 1;
 }
 
+body .workspace-leaf {
+  background-color: var(--background-primary);
+}
+body .workspace-leaf-resize-handle {
+  background-color: var(--background-primary);
+}
 body .workspace-leaf .view-header {
+  background-color: var(--background-primary);
   transition: border-bottom 1s cubic-bezier(0.075, 0.82, 0.165, 1), background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 body .workspace-leaf .view-header-title {
@@ -203,6 +210,30 @@ body .workspace-leaf.mod-active .view-header {
 }
 body .workspace-leaf.mod-active .view-header-title-container::before, body .workspace-leaf.mod-active .view-header-title-container::after {
   background: none !important;
+}
+body .workspace-ribbon {
+  background-color: var(--background-primary);
+}
+body .workspace-tabs {
+  background-color: var(--background-primary);
+}
+body .workspace-tabs .workspace-leaf {
+  background-color: var(--background-primary);
+}
+body .workspace-tabs .workspace-tab-container-before.is-before-active, body .workspace-tabs .workspace-tab-container-after.is-after-active {
+  background-color: var(--background-primary);
+}
+body .workspace-tabs .workspace-tab-header-container {
+  background-color: var(--background-primary);
+}
+body .workspace-tabs .workspace-tab-header.is-before-active {
+  background-color: var(--background-primary);
+}
+body .workspace-tabs .workspace-tab-header.is-after-active {
+  background-color: var(--background-primary);
+}
+body .workspace-tabs .workspace-tab-header-inner {
+  background-color: var(--background-primary) !important;
 }
 
 body .modal {

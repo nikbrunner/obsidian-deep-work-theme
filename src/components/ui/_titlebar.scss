@@ -5,10 +5,10 @@ body {
 
 @include ui-component {
   .titlebar {
-    height: $height-header !important;
+    padding-top: 0px !important;
 
     &-inner {
-      background: var(--background-secondary-alt);
+      background: var(--background-primary);
       color: var(--text-normal);
     }
 
