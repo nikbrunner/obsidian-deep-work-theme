@@ -4,8 +4,7 @@ $selector-status-bar: ".status-bar";
   #{$selector-status-bar} {
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 0%;
     z-index: var(--layer-status-bar);
 
     max-height: none;
@@ -18,10 +17,10 @@ $selector-status-bar: ".status-bar";
     background-color: var(--background-primary);
     color: var(--text-normal);
 
-    border-radius: $border-radius-l $border-radius-l 0 0;
+    border-radius: $border-radius-l 0 0 0;
     border: {
       top: border(1px, var(--background-secondary));
-      right: border(1px, var(--background-secondary));
+      right: none;
       left: border(1px, var(--background-secondary));
       bottom: none;
     }

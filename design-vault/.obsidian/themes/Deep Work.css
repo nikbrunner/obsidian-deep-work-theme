@@ -286,8 +286,7 @@ body .setting-item .setting-hotkey {
 body .status-bar {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 0%;
   z-index: var(--layer-status-bar);
   max-height: none;
   width: fit-content;
@@ -296,13 +295,14 @@ body .status-bar {
   align-self: flex-end;
   background-color: var(--background-primary);
   color: var(--text-normal);
-  border-radius: 12px 12px 0 0;
+  border-radius: 12px 0 0 0;
   border-top: 1px solid var(--background-secondary);
-  border-right: 1px solid var(--background-secondary);
+  border-right: none;
   border-left: 1px solid var(--background-secondary);
   border-bottom: none;
   user-select: none;
   font-size: 14px;
+  font-family: var(--editor-font);
   line-height: 1;
   gap: calc(1rem * 1);
   padding: calc((1rem / 4) * 1) calc(1rem * 1);
