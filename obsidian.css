@@ -430,6 +430,10 @@ body .workspace-tab-container-before.is-before-active {
   display: none;
 }
 
+body .workspace-leaf-resize-handle {
+  background-color: var(--color-transparent);
+}
+
 body .markdown-source-view .CodeMirror .CodeMirror-activeline {
   background: var(--active-line-bg);
 }
