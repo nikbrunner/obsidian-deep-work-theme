@@ -195,16 +195,22 @@ body .suggestion-container {
   border-radius: 6px;
 }
 
+body {
+  padding-top: 27px !important;
+}
+
 body .titlebar {
-  border-bottom: 1px solid var(--background-secondary-alt);
-  padding-top: 0px !important;
+  height: 27px !important;
 }
 body .titlebar-inner {
   background: var(--background-secondary-alt);
   color: var(--text-normal);
 }
 body .titlebar-text {
-  top: 3px;
+  top: 5px;
+}
+body .titlebar-button-container {
+  top: 0px;
 }
 body .titlebar-button {
   opacity: 1;
@@ -328,6 +334,7 @@ body .status-bar {
   justify-content: flex-end;
   align-self: center;
   max-height: none;
+  height: 27px;
   width: 100%;
   background-color: var(--background-primary);
   color: var(--text-muted);

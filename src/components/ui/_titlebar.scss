@@ -1,7 +1,11 @@
+// Necessary to modify to make space for the increased height of the titlebar
+body {
+  padding-top: $height-header !important;
+}
+
 @include ui-component {
   .titlebar {
-    border-bottom: 1px solid var(--background-secondary-alt);
-    padding-top: 0px !important;
+    height: $height-header !important;
 
     &-inner {
       background: var(--background-secondary-alt);
@@ -9,7 +13,11 @@
     }
 
     &-text {
-      top: 3px;
+      top: 5px;
+    }
+
+    &-button-container {
+      top: 0px;
     }
 
     &-button {
