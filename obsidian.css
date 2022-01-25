@@ -837,13 +837,13 @@ body.plugin-sliding-panes-stacking
   > .workspace-leaf {
   transition: box-shadow 0.75s
     cubic-bezier(0.075, 0.82, 0.165, 1);
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
 }
 body.plugin-sliding-panes-stacking
   .workspace
   > .mod-root
   > .workspace-leaf.mod-active {
-  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25) !important;
 }
 body.plugin-sliding-panes-rotate-header
   div.workspace
