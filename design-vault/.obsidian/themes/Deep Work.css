@@ -284,28 +284,20 @@ body .setting-item .setting-hotkey {
 }
 
 body .status-bar {
-  position: absolute;
-  bottom: 0;
-  right: 0%;
-  z-index: var(--layer-status-bar);
-  max-height: none;
-  width: fit-content;
-  display: inline-flex;
+  display: flex;
   justify-content: flex-end;
-  align-self: flex-end;
+  align-self: center;
+  max-height: none;
+  width: 100%;
   background-color: var(--background-primary);
-  color: var(--text-normal);
-  border-radius: 12px 0 0 0;
-  border-top: 1px solid var(--background-secondary);
-  border-right: none;
-  border-left: 1px solid var(--background-secondary);
-  border-bottom: none;
-  user-select: none;
+  color: var(--text-muted);
   font-size: 14px;
   font-family: var(--editor-font);
   line-height: 1;
+  border-top: 1px solid var(--background-secondary);
   gap: calc(1rem * 1);
   padding: calc((1rem / 4) * 1) calc(1rem * 1);
+  user-select: none;
 }
 body .status-bar-item, body .status-bar-item-segment {
   display: flex;

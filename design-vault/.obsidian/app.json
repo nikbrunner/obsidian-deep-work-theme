@@ -6,5 +6,5 @@
   "foldIndent": true,
   "foldHeading": true,
   "legacyEditor": false,
-  "showLineNumber": true
+  "showLineNumber": false
 }

@@ -2,34 +2,24 @@ $selector-status-bar: ".status-bar";
 
 @include ui-component {
   #{$selector-status-bar} {
-    position: absolute;
-    bottom: 0;
-    right: 0%;
-    z-index: var(--layer-status-bar);
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
 
     max-height: none;
-    width: fit-content;
-
-    display: inline-flex;
-    justify-content: flex-end;
-    align-self: flex-end;
+    width: 100%;
 
     background-color: var(--background-primary);
-    color: var(--text-normal);
+    color: var(--text-muted);
 
-    border-radius: $border-radius-l 0 0 0;
-    border: {
-      top: border(1px, var(--background-secondary));
-      right: none;
-      left: border(1px, var(--background-secondary));
-      bottom: none;
-    }
-    user-select: none;
     font-size: 14px;
     font-family: var(--editor-font);
     line-height: 1;
+    border-top: border(1px, var(--background-secondary));
+
     gap: $space;
     padding: $space-xs $space;
+    user-select: none;
 
     &-item,
     &-item-segment {
