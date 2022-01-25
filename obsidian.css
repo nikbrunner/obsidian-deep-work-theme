@@ -760,15 +760,26 @@ body
 }
 body
   .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task~="-"],
+body
+  .markdown-source-view.mod-cm6
   .HyperMD-task-line[data-task~="x"] {
   color: var(--text-normal);
 }
+body
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task~="-"]
+  *:not(.task-list-item-checkbox),
 body
   .markdown-source-view.mod-cm6
   .HyperMD-task-line[data-task~="x"]
   *:not(.task-list-item-checkbox) {
   filter: opacity(0.75);
 }
+body
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task~="-"]
+  .task-list-item-checkbox,
 body
   .markdown-source-view.mod-cm6
   .HyperMD-task-line[data-task~="x"]

@@ -78,6 +78,7 @@ $checked-svg: 'data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox
       top: -1px;
     }
 
+    &[data-task~="-"],
     &[data-task~="x"] {
       // normalize the color to prevent double dimming effect from native app css
       color: var(--text-normal);
