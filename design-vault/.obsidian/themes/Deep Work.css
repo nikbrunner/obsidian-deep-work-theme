@@ -682,6 +682,19 @@ body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
 body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf.mod-active {
   box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.15) !important;
 }
+body.plugin-sliding-panes-rotate-header div.workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header {
+  background: var(--background-primary);
+  border-left: 3px solid var(--interactive-normal);
+  border-right: 3px solid var(--background-primary);
+}
+body.plugin-sliding-panes-rotate-header div.workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-header-title-container:after, body.plugin-sliding-panes-rotate-header div.workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-header-title-container:before {
+  display: none;
+}
+body.plugin-sliding-panes-rotate-header div.workspace > .mod-root > .workspace-leaf.mod-active > .workspace-leaf-content > .view-header {
+  border-left: 3px solid var(--interactive-accent);
+  border-right: 3px solid var(--background-primary);
+  background: var(--background-primary);
+}
 
 .workspace-leaf .kanban-plugin {
   background-color: var(--background-primary);

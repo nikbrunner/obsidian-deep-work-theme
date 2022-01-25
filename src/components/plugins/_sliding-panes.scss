@@ -1,10 +1,48 @@
 @include ui-component {
-  &.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
+  &.plugin-sliding-panes-stacking
+    .workspace
+    > .mod-root
+    > .workspace-leaf {
     transition: transition(box-shadow);
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.05) !important;
 
     &.mod-active {
       box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.15) !important;
+    }
+  }
+
+  &.plugin-sliding-panes-rotate-header {
+    $border-width-view-header: 3px;
+
+    // inactive workspace-leaf
+    div.workspace > .mod-root > .workspace-leaf {
+      > .workspace-leaf-content > .view-header {
+        background: var(--background-primary);
+
+        border-left: $border-width-view-header solid
+          var(--interactive-normal);
+        border-right: $border-width-view-header solid
+          var(--background-primary);
+
+        // hide the litle gradients in the header
+        .view-header-title-container {
+          &:after,
+          &:before {
+            display: none;
+          }
+        }
+      }
+
+      // active workspace-leaf
+      &.mod-active {
+        > .workspace-leaf-content > .view-header {
+          border-left: $border-width-view-header solid
+            var(--interactive-accent);
+          border-right: $border-width-view-header solid
+            var(--background-primary);
+          background: var(--background-primary);
+        }
+      }
     }
   }
 }
