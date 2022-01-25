@@ -861,6 +861,15 @@ body.plugin-sliding-panes-rotate-header
   > .workspace-leaf
   > .workspace-leaf-content
   > .view-header
+  .view-header-icon {
+  left: 4px;
+}
+body.plugin-sliding-panes-rotate-header
+  div.workspace
+  > .mod-root
+  > .workspace-leaf
+  > .workspace-leaf-content
+  > .view-header
   .view-header-title-container:after,
 body.plugin-sliding-panes-rotate-header
   div.workspace
@@ -877,9 +886,9 @@ body.plugin-sliding-panes-rotate-header
   > .workspace-leaf.mod-active
   > .workspace-leaf-content
   > .view-header {
+  background: var(--background-primary);
   border-left: 3px solid var(--interactive-accent);
   border-right: 3px solid var(--background-primary);
-  background: var(--background-primary);
 }
 
 .workspace-leaf .kanban-plugin {

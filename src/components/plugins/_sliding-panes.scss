@@ -24,6 +24,11 @@
         border-right: $border-width-view-header solid
           var(--background-primary);
 
+        // Correct position of icon
+        .view-header-icon {
+          left: 4px;
+        }
+
         // hide the litle gradients in the header
         .view-header-title-container {
           &:after,
@@ -36,11 +41,12 @@
       // active workspace-leaf
       &.mod-active {
         > .workspace-leaf-content > .view-header {
+          background: var(--background-primary);
+
           border-left: $border-width-view-header solid
             var(--interactive-accent);
           border-right: $border-width-view-header solid
             var(--background-primary);
-          background: var(--background-primary);
         }
       }
     }
