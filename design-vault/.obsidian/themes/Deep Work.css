@@ -114,10 +114,8 @@ body {
   word-wrap: break-word;
 }
 
-::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar {
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
+  display: none;
 }
 
 :root {
