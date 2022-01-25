@@ -1,0 +1,87 @@
+// TODO Clean and Dry up
+@include ui-component {
+  $size-tab-header: 40px;
+
+  .workspace-tabs .workspace-tab-header-container {
+    display: flex;
+    justify-content: center;
+
+    height: fit-content;
+
+    padding: {
+      top: $space-s;
+      right: 0;
+      left: 0;
+      bottom: $space-s;
+    }
+  }
+
+  .workspace-tab-container-inner {
+    min-height: $size-tab-header;
+    background-color: var(--background-secondary);
+    border: $border-width-default solid var(--interactive-normal);
+    border-radius: $border-radius-l;
+    flex-wrap: wrap;
+  }
+
+  .workspace-tab-header-inner {
+    width: $size-tab-header;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .workspace-tab-header-inner-icon {
+    display: flex;
+    align-items: center;
+  }
+
+  .workspace-tab-header {
+    border: $border-width-default solid var(--color-transparent);
+    color: var(--text-muted);
+    max-width: 45px;
+    cursor: pointer;
+
+    &.is-active {
+      background-color: var(--interactive-accent);
+      color: var(--text-on-accent);
+
+      border-radius: $border-radius-m;
+      border: $border-width-default solid
+        var(--interactive-accent-hover);
+
+      svg {
+        color: var(--text-bright);
+      }
+
+      &:hover {
+        svg {
+          color: var(--text-bright);
+        }
+      }
+    }
+
+    &:not(.is-active):hover {
+      color: var(--interactive-accent-hover);
+    }
+  }
+
+  .workspace-tab-header.is-after-active,
+  .workspace-tab-header.is-after-active
+    .workspace-tab-header-inner,
+  .workspace-tab-header.is-before-active,
+  .workspace-tab-header.is-before-active
+    .workspace-tab-header-inner {
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: $border-radius-m;
+  }
+
+  .workspace-tab-container-after,
+  .workspace-tab-container-before,
+  .workspace-tab-container-after.is-after-active,
+  .workspace-tab-container-after.is-after-active,
+  .workspace-tab-container-before.is-before-active {
+    display: none;
+  }
+}

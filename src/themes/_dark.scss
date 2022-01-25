@@ -21,13 +21,14 @@
   --text-muted: var(--color-gray-4);
   --text-muted-rgb: 153, 153, 153;
   --text-faint: var(--color-gray-4);
+  --text-bright: var(--color-gray-0);
   --text-error: var(--color-red-4);
   --text-error-hover: var(--color-red-5);
   --text-highlight-bg: rgba(0, 63, 179, 0.75);
   --text-highlight-bg-active: rgba(0, 123, 255, 0.15);
   --text-selection: rgba(23, 48, 77, 0.99);
   --text-on-accent: var(--color-gray-8);
-  --interactive-normal: var(--color-gray-7);
+  --interactive-normal: var(--color-gray-6);
   --interactive-hover: var(--color-gray-5);
   --interactive-accent: var(--color-green-4);
   --interactive-accent-rgb: 46, 160, 67;
@@ -40,4 +41,6 @@
   --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
   --cursor-bg: var(--color-green-3);
   --active-line-bg: rgba(var(--text-muted-rgb), 0.1);
+
+  --color-transparent: rgba(255, 255, 255, 0);
 }

@@ -21,6 +21,7 @@
   --text-muted: var(--color-gray-4);
   --text-muted-rgb: 153, 153, 153;
   --text-faint: var(--color-gray-4);
+  --text-bright: var(--color-gray-0);
   --text-error: var(--color-red-4);
   --text-error-hover: var(--color-red-5);
   --text-highlight-bg: rgba(0, 89, 255, 0.2);
@@ -40,4 +41,6 @@
   --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
   --cursor-bg: var(--color-blue-4);
   --active-line-bg: rgba(var(--text-muted-rgb), 0.25);
+
+  --color-transparent: rgba(255, 255, 255, 0);
 }
