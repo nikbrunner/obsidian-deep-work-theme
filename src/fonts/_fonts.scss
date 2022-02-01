@@ -7,8 +7,10 @@
 
 .markdown-source-view {
   font-family: var(--editor-font);
+  font-weight: var(--cm-font-weight, $font-weight-normal);
 }
 
 .markdown-preview-view {
   font-family: var(--default-font);
+  font-weight: var(--cm-font-weight, $font-weight-normal);
 }
