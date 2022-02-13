@@ -375,14 +375,14 @@ body .workspace-tabs .workspace-tab-header-container {
   padding-bottom: calc((1rem / 2) * 1);
 }
 body .workspace-tab-container-inner {
-  min-height: 40px;
+  min-height: 35px;
   background-color: var(--background-secondary);
   border: 2px solid var(--interactive-normal);
   border-radius: 12px;
   flex-wrap: wrap;
 }
 body .workspace-tab-header-inner {
-  width: 40px;
+  width: 35px;
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -394,8 +394,11 @@ body .workspace-tab-header-inner-icon {
 body .workspace-tab-header {
   border: 2px solid var(--color-transparent);
   color: var(--text-muted);
-  max-width: 45px;
   cursor: pointer;
+}
+body .workspace-tab-header svg {
+  width: 15px;
+  height: 15px;
 }
 body .workspace-tab-header.is-active {
   background-color: var(--interactive-accent);

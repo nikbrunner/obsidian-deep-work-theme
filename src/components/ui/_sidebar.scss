@@ -1,6 +1,7 @@
 // TODO Clean and Dry up
 @include ui-component {
-  $size-tab-header: 40px;
+  $size-tab-header: 35px;
+  $size-svg-icon: 15px;
 
   .workspace-tabs .workspace-tab-header-container {
     display: flex;
@@ -39,8 +40,12 @@
   .workspace-tab-header {
     border: $border-width-default solid var(--color-transparent);
     color: var(--text-muted);
-    max-width: 45px;
     cursor: pointer;
+
+    svg {
+      width: $size-svg-icon;
+      height: $size-svg-icon;
+    }
 
     &.is-active {
       background-color: var(--interactive-accent);
