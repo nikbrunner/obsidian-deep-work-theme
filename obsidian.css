@@ -143,12 +143,12 @@ body {
 
 .markdown-source-view {
   font-family: var(--editor-font);
-  font-weight: var(--cm-font-weight, 500);
+  font-weight: var(--cm-font-weight, 400);
 }
 
 .markdown-preview-view {
   font-family: var(--default-font);
-  font-weight: var(--cm-font-weight, 500);
+  font-weight: var(--cm-font-weight, 400);
 }
 
 body .dropdown {
