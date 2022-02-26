@@ -637,11 +637,45 @@ body .markdown-preview-view p {
 
 body .markdown-preview-view .tag:not(.token) {
   background: var(--color-topic-tag-bg);
-  color: var(--color-blue-3);
-  border-radius: 12px;
+  color: var(--text-accent-light);
   font-size: 0.75rem;
-  padding: 3px 10px 5px;
   text-decoration: none;
+  padding-top: calc((1rem / 8) * 1);
+  padding-right: calc((1rem / 2) * 1);
+  padding-bottom: calc((1rem / 4) * 1);
+  padding-left: calc((1rem / 2) * 1);
+  border-radius: 12px;
+  border: 1px solid var(--text-accent-light);
+}
+
+body .markdown-source-view.mod-cm6 .cm-hashtag-begin,
+body .markdown-source-view.mod-cm6 .cm-hashtag-end {
+  background: var(--color-topic-tag-bg);
+  color: var(--text-accent-light);
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+body .markdown-source-view.mod-cm6 .cm-hashtag-begin {
+  padding-top: calc((1rem / 8) * 1);
+  padding-right: 0;
+  padding-bottom: calc((1rem / 4) * 1);
+  padding-left: calc((1rem / 2) * 1);
+  border-radius: 12px 0 0 12px;
+  border-top: 1px solid var(--text-accent-light);
+  border-right: none;
+  border-bottom: 1px solid var(--text-accent-light);
+  border-left: 1px solid var(--text-accent-light);
+}
+body .markdown-source-view.mod-cm6 .cm-hashtag-end {
+  padding-top: calc((1rem / 8) * 1);
+  padding-right: calc((1rem / 2) * 1);
+  padding-bottom: calc((1rem / 4) * 1);
+  padding-left: 0;
+  border-radius: 0 12px 12px 0;
+  border-top: 1px solid var(--text-accent-light);
+  border-right: 1px solid var(--text-accent-light);
+  border-bottom: 1px solid var(--text-accent-light);
+  border-left: none;
 }
 
 body .markdown-preview-view ul.contains-task-list .task-list-item {
@@ -835,7 +869,8 @@ body.plugin-sliding-panes-rotate-header div.workspace > .mod-root > .workspace-l
   --background-modifier-error-hover: var(--color-red-6);
   --background-modifier-cover: rgba(0, 0, 0, 0.1);
   --text-accent: var(--color-blue-4);
-  --text-accent-hover: var(--color-blue-3);
+  --text-accent-light: var(--color-blue-3);
+  --text-accent-hover: var(--text-accent-light);
   --text-normal: var(--color-gray-1);
   --text-code: var(--color-gray-1);
   --text-muted: var(--color-gray-4);
@@ -881,7 +916,8 @@ body.plugin-sliding-panes-rotate-header div.workspace > .mod-root > .workspace-l
   --background-modifier-error-hover: var(--color-red-6);
   --background-modifier-cover: rgba(0, 0, 0, 0.1);
   --text-accent: var(--color-blue-5);
-  --text-accent-hover: var(--color-blue-4);
+  --text-accent-light: var(--color-blue-3);
+  --text-accent-hover: var(--text-accent-light);
   --text-normal: var(--color-gray-8);
   --text-code: var(--color-gray-7);
   --text-muted: var(--color-gray-4);
