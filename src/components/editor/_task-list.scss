@@ -7,8 +7,6 @@ $checked-svg: 'data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox
 @mixin checkbox-style-unchecked {
   $size: 16px;
 
-  position: relative;
-  top: 5px;
   width: $size;
   height: $size;
 
@@ -53,6 +51,10 @@ $checked-svg: 'data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox
 
       &-checkbox {
         @include checkbox-style-unchecked();
+
+        // correct the position of checkbox
+        position: relative;
+        top: 2px;
 
         &:checked {
           @include checkbox-style-checked();

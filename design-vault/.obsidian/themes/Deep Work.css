@@ -691,8 +691,6 @@ body .markdown-preview-view ul.contains-task-list .task-list-item.is-checked .ex
   filter: opacity(0.5);
 }
 body .markdown-preview-view ul.contains-task-list .task-list-item-checkbox {
-  position: relative;
-  top: 5px;
   width: 16px;
   height: 16px;
   filter: none;
@@ -705,6 +703,8 @@ body .markdown-preview-view ul.contains-task-list .task-list-item-checkbox {
   border-radius: 30%;
   border: 2px solid var(--text-muted);
   padding: 0;
+  position: relative;
+  top: 2px;
 }
 body .markdown-preview-view ul.contains-task-list .task-list-item-checkbox:checked {
   border: 2px solid var(--text-accent-hover);
@@ -720,8 +720,6 @@ body .markdown-source-view.mod-cm6 .HyperMD-task-line {
   transition: color 0.75s cubic-bezier(0.075, 0.82, 0.165, 1), filter 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 body .markdown-source-view.mod-cm6 .HyperMD-task-line .task-list-item-checkbox {
-  position: relative;
-  top: 5px;
   width: 16px;
   height: 16px;
   filter: none;
