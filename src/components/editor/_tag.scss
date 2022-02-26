@@ -1,10 +1,68 @@
+$tag-padding-top: $space-xxs;
+$tag-padding-side: $space-s;
+$tag-padding-bottom: $space-xs;
+$tag-font-color: var(--text-accent-light);
+$tag-background-color: var(--color-topic-tag-bg);
+$tag-border-style: border(1px, $tag-font-color);
+$tag-font-size: 0.75rem;
+
+@mixin shared-tag-style {
+  background: $tag-background-color;
+  color: $tag-font-color;
+  font-size: $tag-font-size;
+  text-decoration: none;
+}
+
 @include editor-preview-component {
   .tag:not(.token) {
-    background: var(--color-topic-tag-bg);
-    color: var(--color-blue-3);
+    @include shared-tag-style;
+
+    padding: {
+      top: $tag-padding-top;
+      right: $tag-padding-side;
+      bottom: $tag-padding-bottom;
+      left: $tag-padding-side;
+    }
     border-radius: $border-radius-l;
-    font-size: 0.75rem;
-    padding: 3px 10px 5px;
-    text-decoration: none;
+    border: $tag-border-style;
+  }
+}
+
+@include editor-live-preview-component {
+  .cm-hashtag-begin,
+  .cm-hashtag-end {
+    @include shared-tag-style;
+  }
+
+  .cm-hashtag-begin {
+    padding: {
+      top: $tag-padding-top;
+      right: 0;
+      bottom: $tag-padding-bottom;
+      left: $tag-padding-side;
+    }
+    border-radius: $border-radius-l 0 0 $border-radius-l;
+    border: {
+      top: $tag-border-style;
+      right: none;
+      bottom: $tag-border-style;
+      left: $tag-border-style;
+    }
+  }
+
+  .cm-hashtag-end {
+    padding: {
+      top: $tag-padding-top;
+      right: $tag-padding-side;
+      bottom: $tag-padding-bottom;
+      left: 0;
+    }
+    border-radius: 0 $border-radius-l $border-radius-l 0;
+    border: {
+      top: $tag-border-style;
+      right: $tag-border-style;
+      bottom: $tag-border-style;
+      left: none;
+    }
   }
 }

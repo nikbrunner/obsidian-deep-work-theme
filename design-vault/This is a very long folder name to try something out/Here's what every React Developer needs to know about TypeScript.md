@@ -5,7 +5,7 @@ created: 12312
 
 # Here's what every React Developer needs to know about TypeScript
 
-#typescript
+#typescript #dev/lang #app/vim/tricks 
 
 [Here's what every React Developer needs to know about TypeScript - Part 1](https://www.reddit.com/r/reactjs/comments/nn1y6x/heres_what_every_react_developer_needs_to_know/)
 

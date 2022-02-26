@@ -15,7 +15,8 @@
   --background-modifier-error-hover: var(--color-red-6);
   --background-modifier-cover: rgba(0, 0, 0, 0.1);
   --text-accent: var(--color-blue-5);
-  --text-accent-hover: var(--color-blue-4);
+  --text-accent-light: var(--color-blue-3);
+  --text-accent-hover: var(--text-accent-light);
   --text-normal: var(--color-gray-8);
   --text-code: var(--color-gray-7);
   --text-muted: var(--color-gray-4);
