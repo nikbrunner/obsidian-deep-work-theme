@@ -818,8 +818,6 @@ body
   .markdown-preview-view
   ul.contains-task-list
   .task-list-item-checkbox {
-  position: relative;
-  top: 5px;
   width: 16px;
   height: 16px;
   filter: none;
@@ -833,6 +831,8 @@ body
   border-radius: 30%;
   border: 2px solid var(--text-muted);
   padding: 0;
+  position: relative;
+  top: 2px;
 }
 body
   .markdown-preview-view
@@ -855,8 +855,6 @@ body
   .markdown-source-view.mod-cm6
   .HyperMD-task-line
   .task-list-item-checkbox {
-  position: relative;
-  top: 5px;
   width: 16px;
   height: 16px;
   filter: none;
