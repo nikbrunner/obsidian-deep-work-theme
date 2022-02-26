@@ -40,6 +40,8 @@ In fact, a buffer can have three different states:
 - [ ] A second todo
 - [x] A completed todo
 
+![[A Checklist]]
+
 The content of a file in a hidden buffer is not directly visible in Vim. At that point, you might wonder: how do we know that this buffer is still open, if we can’t see it?
 
 To see all opened buffered, we can look at the *buffer list*. You can use the command `:buffers` to display it. Each line contains:

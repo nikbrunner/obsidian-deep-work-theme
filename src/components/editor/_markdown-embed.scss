@@ -80,5 +80,10 @@
     .markdown-embed-link {
       top: $space-l;
     }
+
+    // Correct vertical position for checkboxes in embedded markdown
+    .task-list-item-checkbox {
+      top: -1px;
+    }
   }
 }

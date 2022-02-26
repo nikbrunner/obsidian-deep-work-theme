@@ -739,6 +739,12 @@ body
   .markdown-embed-link {
   top: calc((1rem * 2) * 1);
 }
+body
+  .markdown-source-view.mod-cm6
+  .markdown-embed
+  .task-list-item-checkbox {
+  top: -1px;
+}
 
 body .markdown-preview-view p {
   line-height: 1.5;
