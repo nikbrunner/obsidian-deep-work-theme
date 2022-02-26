@@ -1,5 +1,22 @@
 @include ui-component {
   button {
     border-radius: $border-radius-m;
+    box-shadow: $box-shadow-button;
+    border: border(
+      $border-width-default,
+      var(--background-primary-alt)
+    );
+    text-shadow: 0 1px 1px var(--text-faint);
+
+    &.mod-cta {
+      border: border(
+        $border-width-default,
+        var(--interactive-accent-hover)
+      );
+    }
+
+    &.mod-warning {
+      border: border($border-width-default, var(--color-red-5));
+    }
   }
 }

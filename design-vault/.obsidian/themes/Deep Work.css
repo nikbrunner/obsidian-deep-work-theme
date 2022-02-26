@@ -275,6 +275,15 @@ body .frontmatter code[class*=language-] {
 
 body button {
   border-radius: 10px;
+  box-shadow: 0px 2px 4px 0px rgba(100, 100, 100, 0.3);
+  border: 2px solid var(--background-primary-alt);
+  text-shadow: 0 1px 1px var(--text-faint);
+}
+body button.mod-cta {
+  border: 2px solid var(--interactive-accent-hover);
+}
+body button.mod-warning {
+  border: 2px solid var(--color-red-5);
 }
 
 body input[type=text],
