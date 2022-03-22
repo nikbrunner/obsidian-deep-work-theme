@@ -1,6 +1,7 @@
-$tag-padding-top: $space-xxs;
-$tag-padding-side: $space-s;
-$tag-padding-bottom: $space-xs;
+$tag-padding-top: 2px;
+$tag-padding-side: 5px;
+$tag-padding-bottom: 2px;
+$tag-border-radius: $border-radius-tag;
 $tag-font-color: var(--text-accent-light);
 $tag-background-color: var(--color-topic-tag-bg);
 $tag-border-style: border(1px, $tag-font-color);
@@ -11,6 +12,7 @@ $tag-font-size: 0.75rem;
   color: $tag-font-color;
   font-size: $tag-font-size;
   text-decoration: none;
+  font-family: var(--editor-font);
 }
 
 @include editor-preview-component {
@@ -23,7 +25,7 @@ $tag-font-size: 0.75rem;
       bottom: $tag-padding-bottom;
       left: $tag-padding-side;
     }
-    border-radius: $border-radius-l;
+    border-radius: $tag-border-radius;
     border: $tag-border-style;
   }
 }
@@ -41,7 +43,7 @@ $tag-font-size: 0.75rem;
       bottom: $tag-padding-bottom;
       left: $tag-padding-side;
     }
-    border-radius: $border-radius-l 0 0 $border-radius-l;
+    border-radius: $tag-border-radius 0 0 $tag-border-radius;
     border: {
       top: $tag-border-style;
       right: none;
@@ -57,7 +59,7 @@ $tag-font-size: 0.75rem;
       bottom: $tag-padding-bottom;
       left: 0;
     }
-    border-radius: 0 $border-radius-l $border-radius-l 0;
+    border-radius: 0 $tag-border-radius $tag-border-radius 0;
     border: {
       top: $tag-border-style;
       right: $tag-border-style;

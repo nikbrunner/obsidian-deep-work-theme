@@ -652,11 +652,12 @@ body .markdown-preview-view .tag:not(.token) {
   color: var(--text-accent-light);
   font-size: 0.75rem;
   text-decoration: none;
-  padding-top: calc((1rem / 8) * 1);
-  padding-right: calc((1rem / 2) * 1);
-  padding-bottom: calc((1rem / 4) * 1);
-  padding-left: calc((1rem / 2) * 1);
-  border-radius: 12px;
+  font-family: var(--editor-font);
+  padding-top: 2px;
+  padding-right: 10px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  border-radius: 8px;
   border: 1px solid var(--text-accent-light);
 }
 
@@ -666,24 +667,25 @@ body .markdown-source-view.mod-cm6 .cm-hashtag-end {
   color: var(--text-accent-light);
   font-size: 0.75rem;
   text-decoration: none;
+  font-family: var(--editor-font);
 }
 body .markdown-source-view.mod-cm6 .cm-hashtag-begin {
-  padding-top: calc((1rem / 8) * 1);
+  padding-top: 2px;
   padding-right: 0;
-  padding-bottom: calc((1rem / 4) * 1);
-  padding-left: calc((1rem / 2) * 1);
-  border-radius: 12px 0 0 12px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  border-radius: 8px 0 0 8px;
   border-top: 1px solid var(--text-accent-light);
   border-right: none;
   border-bottom: 1px solid var(--text-accent-light);
   border-left: 1px solid var(--text-accent-light);
 }
 body .markdown-source-view.mod-cm6 .cm-hashtag-end {
-  padding-top: calc((1rem / 8) * 1);
-  padding-right: calc((1rem / 2) * 1);
-  padding-bottom: calc((1rem / 4) * 1);
+  padding-top: 2px;
+  padding-right: 10px;
+  padding-bottom: 2px;
   padding-left: 0;
-  border-radius: 0 12px 12px 0;
+  border-radius: 0 8px 8px 0;
   border-top: 1px solid var(--text-accent-light);
   border-right: 1px solid var(--text-accent-light);
   border-bottom: 1px solid var(--text-accent-light);

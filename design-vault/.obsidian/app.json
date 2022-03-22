@@ -5,6 +5,6 @@
   "emacsyKeys": false,
   "foldIndent": true,
   "foldHeading": true,
-  "legacyEditor": true,
+  "legacyEditor": false,
   "showLineNumber": false
 }

@@ -1,6 +1,7 @@
 # A Vim Guide for Intermediate Users
 
-#app/vim/tricks #app/vim/article
+#app/vim/tricks 
+#app/vim/article
 
 > You know already the basics of Vim and you want to get better? This article explains more advanced Vim concepts.
 
@@ -20,6 +21,8 @@ Specifically, we’ll see together:
 The amount of information in this article can feel overwhelming. My advice: take your time and don’t try to swallow everything at once. Experiment with Vim as you read along, try to understand how it works, and you’ll have a powerful tool you can control entirely with your keyboard.
 
 You’ll see at the end of each sections some related Vim’s help commands. You can read these help sections directly in Vim when you’re ready to dive deeper.
+
+## A header with a tag: #dev/lang/typescript 
 
 ## Vim’s Spatial Organization
 
