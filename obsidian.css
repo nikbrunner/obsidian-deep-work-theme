@@ -129,10 +129,6 @@ body {
   word-wrap: break-word;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 :root {
   --default-font: -apple-system, BlinkMacSystemFont, Segoe UI,
     Helvetica, Arial, sans-serif, Apple Color Emoji,
