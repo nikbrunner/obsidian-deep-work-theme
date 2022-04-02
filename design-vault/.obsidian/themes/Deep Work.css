@@ -650,9 +650,9 @@ body .markdown-preview-view .tag:not(.token) {
   text-decoration: none;
   font-family: var(--editor-font);
   padding-top: 2px;
-  padding-right: 10px;
+  padding-right: 5px;
   padding-bottom: 2px;
-  padding-left: 10px;
+  padding-left: 5px;
   border-radius: 8px;
   border: 1px solid var(--text-accent-light);
 }
@@ -669,7 +669,7 @@ body .markdown-source-view.mod-cm6 .cm-hashtag-begin {
   padding-top: 2px;
   padding-right: 0;
   padding-bottom: 2px;
-  padding-left: 10px;
+  padding-left: 5px;
   border-radius: 8px 0 0 8px;
   border-top: 1px solid var(--text-accent-light);
   border-right: none;
@@ -678,7 +678,7 @@ body .markdown-source-view.mod-cm6 .cm-hashtag-begin {
 }
 body .markdown-source-view.mod-cm6 .cm-hashtag-end {
   padding-top: 2px;
-  padding-right: 10px;
+  padding-right: 5px;
   padding-bottom: 2px;
   padding-left: 0;
   border-radius: 0 8px 8px 0;
