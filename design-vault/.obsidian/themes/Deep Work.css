@@ -273,6 +273,7 @@ body .frontmatter code[class*=language-] {
 body button {
   border-radius: 6px;
   border: 1px solid var(--color-border);
+  font-weight: 600;
 }
 
 body input[type=text],
