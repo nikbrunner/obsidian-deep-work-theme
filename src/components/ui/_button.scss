@@ -1,7 +1,6 @@
 @include ui-component {
   button {
     border-radius: $border-radius-m;
-    box-shadow: $box-shadow-button;
     border: border(
       $border-width-default,
       var(--background-primary-alt)
