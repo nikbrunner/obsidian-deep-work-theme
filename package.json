@@ -4,7 +4,7 @@
   "description": "A theme for Obsidian inspired by the modern GitHub colors",
   "main": "src/Deep Work.scss",
   "scripts": {
-    "format:dev": "prettier --config .prettierrc --write \"{src}/**/*.{css,scss}\"",
+    "format:dev": "prettier --config .prettierrc --write \"src/**/*.{css,scss}\"",
     "format:build": "prettier --config .prettierrc --write obsidian.css",
     "dev": "sass --watch --no-source-map src/Deep\\ Work.scss design-vault/.obsidian/themes/Deep\\ Work.css",
     "build": "sass --no-source-map src/Deep\\ Work.scss obsidian.css && npm run format:build"
