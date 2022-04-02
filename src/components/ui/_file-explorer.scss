@@ -10,19 +10,26 @@
         @include wrap-title-and-folder-names();
 
         border-left: border($border-width, transparent);
-        transition: transition(background-color), transition(border-left),
+        transition: transition(background-color),
+          transition(border-left),
           transition(color, $transition-speed-slow);
         margin-bottom: 0.25rem;
 
         &:hover {
-          border-left: border($border-width, var(--interactive-hover));
+          border-left: border(
+            $border-width,
+            var(--interactive-hover)
+          );
         }
       }
 
       .nav-file {
         &-title {
           &.is-active {
-            border-left: border($border-width, var(--interactive-accent));
+            border-left: border(
+              $border-width,
+              var(--interactive-accent)
+            );
           }
         }
       }
