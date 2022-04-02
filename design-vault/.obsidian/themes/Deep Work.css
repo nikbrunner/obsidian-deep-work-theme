@@ -884,7 +884,7 @@ body.plugin-sliding-panes-rotate-header div.workspace > .mod-root > .workspace-l
   --text-highlight-bg: rgba(0, 63, 179, 0.75);
   --text-highlight-bg-active: rgba(0, 123, 255, 0.15);
   --text-selection: rgba(23, 48, 77, 0.99);
-  --text-on-accent: var(--color-gray-8);
+  --text-on-accent: var(--color-white);
   --interactive-normal: var(--color-gray-6);
   --interactive-hover: var(--color-gray-5);
   --interactive-accent: var(--color-green-4);
