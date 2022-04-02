@@ -1,0 +1,44 @@
+/* @settings
+
+name: Deep Work Theme Settings
+id: deep-work-theme-settings
+settings:
+    -
+        id: deep-work-theme-colors
+        title: 🎨 Colors
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: color-accent
+        title: Accent Color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#1f6feb'
+        default-dark: '#2ea043'
+    -
+        id: color-accent-light
+        title:  Accent Color Light
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#58a6ff'
+        default-dark: '#3fb950'
+    -
+        id: color-accent-secondary
+        title: Secondary Accent Color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#1f6feb'
+        default-dark: '#2ea043'
+    -
+        id: color-accent-secondary-light
+        title: Secondary Accent Color Light
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#58a6ff'
+        default-dark: '#3fb950'
+*/
