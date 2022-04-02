@@ -41,4 +41,30 @@ settings:
         opacity: false
         default-light: '#58a6ff'
         default-dark: '#3fb950'
+    -
+        id: deep-work-theme-variant
+        title: ⚡️ Theme Style
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: deep-work-theme-light-variant
+        title: Light Theme variant
+        description: Variations of the Light Theme
+        type: class-select
+        allowEmpty: false
+        default: light-default
+        options:
+            - light-default
+            - light-dimmed
+    -
+        id: deep-work-theme-dark-variant
+        title: Dark Theme variant
+        description: Variations of the Dark Theme
+        type: class-select
+        allowEmpty: false
+        default: dark-default
+        options:
+            - dark-default
+            - dark-dimmed
 */

@@ -1,7 +1,7 @@
 // Semantic Runtime Color Vars
 // Naming: color-<*block>-<modifier>
 
-.theme-dark.dark-default {
+.theme-dark.dark-dimmed {
   --color-accent: var(--color-green-4);
   --color-accent-light: var(--color-green-3);
   --color-accent-secondary: var(--color-blue-4);
@@ -20,10 +20,10 @@
   --color-border: rgba(255, 255, 255, 0.2);
 
   // background
-  --background-primary: var(--color-gray-9);
-  --background-primary-alt: var(--color-gray-8);
+  --background-primary: var(--color-gray-7);
+  --background-primary-alt: var(--color-gray-6);
   --background-secondary: var(--color-gray-8);
-  --background-secondary-alt: var(--color-gray-7);
+  --background-secondary-alt: var(--color-gray-8);
   --background-modifier-border: var(--color-gray-7);
   --background-modifier-form-field: var(--color-gray-8);
   --background-modifier-form-field-highlighted: var(
@@ -51,7 +51,9 @@
   --text-highlight-bg: rgba(0, 63, 179, 0.75);
   --text-highlight-bg-active: rgba(0, 123, 255, 0.15);
   --text-selection: rgba(23, 48, 77, 0.99);
-  --text-on-accent: var(--color-white);
+  --text-on-accent: var(--color-gray-8);
+
+  // interactive
   --interactive-normal: var(--color-gray-6);
   --interactive-hover: var(--color-gray-5);
   --interactive-accent: var(--color-interactive-accent);
