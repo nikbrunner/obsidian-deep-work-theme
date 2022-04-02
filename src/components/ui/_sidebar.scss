@@ -21,7 +21,7 @@
     min-height: $size-tab-header;
     background-color: var(--background-secondary);
     border: $border-width-default solid var(--interactive-normal);
-    border-radius: $border-radius-l;
+    border-radius: $border-radius-default;
     flex-wrap: wrap;
   }
 
@@ -51,7 +51,7 @@
       background-color: var(--interactive-accent);
       color: var(--text-on-accent);
 
-      border-radius: $border-radius-m;
+      border-radius: $border-radius-default;
       border: $border-width-default solid
         var(--interactive-accent-hover);
 

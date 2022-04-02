@@ -150,7 +150,7 @@ body {
 body .dropdown {
   border-width: 2px;
   border-color: var(--background-modifier-border);
-  border-radius: 12px;
+  border-radius: 6px;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOTIuNCIgaGVpZ2h0PSIyOTIuNCI+PHBhdGggZmlsbD0iIzAwMCIgZD0iTTI4NyA2OS40YTE3LjYgMTcuNiAwIDAgMC0xMy01LjRIMTguNGMtNSAwLTkuMyAxLjgtMTIuOSA1LjRBMTcuNiAxNy42IDAgMCAwIDAgODIuMmMwIDUgMS44IDkuMyA1LjQgMTIuOWwxMjggMTI3LjljMy42IDMuNiA3LjggNS40IDEyLjggNS40czkuMi0xLjggMTIuOC01LjRMMjg3IDk1YzMuNS0zLjUgNS40LTcuOCA1LjQtMTIuOCAwLTUtMS45LTkuMi01LjUtMTIuOHoiLz48L3N2Zz4=);
   cursor: pointer;
 }
@@ -309,15 +309,8 @@ body .frontmatter code[class*="language-"] {
 }
 
 body button {
-  border-radius: 10px;
-  border: 2px solid var(--background-primary-alt);
-  text-shadow: 0 1px 1px var(--text-faint);
-}
-body button.mod-cta {
-  border: 2px solid var(--interactive-accent-hover);
-}
-body button.mod-warning {
-  border: 2px solid var(--color-red-5);
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
 }
 
 body input[type="text"],
@@ -382,7 +375,7 @@ body .workspace-tab-container-inner {
   min-height: 35px;
   background-color: var(--background-secondary);
   border: 2px solid var(--interactive-normal);
-  border-radius: 12px;
+  border-radius: 6px;
   flex-wrap: wrap;
 }
 body .workspace-tab-header-inner {
@@ -407,7 +400,7 @@ body .workspace-tab-header svg {
 body .workspace-tab-header.is-active {
   background-color: var(--interactive-accent);
   color: var(--text-on-accent);
-  border-radius: 10px;
+  border-radius: 6px;
   border: 2px solid var(--interactive-accent-hover);
 }
 body .workspace-tab-header.is-active svg {
@@ -1120,6 +1113,7 @@ body.plugin-sliding-panes-rotate-header
   --cursor-bg: var(--color-green-3);
   --active-line-bg: rgba(var(--text-muted-rgb), 0.1);
   --color-transparent: rgba(255, 255, 255, 0);
+  --border-color: rgba(255, 255, 255, 0.2);
 }
 
 .theme-light {
@@ -1167,4 +1161,5 @@ body.plugin-sliding-panes-rotate-header
   --cursor-bg: var(--color-blue-4);
   --active-line-bg: rgba(var(--text-muted-rgb), 0.25);
   --color-transparent: rgba(255, 255, 255, 0);
+  --border-color: rgba(0, 0, 0, 0.2);
 }
