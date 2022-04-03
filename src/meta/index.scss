@@ -1,11 +1,11 @@
 /* @settings
-
 name: Deep Work Theme Settings
+
 id: deep-work-theme-settings
 settings:
     -
         id: deep-work-theme-colors
-        title: 🎨 Colors
+        title: Colors
         type: heading
         level: 2
         collapsed: true
@@ -43,7 +43,7 @@ settings:
         default-dark: '#3fb950'
     -
         id: deep-work-theme-variant
-        title: ⚡️ Theme Style
+        title: Theme Style
         type: heading
         level: 2
         collapsed: true
@@ -67,4 +67,20 @@ settings:
         options:
             - dark-default
             - dark-dimmed
+    -
+        id: deep-work-theme-interface
+        title: Interface Modifications
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: deep-work-theme-interface-hide
+        title: Hide Interface Elements
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: dwt-hide-scrollbars
+        title: Hide Scrollbars
+        type: class-toggle
 */

@@ -1,4 +1,10 @@
 body {
   line-height: $line-height-default;
   word-wrap: break-word;
+
+  &.dwt-hide-scrollbars {
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
