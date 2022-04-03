@@ -1,12 +1,37 @@
-@charset "UTF-8";
 /* @settings
-
 name: Deep Work Theme Settings
+
 id: deep-work-theme-settings
 settings:
     -
+        id: deep-work-theme-variant
+        title: Theme Style
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: deep-work-theme-light-variant
+        title: Light Theme variant
+        description: Variations of the Light Theme
+        type: class-select
+        allowEmpty: false
+        default: light-default
+        options:
+            - light-default
+            - light-dimmed
+    -
+        id: deep-work-theme-dark-variant
+        title: Dark Theme variant
+        description: Variations of the Dark Theme
+        type: class-select
+        allowEmpty: false
+        default: dark-default
+        options:
+            - dark-default
+            - dark-dimmed
+    -
         id: deep-work-theme-colors
-        title: 🎨 Colors
+        title: Colors
         type: heading
         level: 2
         collapsed: true
@@ -43,31 +68,15 @@ settings:
         default-light: '#58a6ff'
         default-dark: '#3fb950'
     -
-        id: deep-work-theme-variant
-        title: ⚡️ Theme Style
+        id: deep-work-theme-interface
+        title: Interface Modifications
         type: heading
         level: 2
         collapsed: true
     -
-        id: deep-work-theme-light-variant
-        title: Light Theme variant
-        description: Variations of the Light Theme
-        type: class-select
-        allowEmpty: false
-        default: light-default
-        options:
-            - light-default
-            - light-dimmed
-    -
-        id: deep-work-theme-dark-variant
-        title: Dark Theme variant
-        description: Variations of the Dark Theme
-        type: class-select
-        allowEmpty: false
-        default: dark-default
-        options:
-            - dark-default
-            - dark-dimmed
+        id: dwt-hide-scrollbars
+        title: Hide Scrollbars
+        type: class-toggle
 */
 :root {
   --border-radius: 8px;
@@ -190,6 +199,9 @@ body {
   line-height: 1.5;
   word-wrap: break-word;
 }
+body.dwt-hide-scrollbars ::-webkit-scrollbar {
+  display: none;
+}
 
 :root {
   --default-font: -apple-system, BlinkMacSystemFont, Segoe UI,
@@ -213,6 +225,7 @@ body .dropdown {
   border-width: 2px;
   border-color: var(--background-modifier-border);
   border-radius: 6px;
+  background-color: var(--background-primary);
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOTIuNCIgaGVpZ2h0PSIyOTIuNCI+PHBhdGggZmlsbD0iIzAwMCIgZD0iTTI4NyA2OS40YTE3LjYgMTcuNiAwIDAgMC0xMy01LjRIMTguNGMtNSAwLTkuMyAxLjgtMTIuOSA1LjRBMTcuNiAxNy42IDAgMCAwIDAgODIuMmMwIDUgMS44IDkuMyA1LjQgMTIuOWwxMjggMTI3LjljMy42IDMuNiA3LjggNS40IDEyLjggNS40czkuMi0xLjggMTIuOC01LjRMMjg3IDk1YzMuNS0zLjUgNS40LTcuOCA1LjQtMTIuOCAwLTUtMS45LTkuMi01LjUtMTIuOHoiLz48L3N2Zz4=);
   cursor: pointer;
 }
@@ -233,6 +246,7 @@ body [data-type=file-explorer] .nav-files-container .nav-file-title:hover {
   border-left: 5px solid var(--interactive-hover);
 }
 body [data-type=file-explorer] .nav-files-container .nav-file-title.is-active {
+  background-color: var(--background-primary);
   border-left: 5px solid var(--interactive-accent);
 }
 
@@ -248,7 +262,7 @@ body .titlebar {
   height: 27px !important;
 }
 body .titlebar-inner {
-  background: var(--background-secondary-alt);
+  background: var(--background-primary-alt);
   color: var(--text-normal);
 }
 body .titlebar-text {
@@ -261,6 +275,18 @@ body .titlebar-button {
   opacity: 1;
 }
 
+body .workspace-split.mod-horizontal.mod-right-split {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+body .workspace-ribbon {
+  background-color: var(--background-primary-alt);
+}
+body .workspace-ribbon.is-collapsed {
+  background-color: var(--background-primary-alt);
+}
+body .workspace-leaf {
+  background-color: var(--background-primary);
+}
 body .workspace-leaf .view-header {
   transition: border-bottom 1s cubic-bezier(0.075, 0.82, 0.165, 1), background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -275,6 +301,7 @@ body .workspace-leaf.mod-active .view-header-title-container::before, body .work
 }
 
 body .modal {
+  background: var(--background-primary);
   border-radius: 18px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
@@ -354,7 +381,7 @@ body input[type=email],
 body input[type=password],
 body input[type=number] {
   border-width: 2px;
-  border-radius: 12px;
+  border-radius: 6px;
   padding: calc(1rem * 1) calc((1rem * 2) * 1) calc(1rem * 1) calc(1rem * 1);
 }
 
@@ -372,7 +399,7 @@ body .status-bar {
   max-height: none;
   height: 27px;
   width: 100%;
-  background-color: var(--background-primary);
+  background-color: var(--background-primary-alt);
   color: var(--text-muted);
   font-size: 14px;
   font-family: var(--editor-font);
@@ -394,74 +421,94 @@ body .status-bar-item svg, body .status-bar-item-segment svg {
   display: block;
 }
 
+body .workspace-tabs {
+  background-color: var(--background-primary-alt);
+}
+body .workspace-tabs .workspace-leaf {
+  background: var(--background-primary-alt);
+}
 body .workspace-tabs .workspace-tab-header-container {
   display: flex;
   justify-content: center;
   height: fit-content;
+  background-color: var(--background-primary-alt);
   padding-top: calc((1rem / 2) * 1);
   padding-right: 0;
   padding-left: 0;
   padding-bottom: calc((1rem / 2) * 1);
 }
-body .workspace-tab-container-inner {
+body .workspace-tabs .workspace-tab-header-container .workspace-tab-container-inner {
   min-height: 35px;
-  background-color: var(--background-secondary);
+  background-color: var(--background-primary-alt);
   border: 2px solid var(--interactive-normal);
   border-radius: 6px;
   flex-wrap: wrap;
 }
-body .workspace-tab-header-inner {
-  width: 35px;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-}
-body .workspace-tab-header-inner-icon {
-  display: flex;
-  align-items: center;
-}
-body .workspace-tab-header {
+body .workspace-tabs .workspace-tab-header-container .workspace-tab-container-inner .workspace-tab-header {
   border: 2px solid var(--color-transparent);
   color: var(--text-muted);
   cursor: pointer;
 }
-body .workspace-tab-header svg {
+body .workspace-tabs .workspace-tab-header-container .workspace-tab-container-inner .workspace-tab-header svg {
   width: 15px;
   height: 15px;
 }
-body .workspace-tab-header.is-active {
+body .workspace-tabs .workspace-tab-header-container .workspace-tab-container-inner .workspace-tab-header.is-active {
   background-color: var(--interactive-accent);
   color: var(--text-on-accent);
   border-radius: 6px;
   border: 2px solid var(--interactive-accent-hover);
 }
-body .workspace-tab-header.is-active svg {
+body .workspace-tabs .workspace-tab-header-container .workspace-tab-container-inner .workspace-tab-header.is-active svg {
   color: var(--text-bright);
 }
-body .workspace-tab-header.is-active:hover svg {
+body .workspace-tabs .workspace-tab-header-container .workspace-tab-container-inner .workspace-tab-header.is-active:hover svg {
   color: var(--text-bright);
 }
-body .workspace-tab-header:not(.is-active):hover {
+body .workspace-tabs .workspace-tab-header-container .workspace-tab-container-inner .workspace-tab-header:not(.is-active):hover {
   color: var(--interactive-accent-hover);
 }
-body .workspace-tab-header.is-after-active,
-body .workspace-tab-header.is-after-active .workspace-tab-header-inner,
-body .workspace-tab-header.is-before-active,
-body .workspace-tab-header.is-before-active .workspace-tab-header-inner {
+body .workspace-tabs .workspace-tab-header-container .workspace-tab-container-inner .workspace-tab-header .workspace-tab-header-inner {
+  width: 35px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+body .workspace-tabs .workspace-tab-header-container .workspace-tab-container-inner .workspace-tab-header .workspace-tab-header-inner .workspace-tab-header-inner-icon {
+  display: flex;
+  align-items: center;
+}
+body .workspace-tabs .workspace-tab-header.is-after-active,
+body .workspace-tabs .workspace-tab-header.is-after-active .workspace-tab-header-inner,
+body .workspace-tabs .workspace-tab-header.is-before-active,
+body .workspace-tabs .workspace-tab-header.is-before-active .workspace-tab-header-inner {
   background-color: transparent;
   box-shadow: none;
   border-radius: 10px;
 }
-body .workspace-tab-container-after,
-body .workspace-tab-container-before,
-body .workspace-tab-container-after.is-after-active,
-body .workspace-tab-container-after.is-after-active,
-body .workspace-tab-container-before.is-before-active {
+body .workspace-tabs .workspace-tab-container-after,
+body .workspace-tabs .workspace-tab-container-before,
+body .workspace-tabs .workspace-tab-container-after.is-after-active,
+body .workspace-tabs .workspace-tab-container-after.is-after-active,
+body .workspace-tabs .workspace-tab-container-before.is-before-active {
   display: none;
 }
 
+/* Appears in:
+ * - Modal Settings
+ */
+body .vertical-tab-header {
+  background-color: var(--background-primary-alt);
+}
+body .vertical-tab-header-group-items .vertical-tab-nav-item {
+  background-color: var(--background-primary-alt);
+}
+body .vertical-tab-content-container .vertical-tab-content {
+  background-color: var(--background-primary);
+}
+
 body .workspace-leaf-resize-handle {
-  background-color: var(--color-transparent);
+  background-color: var(--background-secondary);
 }
 
 body .markdown-source-view .CodeMirror .CodeMirror-activeline {
@@ -860,7 +907,7 @@ body .markdown-preview-view .button-default.purple {
 
 body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
   transition: box-shadow 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
 }
 body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf.mod-active {
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25) !important;
@@ -927,6 +974,10 @@ body.plugin-sliding-panes-rotate-header div.workspace > .mod-root > .workspace-l
 }
 
 .theme-dark.dark-default {
+  /*
+   * Deep Work Theme Custom Semantic Colors;
+   * Naming: color-<block>-<modifier?>
+   */
   --color-accent: var(--color-green-4);
   --color-accent-light: var(--color-green-3);
   --color-accent-secondary: var(--color-blue-4);
@@ -938,10 +989,17 @@ body.plugin-sliding-panes-rotate-header div.workspace > .mod-root > .workspace-l
   --color-text-accent: var(--color-accent-secondary);
   --color-text-accent-light: var(--color-accent-secondary-light);
   --color-interactive-accent: var(--color-accent);
+  --color-interactive-accent: var(--color-accent);
   --color-interactive-accent-light: var(--color-accent-light);
   --color-border: rgba(255, 255, 255, 0.2);
+  /*
+   * Obsidian Native Variables
+   * These are greatly unchanged from the default theme,
+   * and are fed with the other variables above
+   * Naming: color-<modifier>-<modifier?>-<block?>
+   */
   --background-primary: var(--color-gray-9);
-  --background-primary-alt: var(--color-gray-8);
+  --background-primary-alt: var(--color-black);
   --background-secondary: var(--color-gray-8);
   --background-secondary-alt: var(--color-gray-7);
   --background-modifier-border: var(--color-gray-7);
@@ -970,7 +1028,7 @@ body.plugin-sliding-panes-rotate-header div.workspace > .mod-root > .workspace-l
   --text-highlight-bg-active: rgba(0, 123, 255, 0.15);
   --text-selection: rgba(23, 48, 77, 0.99);
   --text-on-accent: var(--color-white);
-  --interactive-normal: var(--color-gray-6);
+  --interactive-normal: var(--color-gray-7);
   --interactive-hover: var(--color-gray-5);
   --interactive-accent: var(--color-interactive-accent);
   --interactive-accent-rgb: 46, 160, 67;
@@ -1002,13 +1060,13 @@ body.plugin-sliding-panes-rotate-header div.workspace > .mod-root > .workspace-l
   --color-interactive-accent-light: var(--color-accent-light);
   --color-border: rgba(255, 255, 255, 0.2);
   --background-primary: var(--color-gray-7);
-  --background-primary-alt: var(--color-gray-6);
-  --background-secondary: var(--color-gray-8);
-  --background-secondary-alt: var(--color-gray-8);
-  --background-modifier-border: var(--color-gray-7);
-  --background-modifier-form-field: var(--color-gray-8);
+  --background-primary-alt: var(--color-gray-8);
+  --background-secondary: var(--color-gray-6);
+  --background-secondary-alt: var(--color-gray-5);
+  --background-modifier-border: var(--color-gray-6);
+  --background-modifier-form-field: var(--background-secondary);
   --background-modifier-form-field-highlighted: var(
-    --color-gray-8
+    --color-background-secondary-alt
   );
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-success: var(--color-success);

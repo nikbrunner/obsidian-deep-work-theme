@@ -1,5 +1,6 @@
 @include ui-component {
   .modal {
+    background: var(--background-primary);
     border-radius: $border-radius-xl;
     box-shadow: $box-shadow-modal;
 

@@ -1,7 +1,9 @@
-// Semantic Runtime Color Vars
-// Naming: color-<*block>-<modifier>
-
 .theme-dark.dark-default {
+  // Naming: color-<*block>-<modifier>
+  /*
+   * Deep Work Theme Custom Semantic Colors;
+   * Naming: color-<block>-<modifier?>
+   */
   --color-accent: var(--color-green-4);
   --color-accent-light: var(--color-green-3);
   --color-accent-secondary: var(--color-blue-4);
@@ -12,18 +14,29 @@
   --color-error: var(--color-red-4);
   --color-error-light: var(--color-red-3);
 
+  // TODO Resolve these ?
+  // TODO Rename: color-foreground-<modifier?>
   --color-text-accent: var(--color-accent-secondary);
   --color-text-accent-light: var(--color-accent-secondary-light);
+  --color-interactive-accent: var(--color-accent);
   --color-interactive-accent: var(--color-accent);
   --color-interactive-accent-light: var(--color-accent-light);
 
   --color-border: rgba(255, 255, 255, 0.2);
 
+  /*
+   * Obsidian Native Variables
+   * These are greatly unchanged from the default theme,
+   * and are fed with the other variables above
+   * Naming: color-<modifier>-<modifier?>-<block?>
+   */
+
   // background
   --background-primary: var(--color-gray-9);
-  --background-primary-alt: var(--color-gray-8);
+  --background-primary-alt: var(--color-black);
   --background-secondary: var(--color-gray-8);
   --background-secondary-alt: var(--color-gray-7);
+
   --background-modifier-border: var(--color-gray-7);
   --background-modifier-form-field: var(--color-gray-8);
   --background-modifier-form-field-highlighted: var(
@@ -52,7 +65,7 @@
   --text-highlight-bg-active: rgba(0, 123, 255, 0.15);
   --text-selection: rgba(23, 48, 77, 0.99);
   --text-on-accent: var(--color-white);
-  --interactive-normal: var(--color-gray-6);
+  --interactive-normal: var(--color-gray-7);
   --interactive-hover: var(--color-gray-5);
   --interactive-accent: var(--color-interactive-accent);
   --interactive-accent-rgb: 46, 160, 67;
@@ -65,6 +78,8 @@
   --scrollbar-active-thumb-bg: var(--color-text-accent);
   --scrollbar-bg: var(--background-primary);
   --scrollbar-thumb-bg: var(--background-primary-alt);
+
+  // Misc
   --highlight-mix-blend-mode: screen;
   --color-topic-tag-bg: rgba(56, 139, 253, 0.1);
   --cursor-bg: var(--color-accent-light);

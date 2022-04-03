@@ -1,6 +1,24 @@
 @include ui-component {
   .workspace {
+    &-split {
+      &.mod-horizontal {
+        &.mod-right-split {
+          box-shadow: $box-shadow-leaf;
+        }
+      }
+    }
+
+    &-ribbon {
+      background-color: var(--background-primary-alt);
+
+      &.is-collapsed {
+        background-color: var(--background-primary-alt);
+      }
+    }
+
     &-leaf {
+      background-color: var(--background-primary);
+
       .view-header {
         transition: transition(
             border-bottom,

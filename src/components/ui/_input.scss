@@ -5,7 +5,7 @@
   input[type="password"],
   input[type="number"] {
     border-width: $border-width-default;
-    border-radius: $border-radius-l;
+    border-radius: $border-radius-default;
     padding: $space $space-l $space $space;
   }
 }

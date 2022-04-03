@@ -1,0 +1,31 @@
+/* Appears in:
+ * - Modal Settings
+ */
+
+@include ui-component {
+  .vertical-tabs-container {
+  }
+
+  // Sidebar Area
+  .vertical-tab-header {
+    background-color: var(--background-primary-alt);
+  }
+
+  .vertical-tab-header-group {
+    &-title {
+    }
+
+    &-items {
+      .vertical-tab-nav-item {
+        background-color: var(--background-primary-alt);
+      }
+    }
+  }
+
+  // Content Area
+  .vertical-tab-content-container {
+    .vertical-tab-content {
+      background-color: var(--background-primary);
+    }
+  }
+}

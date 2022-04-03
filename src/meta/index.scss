@@ -4,6 +4,32 @@ name: Deep Work Theme Settings
 id: deep-work-theme-settings
 settings:
     -
+        id: deep-work-theme-variant
+        title: Theme Style
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: deep-work-theme-light-variant
+        title: Light Theme variant
+        description: Variations of the Light Theme
+        type: class-select
+        allowEmpty: false
+        default: light-default
+        options:
+            - light-default
+            - light-dimmed
+    -
+        id: deep-work-theme-dark-variant
+        title: Dark Theme variant
+        description: Variations of the Dark Theme
+        type: class-select
+        allowEmpty: false
+        default: dark-default
+        options:
+            - dark-default
+            - dark-dimmed
+    -
         id: deep-work-theme-colors
         title: Colors
         type: heading
@@ -42,42 +68,10 @@ settings:
         default-light: '#58a6ff'
         default-dark: '#3fb950'
     -
-        id: deep-work-theme-variant
-        title: Theme Style
-        type: heading
-        level: 2
-        collapsed: true
-    -
-        id: deep-work-theme-light-variant
-        title: Light Theme variant
-        description: Variations of the Light Theme
-        type: class-select
-        allowEmpty: false
-        default: light-default
-        options:
-            - light-default
-            - light-dimmed
-    -
-        id: deep-work-theme-dark-variant
-        title: Dark Theme variant
-        description: Variations of the Dark Theme
-        type: class-select
-        allowEmpty: false
-        default: dark-default
-        options:
-            - dark-default
-            - dark-dimmed
-    -
         id: deep-work-theme-interface
         title: Interface Modifications
         type: heading
         level: 2
-        collapsed: true
-    -
-        id: deep-work-theme-interface-hide
-        title: Hide Interface Elements
-        type: heading
-        level: 3
         collapsed: true
     -
         id: dwt-hide-scrollbars

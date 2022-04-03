@@ -26,6 +26,7 @@
       .nav-file {
         &-title {
           &.is-active {
+            background-color: var(--background-primary);
             border-left: border(
               $border-width,
               var(--interactive-accent)

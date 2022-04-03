@@ -1,0 +1,5 @@
+{
+  "search.exclude": {
+    "**/design-vault/.obsidian": true
+  }
+}

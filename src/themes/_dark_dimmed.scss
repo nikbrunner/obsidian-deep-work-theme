@@ -21,13 +21,14 @@
 
   // background
   --background-primary: var(--color-gray-7);
-  --background-primary-alt: var(--color-gray-6);
-  --background-secondary: var(--color-gray-8);
-  --background-secondary-alt: var(--color-gray-8);
-  --background-modifier-border: var(--color-gray-7);
-  --background-modifier-form-field: var(--color-gray-8);
+  --background-primary-alt: var(--color-gray-8);
+  --background-secondary: var(--color-gray-6);
+  --background-secondary-alt: var(--color-gray-5);
+
+  --background-modifier-border: var(--color-gray-6);
+  --background-modifier-form-field: var(--background-secondary);
   --background-modifier-form-field-highlighted: var(
-    --color-gray-8
+    --color-background-secondary-alt
   );
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-success: var(--color-success);
