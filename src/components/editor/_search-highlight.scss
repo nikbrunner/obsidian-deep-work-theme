@@ -1,7 +1,7 @@
 @include editor-preview-component {
-  .search-highlight > div {
-    &.is-active {
-      border-bottom: border(2px, var(--color-blue-3), dashed);
+    .search-highlight > div {
+        &.is-active {
+            border-bottom: border(2px, var(--dwt-semantic-color-accent-light), dashed);
+        }
     }
-  }
 }

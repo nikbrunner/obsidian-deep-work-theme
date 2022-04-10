@@ -22,5 +22,77 @@
       ],
       "key": "R"
     }
+  ],
+  "theme:use-light": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "L"
+    }
+  ],
+  "theme:use-dark": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "D"
+    }
+  ],
+  "obsidian-theme-design-utilities:toggle-emulate-mobile": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "M"
+    }
+  ],
+  "obsidian-theme-design-utilities:toggle-dark-light-mode": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "T"
+    }
+  ],
+  "obsidian-theme-design-utilities:test-notice": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "N"
+    }
+  ],
+  "obsidian-theme-design-utilities:freeze-obsidian": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "F"
+    }
+  ],
+  "obsidian-theme-design-utilities:cycle-views": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ],
+  "obsidian-theme-design-utilities:cheatsheet-css-classes": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "S"
+    }
   ]
 }

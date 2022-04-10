@@ -3,3 +3,10 @@ node_modules
 design-vault/.obsidian/workspace
 design-vault/.obsidian/plugins
 design-vault/.obsidian/todoist-token
+
+# Ignore compiled theme file
+design-vault/.obsidian/themes/Deep Work.css
+
+# Ignore editors
+.idea/
+.vscode/

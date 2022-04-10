@@ -8,7 +8,6 @@ lang: en
 
 #dev/lang/typescript 
 
-
 [if statement - Accessing different properties in a typescript union type - Stack Overflow](https://stackoverflow.com/questions/43496154/accessing-different-properties-in-a-typescript-union-type)
 
 ## Example

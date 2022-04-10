@@ -1,39 +1,55 @@
-@include ui-component {
-  [data-type="file-explorer"] {
-    $border-width: 5px;
+.workspace-leaf-content[data-type="file-explorer"] {
+    $border-width: $border-width-xl;
+
+    padding: $space;
 
     .nav-files-container {
-      padding: 1rem;
+        .nav-folder {
+            &:not(.mod-root) {
+                margin-bottom: $space-s;
+                border-left: border($border-width, var(--dwt-semantic-color-bg-accent));
+                border-radius: $border-radius-s;
 
-      .nav-folder-title,
-      .nav-file-title {
-        @include wrap-title-and-folder-names();
+                &.is-collapsed {
+                    border-left: border($border-width, transparent);
 
-        border-left: border($border-width, transparent);
-        transition: transition(background-color),
-          transition(border-left),
-          transition(color, $transition-speed-slow);
-        margin-bottom: 0.25rem;
+                    .nav-folder-title {
+                        // color: var(--text-muted);
+                    }
+                }
+            }
 
-        &:hover {
-          border-left: border(
-            $border-width,
-            var(--interactive-hover)
-          );
+            &-title {
+                @include wrap-title-and-folder-names();
+
+                transition: transition(background-color), transition(border-left),
+                    transition(color, $transition-speed-slow);
+                margin-bottom: $space-xs;
+                color: var(--text-on-accent);
+
+                &:hover {
+                    background-color: var(--background-primary-alt);
+                }
+            }
         }
-      }
 
-      .nav-file {
-        &-title {
-          &.is-active {
-            background-color: var(--background-primary);
-            border-left: border(
-              $border-width,
-              var(--interactive-accent)
-            );
-          }
+        .nav-file {
+            &-title {
+                @include wrap-title-and-folder-names();
+
+                transition: transition(background-color), transition(border-left),
+                    transition(color, $transition-speed-slow);
+                margin-bottom: 0.25rem;
+
+                &:hover {
+                    background-color: var(--background-primary);
+                }
+
+                &.is-active {
+                    background-color: var(--dwt-semantic-color-bg-accent);
+                    color: var(--text-on-accent);
+                }
+            }
         }
-      }
     }
-  }
 }

@@ -1,39 +1,31 @@
-@include ui-component {
-  .modal {
+.modal {
     background: var(--background-primary);
     border-radius: $border-radius-xl;
     box-shadow: $box-shadow-modal;
 
     .prompt-results {
-      padding: $space-l;
+        padding: $space-l;
     }
 
     &.mod-settings {
-      max-width: $modal-max-width;
+        max-width: $modal-max-width;
     }
 
     &.mod-community-theme {
-      max-width: $modal-max-width;
+        max-width: $modal-max-width;
     }
 
     &-bg {
-      backdrop-filter: blur(10px);
-    }
-
-    .vertical-tabs-container {
-      .vertical-tab-header {
-        flex: 0 0 300px;
-      }
+        backdrop-filter: blur(10px);
     }
 
     .community-plugin {
-      &-search {
-        border-radius: $border-radius-xl 0 0 $border-radius-xl;
-      }
+        &-search {
+            border-radius: $border-radius-xl 0 0 $border-radius-xl;
+        }
 
-      &-details {
-        border-radius: 0 $border-radius-xl $border-radius-xl 0;
-      }
+        &-details {
+            border-radius: 0 $border-radius-xl $border-radius-xl 0;
+        }
     }
-  }
 }

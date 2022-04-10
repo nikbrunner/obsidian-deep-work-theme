@@ -1,5 +1,5 @@
 @include editor-source-component {
-  .CodeMirror-cursor {
-    background: var(--cursor-bg);
-  }
+    .CodeMirror-cursor {
+        background: var(--dwt-component-cursor-color-bg);
+    }
 }

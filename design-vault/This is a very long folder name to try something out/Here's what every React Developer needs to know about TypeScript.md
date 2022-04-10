@@ -17,7 +17,7 @@ If you've been using React for a while, you'll have noticed some cases where the
 
 Let me be clear, I love JavaScript and the freedom it provides, for a long time I was "against" [[TypeScript]].
 
-So I want to go on a journey together, figuring out if TypeScript is worth using or TS is only for people who don't know how to code properly (this was an inside joke in my team a time ago!).
+So I want to go on a <mark style="background: #ADCCFFA6;">journey together</mark> , figuring out if TypeScript is worth using or TS is only for people who don't know how to code properly (this was an inside joke in my team a time ago!).
 
 The idea behind this article is to go through the basics of TS and understand the benefits so you can decide if you want those benefits or not, in a second part I will cover the specifics of TS with React.
 
@@ -43,6 +43,14 @@ On the boilerplates I use Airbnb's ESLint rules, Prettier's recommended rules an
 The Airbnb rules can be strange at some points, but they provide a great explanation and examples so you can decide if the rule makes sense for you or not, and if not you can disable it in the `.eslintrc` file.
 
 I found that for junior profiles or people who are just starting out with JS or TS these rules are very useful, so I recommend you at least try to include them in a project and check the results 😉
+
+```ts
+const message: string = "this is a code block for styling";
+
+const printMessage = (message: string) => console.log(message);
+
+printMessage(message); printMessage(message);printMessage(message);printMessage(message);printMessage(message);printMessage(message);printMessage(message);
+```
 
 ## What is TypeScript
 
@@ -417,4 +425,3 @@ let stringLevel: string = level;
 ```
 
 With `unknown` you can assign any type as in `any` but this time the compiler gets the error when you try to assign to another type. So if you don't know what type it will be, try using
-

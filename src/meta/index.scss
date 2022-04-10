@@ -69,12 +69,32 @@ settings:
         default-dark: '#3fb950'
     -
         id: deep-work-theme-interface
-        title: Interface Modifications
+        title: Interface
         type: heading
         level: 2
         collapsed: true
     -
+        id: dwt-disable-dark-sidebars
+        title: Disable Dark Sidebars 
+        description: Decrease contrast for the Sidebars (incl. Title- and Statusbar)
+        type: class-toggle
+        default: false
+    -
+        id: dwt-disable-modal-background-blur
+        title: Disable Modal Background Blur
+        description: Disable the blurred Background, if the Modal is open
+        type: class-toggle
+        default: false
+    -
+        id: dwt-disable-link-underline
+        title: Disable Link Underline
+        description: Remove underline from internal- and external Links
+        type: class-toggle
+        default: false
+    -
         id: dwt-hide-scrollbars
         title: Hide Scrollbars
+        description: Hide all Scrollbars
         type: class-toggle
+        default: false
 */

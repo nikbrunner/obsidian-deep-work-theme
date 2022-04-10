@@ -1,11 +1,9 @@
-@include ui-component {
-  input[type="text"],
-  input[type="search"],
-  input[type="email"],
-  input[type="password"],
-  input[type="number"] {
-    border-width: $border-width-default;
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    border-width: $border-width-s;
     border-radius: $border-radius-default;
     padding: $space $space-l $space $space;
-  }
 }

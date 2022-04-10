@@ -5,5 +5,7 @@
   "obsidian-jump-to-date-plugin",
   "obsidian-git",
   "obsidian-theme-design-utilities",
-  "obsidian-style-settings"
+  "obsidian-style-settings",
+  "highlightr-plugin",
+  "theme-picker"
 ]

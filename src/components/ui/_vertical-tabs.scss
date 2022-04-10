@@ -1,31 +1,62 @@
-/* Appears in:
- * - Modal Settings
- */
-
-@include ui-component {
-  .vertical-tabs-container {
-  }
-
-  // Sidebar Area
-  .vertical-tab-header {
-    background-color: var(--background-primary-alt);
-  }
-
-  .vertical-tab-header-group {
-    &-title {
-    }
-
-    &-items {
-      .vertical-tab-nav-item {
+// Modal Sidebar Area
+.vertical-tabs-container {
+    .vertical-tab-header {
         background-color: var(--background-primary-alt);
-      }
+        flex: 0 0 300px;
     }
-  }
 
-  // Content Area
-  .vertical-tab-content-container {
-    .vertical-tab-content {
-      background-color: var(--background-primary);
+    .vertical-tab-header-group {
+        &-title {
+        }
+
+        &-items {
+            .vertical-tab-nav-item {
+                background-color: var(--background-primary-alt);
+                border-left-width: $border-width-xl;
+
+                &.is-active {
+                    background-color: var(--background-primary);
+                }
+            }
+        }
     }
-  }
+
+    // Modal Content Area
+    .vertical-tab-content-container {
+        .vertical-tab-content {
+            background-color: var(--background-primary);
+        }
+    }
+}
+
+@include if-body-has($style-setting-disable-dark-sidebars-class) {
+    .vertical-tabs-container {
+        .vertical-tab-header {
+            background-color: var(--background-primary);
+        }
+
+        .vertical-tab-header-group {
+            &-title {
+            }
+
+            &-items {
+                .vertical-tab-nav-item {
+                    background-color: var(--background-primary);
+
+                    &.is-active {
+                        background-color: var(--background-secondary);
+                    }
+                }
+            }
+        }
+
+        // Content Area
+        .vertical-tab-content-container {
+            border-left: border($border-width-s, var(--dwt-semantic-color-bg-secondary));
+
+            .vertical-tab-content {
+                background-color: var(--background-primary);
+            }
+        }
+    }
 }

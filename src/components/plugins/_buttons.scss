@@ -1,46 +1,30 @@
 @include editor-preview-component {
-  .button-default {
-    box-shadow: none;
+    .button-default {
+        box-shadow: none;
 
-    &:hover {
-      background-color: inherit;
-    }
+        &:hover {
+            background-color: inherit;
+        }
 
-    &.white {
-      background: linear-gradient(
-        45deg,
-        var(--color-gray-1),
-        var(--color-gray-2)
-      );
-      border: 1px solid var(--color-gray-1);
-      color: var(--color-gray-8);
-    }
+        &.white {
+            background: linear-gradient(45deg, var(--dwt-core-color-gray-1), var(--color-gray-2));
+            border: 1px solid var(--dwt-core-color-gray-1);
+            color: var(--dwt-core-color-gray-8);
+        }
 
-    &.green {
-      background: linear-gradient(
-        45deg,
-        var(--color-green-3),
-        var(--color-green-4)
-      );
-      border: 1px solid var(--color-green-2);
-    }
+        &.green {
+            background: linear-gradient(45deg, var(--dwt-core-color-green-3), var(--color-green-4));
+            border: 1px solid var(--dwt-core-color-green-2);
+        }
 
-    &.blue {
-      background: linear-gradient(
-        45deg,
-        var(--color-blue-3),
-        var(--color-blue-4)
-      );
-      border: 1px solid var(--color-blue-2);
-    }
+        &.blue {
+            background: linear-gradient(45deg, var(--dwt-core-color-blue-3), var(--color-blue-4));
+            border: 1px solid var(--dwt-core-color-blue-2);
+        }
 
-    &.purple {
-      background: linear-gradient(
-        45deg,
-        var(--color-purple-3),
-        var(--color-purple-4)
-      );
-      border: 1px solid var(--color-purple-2);
+        &.purple {
+            background: linear-gradient(45deg, var(--dwt-core-color-purple-3), var(--color-purple-4));
+            border: 1px solid var(--dwt-core-color-purple-2);
+        }
     }
-  }
 }

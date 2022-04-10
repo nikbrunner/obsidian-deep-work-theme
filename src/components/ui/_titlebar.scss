@@ -1,27 +1,28 @@
-// Necessary to modify to make space for the increased height of the titlebar
-body {
-  padding-top: $height-header !important;
-}
-
-@include ui-component {
-  .titlebar {
+.titlebar {
     height: $height-header !important;
 
     &-inner {
-      background: var(--background-primary-alt);
-      color: var(--text-normal);
+        background: var(--background-primary-alt);
+        color: var(--text-normal);
     }
 
     &-text {
-      top: 5px;
+        top: 5px;
     }
 
     &-button-container {
-      top: 0px;
+        top: 0px;
     }
 
     &-button {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
+
+@include if-body-has($style-setting-disable-dark-sidebars-class) {
+    .titlebar {
+        &-inner {
+            background: var(--background-primary);
+        }
+    }
 }

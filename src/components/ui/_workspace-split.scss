@@ -1,0 +1,13 @@
+.workspace-split {
+    &.mod-vertical {
+        &.mod-root {
+            background-color: var(--background-primary);
+        }
+    }
+
+    &.mod-horizontal {
+        &.mod-right-split {
+            box-shadow: $box-shadow-leaf;
+        }
+    }
+}

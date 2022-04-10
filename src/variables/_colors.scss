@@ -1,7 +1,13 @@
 :root {
+    // DWT CORE Colors
     --dwt-core-color-transparent: rgba(255, 255, 255, 0);
 
-    --dwt-core-color-white: #f7f9fc;
+    --dwt-core-color-white-alpha-10: hsla(216, 45%, 98%, 0.1);
+    --dwt-core-color-white-alpha-25: hsla(216, 45%, 98%, 0.25);
+    --dwt-core-color-white-alpha-50: hsla(216, 45%, 98%, 0.5);
+    --dwt-core-color-white-alpha-75: hsla(216, 45%, 98%, 0.75);
+    --dwt-core-color-white-alpha-90: hsla(216, 45%, 98%, 0.9);
+    --dwt-core-color-white: hsl(216, 45%, 98%);
 
     // TODO gray-cold
     // TODO gray-warm
@@ -76,6 +82,11 @@
     --dwt-core-color-gray-9-alpha-90: hsla(216, 28%, 7%, 0.9);
     --dwt-core-color-gray-9: hsl(216, 28%, 7%);
 
+    --dwt-core-color-black-alpha-10: hsla(218, 80%, 2%, 0.1);
+    --dwt-core-color-black-alpha-25: hsla(218, 80%, 2%, 0.25);
+    --dwt-core-color-black-alpha-50: hsla(218, 80%, 2%, 0.5);
+    --dwt-core-color-black-alpha-75: hsla(218, 80%, 2%, 0.75);
+    --dwt-core-color-black-alpha-90: hsla(218, 80%, 2%, 0.9);
     --dwt-core-color-black: hsl(218, 80%, 2%);
 
     --dwt-core-color-blue-0-alpha-10: hsla(206, 100%, 90%, 0.1);
