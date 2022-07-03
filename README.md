@@ -1,7 +1,7 @@
 <div>
   <h1 align=center>⚠️  Development Status ⚠️ </h1>
   <p align="center">
-    Please note that the development of this theme has <strong>currently almost stopped</strong>, since I am concentrating my limited time on another project.
+    Please note that the development of this theme has <strong>currently on hold</strong>, since I am concentrating my limited time on [another project](https://github.com/terra-theme).
     I will try to update it when I can, but also accept contributions.
   </p>
 </div>
