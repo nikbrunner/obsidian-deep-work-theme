@@ -25,6 +25,7 @@ $border-radius-xl: 18px;
 $border-width-s: 1px;
 $border-width-default: 2px;
 $border-width-l: 3px;
+$border-width-xl: 5px;
 
 $border-style-default: solid;
 
@@ -42,7 +43,7 @@ $line-height-s: 1.25;
 $line-height-default: 1.5;
 $line-height-l: 2;
 
-$box-shadow-leaf: 0 5px 15px rgba(0, 0, 0, 0.1);
+$box-shadow-leaf: 0 10px 30px rgba(0, 0, 0, 0.25);
 $box-shadow-leaf-active: 0 15px 50px rgba(0, 0, 0, 0.25);
 $box-shadow-kanban: 0 5px 15px rgba(0, 0, 0, 0.25);
 $box-shadow-modal: 0 10px 30px rgba(0, 0, 0, 0.25);

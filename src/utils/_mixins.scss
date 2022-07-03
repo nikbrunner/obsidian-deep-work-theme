@@ -1,4 +1,10 @@
 @mixin wrap-title-and-folder-names {
-  white-space: normal;
-  width: auto;
+    white-space: normal;
+    width: auto;
+}
+
+@mixin if-body-has($selector) {
+    body#{$selector} {
+        @content;
+    }
 }

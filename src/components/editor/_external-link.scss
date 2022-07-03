@@ -1,23 +1,23 @@
 @include editor-preview-component {
-  .external-link {
-    font-weight: 600;
-    text-decoration: none;
-    background-position-y: 60%;
+    .external-link {
+        font-weight: 600;
+        text-decoration: none;
+        background-position-y: 60%;
 
-    &:hover {
-      text-decoration: underline;
+        &:hover {
+            text-decoration: underline;
+        }
     }
-  }
 }
 
 @include editor-source-component {
-  .cm-link {
-    font-weight: $font-weight-bold;
-  }
+    .cm-link {
+        font-weight: $font-weight-bold;
+    }
 }
 
 @include editor-live-preview-component {
-  .cm-link {
-    font-weight: $font-weight-bold;
-  }
+    .cm-link {
+        font-weight: $font-weight-bold;
+    }
 }

@@ -1,55 +1,44 @@
-@include ui-component {
-  $border-width: 5px;
-  $border-radius: $border-radius-xl;
+.prompt {
+    $border-width: 5px;
+    $border-radius: $border-radius-xl;
 
-  .prompt {
     box-shadow: $box-shadow-modal;
     border-radius: $border-radius;
     padding: $space-l;
 
     &-input {
-      background-color: var(--background-primary-alt);
-      border-radius: $border-radius;
-      margin-bottom: $space;
-      padding: $space !important;
-      height: initial;
-      font-size: 1.15rem;
-      flex-shrink: 0;
+        background-color: var(--background-primary-alt);
+        border-radius: $border-radius;
+        margin-bottom: $space;
+        padding: $space !important;
+        height: initial;
+        font-size: 1.15rem;
+        flex-shrink: 0;
     }
 
     &-results {
-      padding: $space;
+        padding: $space;
 
-      .suggestion {
-        &-item {
-          border-left: border($border-width, transparent);
-          border-radius: $border-radius-default;
-          transition: transition(
-              border-left,
-              $transition-speed-fast
-            ),
-            transition(
-              background-color,
-              $transition-speed-default
-            ),
-            transition(color, $transition-speed-default);
+        .suggestion {
+            &-item {
+                border-left: border($border-width, transparent);
+                border-radius: $border-radius-default;
+                transition: transition(border-left, $transition-speed-fast),
+                    transition(background-color, $transition-speed-default),
+                    transition(color, $transition-speed-default);
 
-          // Verticall center hotkey
-          .suggestion-hotkey {
-            position: relative;
-            top: 0.25em;
-          }
+                // Verticall center hotkey
+                .suggestion-hotkey {
+                    position: relative;
+                    top: 0.25em;
+                }
 
-          &.is-selected {
-            background-color: var(--background-secondary-alt);
-            color: var(--interactive-accent);
-            border-left: border(
-              $border-width,
-              var(--interactive-accent)
-            );
-          }
+                &.is-selected {
+                    background-color: var(--background-secondary-alt);
+                    color: var(--interactive-accent);
+                    border-left: border($border-width, var(--interactive-accent));
+                }
+            }
         }
-      }
     }
-  }
 }

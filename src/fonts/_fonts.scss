@@ -1,17 +1,15 @@
 :root {
-  --default-font: -apple-system, BlinkMacSystemFont, Segoe UI,
-    Helvetica, Arial, sans-serif, Apple Color Emoji,
-    Segoe UI Emoji;
-  --editor-font: ui-monospace, SFMono-Regular, SF Mono, Menlo,
-    Consolas, Liberation Mono, monospace;
+    --default-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji,
+        Segoe UI Emoji;
+    --editor-font: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
 }
 
 .markdown-source-view {
-  font-family: var(--editor-font);
-  font-weight: var(--cm-font-weight, $font-weight-normal);
+    font-family: var(--editor-font);
+    font-weight: var(--cm-font-weight, $font-weight-normal);
 }
 
 .markdown-preview-view {
-  font-family: var(--default-font);
-  font-weight: var(--cm-font-weight, $font-weight-normal);
+    font-family: var(--default-font);
+    font-weight: var(--cm-font-weight, $font-weight-normal);
 }

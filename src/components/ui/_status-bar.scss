@@ -1,7 +1,4 @@
-$selector-status-bar: ".status-bar";
-
-@include ui-component {
-  #{$selector-status-bar} {
+.status-bar {
     display: flex;
     justify-content: flex-end;
     align-self: center;
@@ -10,7 +7,7 @@ $selector-status-bar: ".status-bar";
     height: $height-footer;
     width: 100%;
 
-    background-color: var(--background-primary);
+    background-color: var(--background-primary-alt);
     color: var(--text-muted);
 
     font-size: 14px;
@@ -24,18 +21,23 @@ $selector-status-bar: ".status-bar";
 
     &-item,
     &-item-segment {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
 
-      line-height: 1;
-      padding: 0;
+        line-height: 1;
+        padding: 0;
 
-      svg {
-        // remove little space below icon
-        display: block;
-      }
+        svg {
+            // remove little space below icon
+            display: block;
+        }
     }
-  }
+}
+
+@include if-body-has($style-setting-disable-dark-sidebars-class) {
+    .status-bar {
+        background-color: var(--background-primary);
+    }
 }

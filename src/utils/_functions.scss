@@ -1,11 +1,7 @@
-@function transition(
-  $property,
-  $speed: $transition-speed-default,
-  $ease: $transition-ease-default
-) {
-  @return $property $speed $ease;
+@function transition($property, $speed: $transition-speed-default, $ease: $transition-ease-default) {
+    @return $property $speed $ease;
 }
 
 @function border($width, $color, $style: $border-style-default) {
-  @return $width $style $color;
+    @return $width $style $color;
 }

@@ -1,4 +1,19 @@
 body {
-  line-height: $line-height-default;
-  word-wrap: break-word;
+    line-height: $line-height-default;
+    word-wrap: break-word;
+
+    // Necessary to modify to make space for the increased height of the titlebar
+    padding-top: $height-header !important;
+
+    &.dwt-hide-scrollbars {
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    // Needed for Highlightr Plugin
+    mark {
+        background-color: inherit;
+        color: inherit;
+    }
 }

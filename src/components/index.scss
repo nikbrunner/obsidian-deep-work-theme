@@ -2,7 +2,6 @@
 @import "ui/file-explorer";
 @import "ui/suggestion-container";
 @import "ui/titlebar";
-@import "ui/workspace";
 @import "ui/modal";
 @import "ui/prompt";
 @import "ui/frontmatter";
@@ -10,8 +9,11 @@
 @import "ui/input";
 @import "ui/setting-item";
 @import "ui/status-bar";
-@import "ui/sidebar";
-@import "ui/resize-handle";
+@import "ui/workspace-ribbon";
+@import "ui/workspace-tabs";
+@import "ui/workspace-leaf";
+@import "ui/workspace-split";
+@import "ui/vertical-tabs";
 
 @import "editor/active-line";
 @import "editor/blockquote";

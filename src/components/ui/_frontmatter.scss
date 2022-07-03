@@ -1,15 +1,13 @@
-@include ui-component {
-  .frontmatter {
+.frontmatter {
     &-container {
-      border: border(1px, var(--background-modifier-border));
-      background-color: var(--background-secondary);
-      border-radius: $border-radius-m;
-      padding: $space-l $space;
+        border: border(1px, var(--background-modifier-border));
+        background-color: var(--background-secondary);
+        border-radius: $border-radius-m;
+        padding: $space-l $space;
     }
 
     // Overwrite code style for yaml
     code[class*="language-"] {
-      padding: initial;
+        padding: initial;
     }
-  }
 }

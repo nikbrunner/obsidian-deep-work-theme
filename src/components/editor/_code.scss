@@ -1,67 +1,79 @@
+// TODO Improve styling for inline code and code block
 @mixin code-color {
-  color: var(--text-code);
+    color: var(--dwt-component-code-color-fg);
+    background-color: var(--dwt-component-code-color-bg);
 }
 
 @mixin code-block-style {
-  .HyperMD-codeblock {
-    @include code-color();
-  }
+    .HyperMD-codeblock {
+        @include code-color();
+
+        background-color: red;
+    }
 }
 
 @mixin inline-code-style {
-  .cm-inline-code {
-    @include code-color();
-  }
+    .cm-inline-code {
+        @include code-color();
+    }
 }
 
 @include editor-preview-component {
-  code {
-    @include code-color();
+    code {
+        @include code-color();
 
-    font-family: var(--font-monospace);
-    background-color: var(--background-secondary-alt);
-    border-radius: $border-radius-default;
-    font-size: 0.85em;
-  }
-
-  pre[class*="language-"] {
-    border-radius: $border-radius-l;
-    background-color: var(--background-secondary);
-
-    &::-webkit-scrollbar {
-      background-color: var(--background-secondary-alt);
-      border-radius: 0 0 $border-radius-l $border-radius-l;
-      height: 15px;
-
-      &-thumb {
-        background-color: var(--background-secondary);
-        border-radius: 0 0 $border-radius-l $border-radius-l;
-      }
+        border-radius: $border-radius-default;
+        font-size: 0.85em;
     }
 
-    *:not(.copy-code-button) {
-      background-color: transparent !important;
-    }
+    // TODO Wrap / NoWrap?
+    pre[class*="language-"] {
+        @include code-color();
 
-    .copy-code-button {
-      background-color: var(--background-secondary-alt);
+        border-radius: $border-radius-l;
 
-      &:hover {
-        transition: transition(background-color),
-          transition(color);
-        background-color: var(--interactive-accent);
-        color: var(--text-on-accent);
-      }
+        &::-webkit-scrollbar {
+            background-color: var(--background-secondary-alt);
+            border-radius: 0 0 $border-radius-l $border-radius-l;
+            height: 15px;
+
+            &-thumb {
+                background-color: var(--dwt-component-code-color-bg);
+                border-radius: 0 0 $border-radius-l $border-radius-l;
+            }
+        }
+
+        *:not(.copy-code-button) {
+            background-color: transparent !important;
+        }
+
+        .copy-code-button {
+            background-color: var(--dwt-component-code-color-bg);
+
+            &:hover {
+                transition: transition(background-color), transition(color);
+                background-color: var(--interactive-accent);
+                color: var(--text-on-accent);
+            }
+        }
     }
-  }
 }
 
 @include editor-source-component {
-  @include code-block-style();
-  @include inline-code-style();
+    @include code-block-style();
+    @include inline-code-style();
 }
 
 @include editor-live-preview-component {
-  @include code-block-style();
-  @include inline-code-style();
+    @include code-block-style();
+    @include inline-code-style();
+
+    // background: red;
+
+    // .HyperMD-codeblock-begin {
+    //     background: red;
+    //     border-bottom: 1px solid red;
+    //     border-top-left-radius: $border-radius-l;
+    //     border-top-right-radius: $border-radius-l;
+    // }
 }

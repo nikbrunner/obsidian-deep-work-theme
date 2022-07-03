@@ -1,92 +1,581 @@
 :root {
-  --color-black: #010409;
-  --color-white: #f7f9fc;
+    // DWT CORE Colors
+    --dwt-core-color-transparent: rgba(255, 255, 255, 0);
 
-  --color-gray-0: #e1e7ee;
-  --color-gray-1: #c9d1d9;
-  --color-gray-2: #b1bac4;
-  --color-gray-3: #8b949e;
-  --color-gray-4: #6e7681;
-  --color-gray-5: #484f58;
-  --color-gray-6: #30363d;
-  --color-gray-7: #21262d;
-  --color-gray-8: #161b22;
-  --color-gray-9: #0d1117;
+    --dwt-core-color-white-alpha-10: hsla(216, 45%, 98%, 0.1);
+    --dwt-core-color-white-alpha-25: hsla(216, 45%, 98%, 0.25);
+    --dwt-core-color-white-alpha-50: hsla(216, 45%, 98%, 0.5);
+    --dwt-core-color-white-alpha-75: hsla(216, 45%, 98%, 0.75);
+    --dwt-core-color-white-alpha-90: hsla(216, 45%, 98%, 0.9);
+    --dwt-core-color-white: hsl(216, 45%, 98%);
 
-  --color-blue-0: #cae8ff;
-  --color-blue-1: #a5d6ff;
-  --color-blue-2: #79c0ff;
-  --color-blue-3: #58a6ff;
-  --color-blue-4: #388bfd;
-  --color-blue-5: #1f6feb;
-  --color-blue-6: #1158c7;
-  --color-blue-7: #0d419d;
-  --color-blue-8: #0c2d6b;
-  --color-blue-9: #051d4d;
+    // TODO gray-cold
+    // TODO gray-warm
 
-  --color-green-0: #aff5b4;
-  --color-green-1: #7ee787;
-  --color-green-2: #56d364;
-  --color-green-3: #3fb950;
-  --color-green-4: #2ea043;
-  --color-green-5: #238636;
-  --color-green-6: #196c2e;
-  --color-green-7: #0f5323;
-  --color-green-8: #033a16;
-  --color-green-9: #04260f;
+    --dwt-core-color-gray-0-alpha-10: hsla(212, 28%, 91%, 0.1);
+    --dwt-core-color-gray-0-alpha-25: hsla(212, 28%, 91%, 0.25);
+    --dwt-core-color-gray-0-alpha-50: hsla(212, 28%, 91%, 0.5);
+    --dwt-core-color-gray-0-alpha-75: hsla(212, 28%, 91%, 0.75);
+    --dwt-core-color-gray-0-alpha-90: hsla(212, 28%, 91%, 0.9);
+    --dwt-core-color-gray-0: hsl(212, 28%, 91%);
 
-  --color-yellow-0: #f8e3a1;
-  --color-yellow-1: #f2cc60;
-  --color-yellow-2: #e3b341;
-  --color-yellow-3: #d29922;
-  --color-yellow-4: #bb8009;
-  --color-yellow-5: #9e6a03;
-  --color-yellow-6: #845306;
-  --color-yellow-7: #693e00;
-  --color-yellow-8: #4b2900;
-  --color-yellow-9: #341a00;
+    --dwt-core-color-gray-1-alpha-10: hsla(210, 17%, 82%, 0.1);
+    --dwt-core-color-gray-1-alpha-25: hsla(210, 17%, 82%, 0.25);
+    --dwt-core-color-gray-1-alpha-50: hsla(210, 17%, 82%, 0.5);
+    --dwt-core-color-gray-1-alpha-75: hsla(210, 17%, 82%, 0.75);
+    --dwt-core-color-gray-1-alpha-90: hsla(210, 17%, 82%, 0.9);
+    --dwt-core-color-gray-1: hsl(210, 17%, 82%);
 
-  --color-orange-0: #ffdfb6;
-  --color-orange-1: #ffc680;
-  --color-orange-2: #ffa657;
-  --color-orange-3: #f0883e;
-  --color-orange-4: #db6d28;
-  --color-orange-5: #bd561d;
-  --color-orange-6: #9b4215;
-  --color-orange-7: #762d0a;
-  --color-orange-8: #5a1e02;
-  --color-orange-9: #3d1300;
+    --dwt-core-color-gray-2-alpha-10: hsla(212, 14%, 73%, 0.1);
+    --dwt-core-color-gray-2-alpha-25: hsla(212, 14%, 73%, 0.25);
+    --dwt-core-color-gray-2-alpha-50: hsla(212, 14%, 73%, 0.5);
+    --dwt-core-color-gray-2-alpha-75: hsla(212, 14%, 73%, 0.75);
+    --dwt-core-color-gray-2-alpha-90: hsla(212, 14%, 73%, 0.9);
+    --dwt-core-color-gray-2: hsl(212, 14%, 73%);
 
-  --color-red-0: #ffdcd7;
-  --color-red-1: #ffc1ba;
-  --color-red-2: #ffa198;
-  --color-red-3: #ff7b72;
-  --color-red-4: #f85149;
-  --color-red-5: #da3633;
-  --color-red-6: #b62324;
-  --color-red-7: #8e1519;
-  --color-red-8: #67060c;
-  --color-red-9: #490202;
+    --dwt-core-color-gray-3-alpha-10: hsla(212, 9%, 58%, 0.1);
+    --dwt-core-color-gray-3-alpha-25: hsla(212, 9%, 58%, 0.25);
+    --dwt-core-color-gray-3-alpha-50: hsla(212, 9%, 58%, 0.5);
+    --dwt-core-color-gray-3-alpha-75: hsla(212, 9%, 58%, 0.75);
+    --dwt-core-color-gray-3-alpha-90: hsla(212, 9%, 58%, 0.9);
+    --dwt-core-color-gray-3: hsl(212, 9%, 58%);
 
-  --color-purple-0: #eddeff;
-  --color-purple-1: #e2c5ff;
-  --color-purple-2: #d2a8ff;
-  --color-purple-3: #bc8cff;
-  --color-purple-4: #a371f7;
-  --color-purple-5: #8957e5;
-  --color-purple-6: #6e40c9;
-  --color-purple-7: #553098;
-  --color-purple-8: #3c1e70;
-  --color-purple-9: #271052;
+    --dwt-core-color-gray-4-alpha-10: hsla(215, 8%, 47%, 0.1);
+    --dwt-core-color-gray-4-alpha-25: hsla(215, 8%, 47%, 0.25);
+    --dwt-core-color-gray-4-alpha-50: hsla(215, 8%, 47%, 0.5);
+    --dwt-core-color-gray-4-alpha-75: hsla(215, 8%, 47%, 0.75);
+    --dwt-core-color-gray-4-alpha-90: hsla(215, 8%, 47%, 0.9);
+    --dwt-core-color-gray-4: hsl(215, 8%, 47%);
 
-  --color-pink-0: #ffdaec;
-  --color-pink-1: #ffbedd;
-  --color-pink-2: #ff9bce;
-  --color-pink-3: #f778ba;
-  --color-pink-4: #db61a2;
-  --color-pink-5: #bf4b8a;
-  --color-pink-6: #9e3670;
-  --color-pink-7: #7d2457;
-  --color-pink-8: #5e103e;
-  --color-pink-9: #42062a;
+    --dwt-core-color-gray-5-alpha-10: hsla(214, 10%, 31%, 0.1);
+    --dwt-core-color-gray-5-alpha-25: hsla(214, 10%, 31%, 0.25);
+    --dwt-core-color-gray-5-alpha-50: hsla(214, 10%, 31%, 0.5);
+    --dwt-core-color-gray-5-alpha-75: hsla(214, 10%, 31%, 0.75);
+    --dwt-core-color-gray-5-alpha-90: hsla(214, 10%, 31%, 0.9);
+    --dwt-core-color-gray-5: hsl(214, 10%, 31%);
+
+    --dwt-core-color-gray-6-alpha-10: hsla(212, 12%, 21%, 0.1);
+    --dwt-core-color-gray-6-alpha-25: hsla(212, 12%, 21%, 0.25);
+    --dwt-core-color-gray-6-alpha-50: hsla(212, 12%, 21%, 0.5);
+    --dwt-core-color-gray-6-alpha-75: hsla(212, 12%, 21%, 0.75);
+    --dwt-core-color-gray-6-alpha-90: hsla(212, 12%, 21%, 0.9);
+    --dwt-core-color-gray-6: hsl(212, 12%, 21%);
+
+    --dwt-core-color-gray-7-alpha-10: hsla(215, 15%, 15%, 0.1);
+    --dwt-core-color-gray-7-alpha-25: hsla(215, 15%, 15%, 0.25);
+    --dwt-core-color-gray-7-alpha-50: hsla(215, 15%, 15%, 0.5);
+    --dwt-core-color-gray-7-alpha-75: hsla(215, 15%, 15%, 0.75);
+    --dwt-core-color-gray-7-alpha-90: hsla(215, 15%, 15%, 0.9);
+    --dwt-core-color-gray-7: hsl(215, 15%, 15%);
+
+    --dwt-core-color-gray-8-alpha-10: hsla(215, 21%, 11%, 0.1);
+    --dwt-core-color-gray-8-alpha-25: hsla(215, 21%, 11%, 0.25);
+    --dwt-core-color-gray-8-alpha-50: hsla(215, 21%, 11%, 0.5);
+    --dwt-core-color-gray-8-alpha-75: hsla(215, 21%, 11%, 0.75);
+    --dwt-core-color-gray-8-alpha-90: hsla(215, 21%, 11%, 0.9);
+    --dwt-core-color-gray-8: hsl(215, 21%, 11%);
+
+    --dwt-core-color-gray-9-alpha-10: hsla(216, 28%, 7%, 0.1);
+    --dwt-core-color-gray-9-alpha-25: hsla(216, 28%, 7%, 0.25);
+    --dwt-core-color-gray-9-alpha-50: hsla(216, 28%, 7%, 0.5);
+    --dwt-core-color-gray-9-alpha-75: hsla(216, 28%, 7%, 0.75);
+    --dwt-core-color-gray-9-alpha-90: hsla(216, 28%, 7%, 0.9);
+    --dwt-core-color-gray-9: hsl(216, 28%, 7%);
+
+    --dwt-core-color-black-alpha-10: hsla(218, 80%, 2%, 0.1);
+    --dwt-core-color-black-alpha-25: hsla(218, 80%, 2%, 0.25);
+    --dwt-core-color-black-alpha-50: hsla(218, 80%, 2%, 0.5);
+    --dwt-core-color-black-alpha-75: hsla(218, 80%, 2%, 0.75);
+    --dwt-core-color-black-alpha-90: hsla(218, 80%, 2%, 0.9);
+    --dwt-core-color-black: hsl(218, 80%, 2%);
+
+    --dwt-core-color-blue-0-alpha-10: hsla(206, 100%, 90%, 0.1);
+    --dwt-core-color-blue-0-alpha-25: hsla(206, 100%, 90%, 0.25);
+    --dwt-core-color-blue-0-alpha-50: hsla(206, 100%, 90%, 0.5);
+    --dwt-core-color-blue-0-alpha-75: hsla(206, 100%, 90%, 0.75);
+    --dwt-core-color-blue-0-alpha-90: hsla(206, 100%, 90%, 0.9);
+    --dwt-core-color-blue-0: hsl(206, 100%, 90%);
+
+    --dwt-core-color-blue-1-alpha-10: hsla(207, 100%, 82%, 0.1);
+    --dwt-core-color-blue-1-alpha-25: hsla(207, 100%, 82%, 0.25);
+    --dwt-core-color-blue-1-alpha-50: hsla(207, 100%, 82%, 0.5);
+    --dwt-core-color-blue-1-alpha-75: hsla(207, 100%, 82%, 0.75);
+    --dwt-core-color-blue-1-alpha-90: hsla(207, 100%, 82%, 0.9);
+    --dwt-core-color-blue-1: hsl(207, 100%, 82%);
+
+    --dwt-core-color-blue-2-alpha-10: hsla(208, 100%, 74%, 0.1);
+    --dwt-core-color-blue-2-alpha-25: hsla(208, 100%, 74%, 0.25);
+    --dwt-core-color-blue-2-alpha-50: hsla(208, 100%, 74%, 0.5);
+    --dwt-core-color-blue-2-alpha-75: hsla(208, 100%, 74%, 0.75);
+    --dwt-core-color-blue-2-alpha-90: hsla(208, 100%, 74%, 0.9);
+    --dwt-core-color-blue-2: hsl(208, 100%, 74%);
+
+    --dwt-core-color-blue-3-alpha-10: hsla(212, 100%, 67%, 0.1);
+    --dwt-core-color-blue-3-alpha-25: hsla(212, 100%, 67%, 0.25);
+    --dwt-core-color-blue-3-alpha-50: hsla(212, 100%, 67%, 0.5);
+    --dwt-core-color-blue-3-alpha-75: hsla(212, 100%, 67%, 0.75);
+    --dwt-core-color-blue-3-alpha-90: hsla(212, 100%, 67%, 0.9);
+    --dwt-core-color-blue-3: hsl(212, 100%, 67%);
+
+    --dwt-core-color-blue-4-alpha-10: hsla(215, 100%, 61%, 0.1);
+    --dwt-core-color-blue-4-alpha-25: hsla(215, 100%, 61%, 0.25);
+    --dwt-core-color-blue-4-alpha-50: hsla(215, 100%, 61%, 0.5);
+    --dwt-core-color-blue-4-alpha-75: hsla(215, 100%, 61%, 0.75);
+    --dwt-core-color-blue-4-alpha-90: hsla(215, 100%, 61%, 0.9);
+    --dwt-core-color-blue-4: hsl(215, 98%, 61%);
+
+    --dwt-core-color-blue-5-alpha-10: hsla(216, 84%, 52%, 0.1);
+    --dwt-core-color-blue-5-alpha-25: hsla(216, 84%, 52%, 0.25);
+    --dwt-core-color-blue-5-alpha-50: hsla(216, 84%, 52%, 0.5);
+    --dwt-core-color-blue-5-alpha-75: hsla(216, 84%, 52%, 0.75);
+    --dwt-core-color-blue-5-alpha-90: hsla(216, 84%, 52%, 0.9);
+    --dwt-core-color-blue-5: hsl(216, 84%, 52%);
+
+    --dwt-core-color-blue-6-alpha-10: hsla(217, 84%, 42%, 0.1);
+    --dwt-core-color-blue-6-alpha-25: hsla(217, 84%, 42%, 0.25);
+    --dwt-core-color-blue-6-alpha-50: hsla(217, 84%, 42%, 0.5);
+    --dwt-core-color-blue-6-alpha-75: hsla(217, 84%, 42%, 0.75);
+    --dwt-core-color-blue-6-alpha-90: hsla(217, 84%, 42%, 0.9);
+    --dwt-core-color-blue-6: hsl(217, 84%, 42%);
+
+    --dwt-core-color-blue-7-alpha-10: hsla(218, 85%, 33%, 0.1);
+    --dwt-core-color-blue-7-alpha-25: hsla(218, 85%, 33%, 0.25);
+    --dwt-core-color-blue-7-alpha-50: hsla(218, 85%, 33%, 0.5);
+    --dwt-core-color-blue-7-alpha-75: hsla(218, 85%, 33%, 0.75);
+    --dwt-core-color-blue-7-alpha-90: hsla(218, 85%, 33%, 0.9);
+    --dwt-core-color-blue-7: hsl(218, 85%, 33%);
+
+    --dwt-core-color-blue-8-alpha-10: hsla(219, 80%, 23%, 0.1);
+    --dwt-core-color-blue-8-alpha-25: hsla(219, 80%, 23%, 0.25);
+    --dwt-core-color-blue-8-alpha-50: hsla(219, 80%, 23%, 0.5);
+    --dwt-core-color-blue-8-alpha-75: hsla(219, 80%, 23%, 0.75);
+    --dwt-core-color-blue-8-alpha-90: hsla(219, 80%, 23%, 0.9);
+    --dwt-core-color-blue-8: hsl(219, 80%, 23%);
+
+    --dwt-core-color-blue-9-alpha-10: hsla(220, 88%, 16%, 0.1);
+    --dwt-core-color-blue-9-alpha-25: hsla(220, 88%, 16%, 0.25);
+    --dwt-core-color-blue-9-alpha-50: hsla(220, 88%, 16%, 0.5);
+    --dwt-core-color-blue-9-alpha-75: hsla(220, 88%, 16%, 0.75);
+    --dwt-core-color-blue-9-alpha-90: hsla(220, 88%, 16%, 0.9);
+    --dwt-core-color-blue-9: hsl(220, 88%, 16%);
+
+    --dwt-core-color-green-0-alpha-10: hsla(124, 78%, 82%, 0.1);
+    --dwt-core-color-green-0-alpha-25: hsla(124, 78%, 82%, 0.25);
+    --dwt-core-color-green-0-alpha-50: hsla(124, 78%, 82%, 0.5);
+    --dwt-core-color-green-0-alpha-75: hsla(124, 78%, 82%, 0.75);
+    --dwt-core-color-green-0-alpha-90: hsla(124, 78%, 82%, 0.9);
+    --dwt-core-color-green-0: hsl(124, 78%, 82%);
+
+    --dwt-core-color-green-1-alpha-10: hsla(125, 69%, 70%, 0.1);
+    --dwt-core-color-green-1-alpha-25: hsla(125, 69%, 70%, 0.25);
+    --dwt-core-color-green-1-alpha-50: hsla(125, 69%, 70%, 0.5);
+    --dwt-core-color-green-1-alpha-75: hsla(125, 69%, 70%, 0.75);
+    --dwt-core-color-green-1-alpha-90: hsla(125, 69%, 70%, 0.9);
+    --dwt-core-color-green-1: hsl(125, 69%, 70%);
+
+    --dwt-core-color-green-2-alpha-10: hsla(127, 59%, 58%, 0.1);
+    --dwt-core-color-green-2-alpha-25: hsla(127, 59%, 58%, 0.25);
+    --dwt-core-color-green-2-alpha-50: hsla(127, 59%, 58%, 0.5);
+    --dwt-core-color-green-2-alpha-75: hsla(127, 59%, 58%, 0.75);
+    --dwt-core-color-green-2-alpha-90: hsla(127, 59%, 58%, 0.9);
+    --dwt-core-color-green-2: hsl(127, 59%, 58%);
+
+    --dwt-core-color-green-3-alpha-10: hsla(128, 49%, 49%, 0.1);
+    --dwt-core-color-green-3-alpha-25: hsla(128, 49%, 49%, 0.25);
+    --dwt-core-color-green-3-alpha-50: hsla(128, 49%, 49%, 0.5);
+    --dwt-core-color-green-3-alpha-75: hsla(128, 49%, 49%, 0.75);
+    --dwt-core-color-green-3-alpha-90: hsla(128, 49%, 49%, 0.9);
+    --dwt-core-color-green-3: hsl(128, 49%, 49%);
+
+    --dwt-core-color-green-4-alpha-10: hsla(131, 55%, 40%, 0.1);
+    --dwt-core-color-green-4-alpha-25: hsla(131, 55%, 40%, 0.25);
+    --dwt-core-color-green-4-alpha-50: hsla(131, 55%, 40%, 0.5);
+    --dwt-core-color-green-4-alpha-75: hsla(131, 55%, 40%, 0.75);
+    --dwt-core-color-green-4-alpha-90: hsla(131, 55%, 40%, 0.9);
+    --dwt-core-color-green-4: hsl(131, 55%, 40%);
+
+    --dwt-core-color-green-5-alpha-10: hsla(132, 59%, 33%, 0.1);
+    --dwt-core-color-green-5-alpha-25: hsla(132, 59%, 33%, 0.25);
+    --dwt-core-color-green-5-alpha-50: hsla(132, 59%, 33%, 0.5);
+    --dwt-core-color-green-5-alpha-75: hsla(132, 59%, 33%, 0.75);
+    --dwt-core-color-green-5-alpha-90: hsla(132, 59%, 33%, 0.9);
+    --dwt-core-color-green-5: hsl(132, 59%, 33%);
+
+    --dwt-core-color-green-6-alpha-10: hsla(135, 62%, 26%, 0.1);
+    --dwt-core-color-green-6-alpha-25: hsla(135, 62%, 26%, 0.25);
+    --dwt-core-color-green-6-alpha-50: hsla(135, 62%, 26%, 0.5);
+    --dwt-core-color-green-6-alpha-75: hsla(135, 62%, 26%, 0.75);
+    --dwt-core-color-green-6-alpha-90: hsla(135, 62%, 26%, 0.9);
+    --dwt-core-color-green-6: hsl(135, 62%, 26%);
+
+    --dwt-core-color-green-7-alpha-10: hsla(138, 69%, 19%, 0.1);
+    --dwt-core-color-green-7-alpha-25: hsla(138, 69%, 19%, 0.25);
+    --dwt-core-color-green-7-alpha-50: hsla(138, 69%, 19%, 0.5);
+    --dwt-core-color-green-7-alpha-75: hsla(138, 69%, 19%, 0.75);
+    --dwt-core-color-green-7-alpha-90: hsla(138, 69%, 19%, 0.9);
+    --dwt-core-color-green-7: hsl(138, 69%, 19%);
+
+    --dwt-core-color-green-8-alpha-10: hsla(141, 90%, 12%, 0.1);
+    --dwt-core-color-green-8-alpha-25: hsla(141, 90%, 12%, 0.25);
+    --dwt-core-color-green-8-alpha-50: hsla(141, 90%, 12%, 0.5);
+    --dwt-core-color-green-8-alpha-75: hsla(141, 90%, 12%, 0.75);
+    --dwt-core-color-green-8-alpha-90: hsla(141, 90%, 12%, 0.9);
+    --dwt-core-color-green-8: hsl(141, 90%, 12%);
+
+    --dwt-core-color-green-8-alpha-10: hsla(139, 81%, 8%, 0.1);
+    --dwt-core-color-green-8-alpha-25: hsla(139, 81%, 8%, 0.25);
+    --dwt-core-color-green-8-alpha-50: hsla(139, 81%, 8%, 0.5);
+    --dwt-core-color-green-8-alpha-75: hsla(139, 81%, 8%, 0.75);
+    --dwt-core-color-green-8-alpha-90: hsla(139, 81%, 8%, 0.9);
+    --dwt-core-color-green-9: hsl(139, 81%, 8%);
+
+    --dwt-core-color-yellow-0-alpha-10: hsla(46, 86%, 80%, 0.1);
+    --dwt-core-color-yellow-0-alpha-25: hsla(46, 86%, 80%, 0.25);
+    --dwt-core-color-yellow-0-alpha-50: hsla(46, 86%, 80%, 0.5);
+    --dwt-core-color-yellow-0-alpha-75: hsla(46, 86%, 80%, 0.75);
+    --dwt-core-color-yellow-0-alpha-90: hsla(46, 86%, 80%, 0.9);
+    --dwt-core-color-yellow-0: hsl(46, 86%, 80%);
+
+    --dwt-core-color-yellow-1-alpha-10: hsla(44, 85%, 66%, 0.1);
+    --dwt-core-color-yellow-1-alpha-25: hsla(44, 85%, 66%, 0.25);
+    --dwt-core-color-yellow-1-alpha-50: hsla(44, 85%, 66%, 0.5);
+    --dwt-core-color-yellow-1-alpha-75: hsla(44, 85%, 66%, 0.75);
+    --dwt-core-color-yellow-1-alpha-90: hsla(44, 85%, 66%, 0.9);
+    --dwt-core-color-yellow-1: hsl(44, 85%, 66%);
+
+    --dwt-core-color-yellow-2-alpha-10: hsla(42, 74%, 57%, 0.1);
+    --dwt-core-color-yellow-2-alpha-25: hsla(42, 74%, 57%, 0.25);
+    --dwt-core-color-yellow-2-alpha-50: hsla(42, 74%, 57%, 0.5);
+    --dwt-core-color-yellow-2-alpha-75: hsla(42, 74%, 57%, 0.75);
+    --dwt-core-color-yellow-2-alpha-90: hsla(42, 74%, 57%, 0.9);
+    --dwt-core-color-yellow-2: hsl(42, 74%, 57%);
+
+    --dwt-core-color-yellow-3-alpha-10: hsla(41, 72%, 48%, 0.1);
+    --dwt-core-color-yellow-3-alpha-25: hsla(41, 72%, 48%, 0.25);
+    --dwt-core-color-yellow-3-alpha-50: hsla(41, 72%, 48%, 0.5);
+    --dwt-core-color-yellow-3-alpha-75: hsla(41, 72%, 48%, 0.75);
+    --dwt-core-color-yellow-3-alpha-90: hsla(41, 72%, 48%, 0.9);
+    --dwt-core-color-yellow-3: hsl(41, 72%, 48%);
+
+    --dwt-core-color-yellow-4-alpha-10: hsla(40, 91%, 38%, 0.1);
+    --dwt-core-color-yellow-4-alpha-25: hsla(40, 91%, 38%, 0.25);
+    --dwt-core-color-yellow-4-alpha-50: hsla(40, 91%, 38%, 0.5);
+    --dwt-core-color-yellow-4-alpha-75: hsla(40, 91%, 38%, 0.75);
+    --dwt-core-color-yellow-4-alpha-90: hsla(40, 91%, 38%, 0.9);
+    --dwt-core-color-yellow-4: hsl(40, 91%, 38%);
+
+    --dwt-core-color-yellow-5-alpha-10: hsla(40, 96%, 32%, 0.1);
+    --dwt-core-color-yellow-5-alpha-25: hsla(40, 96%, 32%, 0.25);
+    --dwt-core-color-yellow-5-alpha-50: hsla(40, 96%, 32%, 0.5);
+    --dwt-core-color-yellow-5-alpha-75: hsla(40, 96%, 32%, 0.75);
+    --dwt-core-color-yellow-5-alpha-90: hsla(40, 96%, 32%, 0.9);
+    --dwt-core-color-yellow-5: hsl(40, 96%, 32%);
+
+    --dwt-core-color-yellow-6-alpha-10: hsla(37, 91%, 27%, 0.1);
+    --dwt-core-color-yellow-6-alpha-25: hsla(37, 91%, 27%, 0.25);
+    --dwt-core-color-yellow-6-alpha-50: hsla(37, 91%, 27%, 0.5);
+    --dwt-core-color-yellow-6-alpha-75: hsla(37, 91%, 27%, 0.75);
+    --dwt-core-color-yellow-6-alpha-90: hsla(37, 91%, 27%, 0.9);
+    --dwt-core-color-yellow-6: hsl(37, 91%, 27%);
+
+    --dwt-core-color-yellow-7-alpha-10: hsla(35, 100%, 21%, 0.1);
+    --dwt-core-color-yellow-7-alpha-25: hsla(35, 100%, 21%, 0.25);
+    --dwt-core-color-yellow-7-alpha-50: hsla(35, 100%, 21%, 0.5);
+    --dwt-core-color-yellow-7-alpha-75: hsla(35, 100%, 21%, 0.75);
+    --dwt-core-color-yellow-7-alpha-90: hsla(35, 100%, 21%, 0.9);
+    --dwt-core-color-yellow-7: hsl(35, 100%, 21%);
+
+    --dwt-core-color-yellow-8-alpha-10: hsla(33, 100%, 15%, 0.1);
+    --dwt-core-color-yellow-8-alpha-25: hsla(33, 100%, 15%, 0.25);
+    --dwt-core-color-yellow-8-alpha-50: hsla(33, 100%, 15%, 0.5);
+    --dwt-core-color-yellow-8-alpha-75: hsla(33, 100%, 15%, 0.75);
+    --dwt-core-color-yellow-8-alpha-90: hsla(33, 100%, 15%, 0.9);
+    --dwt-core-color-yellow-8: hsl(33, 100%, 15%);
+
+    --dwt-core-color-yellow-9-alpha-10: hsla(30, 100%, 10%, 0.1);
+    --dwt-core-color-yellow-9-alpha-25: hsla(30, 100%, 10%, 0.25);
+    --dwt-core-color-yellow-9-alpha-50: hsla(30, 100%, 10%, 0.5);
+    --dwt-core-color-yellow-9-alpha-75: hsla(30, 100%, 10%, 0.75);
+    --dwt-core-color-yellow-9-alpha-90: hsla(30, 100%, 10%, 0.9);
+    --dwt-core-color-yellow-9: hsl(30, 100%, 10%);
+
+    --dwt-core-color-orange-0-alpha-10: hsla(34, 100%, 86%, 0.1);
+    --dwt-core-color-orange-0-alpha-25: hsla(34, 100%, 86%, 0.25);
+    --dwt-core-color-orange-0-alpha-50: hsla(34, 100%, 86%, 0.5);
+    --dwt-core-color-orange-0-alpha-75: hsla(34, 100%, 86%, 0.75);
+    --dwt-core-color-orange-0-alpha-90: hsla(34, 100%, 86%, 0.9);
+    --dwt-core-color-orange-0: hsl(34, 100%, 86%);
+
+    --dwt-core-color-orange-1-alpha-10: hsla(33, 100%, 75%, 0.1);
+    --dwt-core-color-orange-1-alpha-25: hsla(33, 100%, 75%, 0.25);
+    --dwt-core-color-orange-1-alpha-50: hsla(33, 100%, 75%, 0.5);
+    --dwt-core-color-orange-1-alpha-75: hsla(33, 100%, 75%, 0.75);
+    --dwt-core-color-orange-1-alpha-90: hsla(33, 100%, 75%, 0.9);
+    --dwt-core-color-orange-1: hsl(33, 100%, 75%);
+
+    --dwt-core-color-orange-2-alpha-10: hsla(28, 100%, 67%, 0.1);
+    --dwt-core-color-orange-2-alpha-25: hsla(28, 100%, 67%, 0.25);
+    --dwt-core-color-orange-2-alpha-50: hsla(28, 100%, 67%, 0.5);
+    --dwt-core-color-orange-2-alpha-75: hsla(28, 100%, 67%, 0.75);
+    --dwt-core-color-orange-2-alpha-90: hsla(28, 100%, 67%, 0.9);
+    --dwt-core-color-orange-2: hsl(28, 100%, 67%);
+
+    --dwt-core-color-orange-3-alpha-10: hsla(25, 86%, 59%, 0.1);
+    --dwt-core-color-orange-3-alpha-25: hsla(25, 86%, 59%, 0.25);
+    --dwt-core-color-orange-3-alpha-50: hsla(25, 86%, 59%, 0.5);
+    --dwt-core-color-orange-3-alpha-75: hsla(25, 86%, 59%, 0.75);
+    --dwt-core-color-orange-3-alpha-90: hsla(25, 86%, 59%, 0.9);
+    --dwt-core-color-orange-3: hsl(25, 86%, 59%);
+
+    --dwt-core-color-orange-4-alpha-10: hsla(23, 71%, 51%, 0.1);
+    --dwt-core-color-orange-4-alpha-25: hsla(23, 71%, 51%, 0.25);
+    --dwt-core-color-orange-4-alpha-50: hsla(23, 71%, 51%, 0.5);
+    --dwt-core-color-orange-4-alpha-75: hsla(23, 71%, 51%, 0.75);
+    --dwt-core-color-orange-4-alpha-90: hsla(23, 71%, 51%, 0.9);
+    --dwt-core-color-orange-4: hsl(23, 71%, 51%);
+
+    --dwt-core-color-orange-5-alpha-10: hsla(21, 73%, 43%, 0.1);
+    --dwt-core-color-orange-5-alpha-25: hsla(21, 73%, 43%, 0.25);
+    --dwt-core-color-orange-5-alpha-50: hsla(21, 73%, 43%, 0.5);
+    --dwt-core-color-orange-5-alpha-75: hsla(21, 73%, 43%, 0.75);
+    --dwt-core-color-orange-5-alpha-90: hsla(21, 73%, 43%, 0.9);
+    --dwt-core-color-orange-5: hsl(21, 73%, 43%);
+
+    --dwt-core-color-orange-6-alpha-10: hsla(20, 76%, 35%, 0.1);
+    --dwt-core-color-orange-6-alpha-25: hsla(20, 76%, 35%, 0.25);
+    --dwt-core-color-orange-6-alpha-50: hsla(20, 76%, 35%, 0.5);
+    --dwt-core-color-orange-6-alpha-75: hsla(20, 76%, 35%, 0.75);
+    --dwt-core-color-orange-6-alpha-90: hsla(20, 76%, 35%, 0.9);
+    --dwt-core-color-orange-6: hsl(20, 76%, 35%);
+
+    --dwt-core-color-orange-7-alpha-10: hsla(19, 84%, 25%, 0.1);
+    --dwt-core-color-orange-7-alpha-25: hsla(19, 84%, 25%, 0.25);
+    --dwt-core-color-orange-7-alpha-50: hsla(19, 84%, 25%, 0.5);
+    --dwt-core-color-orange-7-alpha-75: hsla(19, 84%, 25%, 0.75);
+    --dwt-core-color-orange-7-alpha-90: hsla(19, 84%, 25%, 0.9);
+    --dwt-core-color-orange-7: hsl(19, 84%, 25%);
+
+    --dwt-core-color-orange-8-alpha-10: hsla(19, 96%, 18%, 0.1);
+    --dwt-core-color-orange-8-alpha-25: hsla(19, 96%, 18%, 0.25);
+    --dwt-core-color-orange-8-alpha-50: hsla(19, 96%, 18%, 0.5);
+    --dwt-core-color-orange-8-alpha-75: hsla(19, 96%, 18%, 0.75);
+    --dwt-core-color-orange-8-alpha-90: hsla(19, 96%, 18%, 0.9);
+    --dwt-core-color-orange-8: hsl(19, 96%, 18%);
+
+    --dwt-core-color-orange-9-alpha-10: hsla(19, 100%, 12%, 0.1);
+    --dwt-core-color-orange-9-alpha-25: hsla(19, 100%, 12%, 0.25);
+    --dwt-core-color-orange-9-alpha-50: hsla(19, 100%, 12%, 0.5);
+    --dwt-core-color-orange-9-alpha-75: hsla(19, 100%, 12%, 0.75);
+    --dwt-core-color-orange-9-alpha-90: hsla(19, 100%, 12%, 0.9);
+    --dwt-core-color-orange-9: hsl(19, 100%, 12%);
+
+    --dwt-core-color-red-0-alpha-10: hsla(8, 100%, 92%, 0.1);
+    --dwt-core-color-red-0-alpha-25: hsla(8, 100%, 92%, 0.25);
+    --dwt-core-color-red-0-alpha-50: hsla(8, 100%, 92%, 0.5);
+    --dwt-core-color-red-0-alpha-75: hsla(8, 100%, 92%, 0.75);
+    --dwt-core-color-red-0-alpha-90: hsla(8, 100%, 92%, 0.9);
+    --dwt-core-color-red-0: hsl(8, 100%, 92%);
+
+    --dwt-core-color-red-1-alpha-10: hsla(6, 100%, 86%, 0.1);
+    --dwt-core-color-red-1-alpha-25: hsla(6, 100%, 86%, 0.25);
+    --dwt-core-color-red-1-alpha-50: hsla(6, 100%, 86%, 0.5);
+    --dwt-core-color-red-1-alpha-75: hsla(6, 100%, 86%, 0.75);
+    --dwt-core-color-red-1-alpha-90: hsla(6, 100%, 86%, 0.9);
+    --dwt-core-color-red-1: hsl(6, 100%, 86%);
+
+    --dwt-core-color-red-2-alpha-10: hsla(5, 100%, 80%, 0.1);
+    --dwt-core-color-red-2-alpha-25: hsla(5, 100%, 80%, 0.25);
+    --dwt-core-color-red-2-alpha-50: hsla(5, 100%, 80%, 0.5);
+    --dwt-core-color-red-2-alpha-75: hsla(5, 100%, 80%, 0.75);
+    --dwt-core-color-red-2-alpha-90: hsla(5, 100%, 80%, 0.9);
+    --dwt-core-color-red-2: hsl(5, 100%, 80%);
+
+    --dwt-core-color-red-3-alpha-10: hsla(4, 100%, 72%, 0.1);
+    --dwt-core-color-red-3-alpha-25: hsla(4, 100%, 72%, 0.25);
+    --dwt-core-color-red-3-alpha-50: hsla(4, 100%, 72%, 0.5);
+    --dwt-core-color-red-3-alpha-75: hsla(4, 100%, 72%, 0.75);
+    --dwt-core-color-red-3-alpha-90: hsla(4, 100%, 72%, 0.9);
+    --dwt-core-color-red-3: hsl(4, 100%, 72%);
+
+    --dwt-core-color-red-4-alpha-10: hsla(3, 93%, 63%, 0.1);
+    --dwt-core-color-red-4-alpha-25: hsla(3, 93%, 63%, 0.25);
+    --dwt-core-color-red-4-alpha-50: hsla(3, 93%, 63%, 0.5);
+    --dwt-core-color-red-4-alpha-75: hsla(3, 93%, 63%, 0.75);
+    --dwt-core-color-red-4-alpha-90: hsla(3, 93%, 63%, 0.9);
+    --dwt-core-color-red-4: hsl(3, 93%, 63%);
+
+    --dwt-core-color-red-5-alpha-10: hsla(1, 69%, 53%, 0.1);
+    --dwt-core-color-red-5-alpha-25: hsla(1, 69%, 53%, 0.25);
+    --dwt-core-color-red-5-alpha-50: hsla(1, 69%, 53%, 0.5);
+    --dwt-core-color-red-5-alpha-75: hsla(1, 69%, 53%, 0.75);
+    --dwt-core-color-red-5-alpha-90: hsla(1, 69%, 53%, 0.9);
+    --dwt-core-color-red-5: hsl(1, 69%, 53%);
+
+    --dwt-core-color-red-6-alpha-10: hsla(360, 68%, 43%, 0.1);
+    --dwt-core-color-red-6-alpha-25: hsla(360, 68%, 43%, 0.25);
+    --dwt-core-color-red-6-alpha-50: hsla(360, 68%, 43%, 0.5);
+    --dwt-core-color-red-6-alpha-75: hsla(360, 68%, 43%, 0.75);
+    --dwt-core-color-red-6-alpha-90: hsla(360, 68%, 43%, 0.9);
+    --dwt-core-color-red-6: hsl(360, 68%, 43%);
+
+    --dwt-core-color-red-7-alpha-10: hsla(358, 74%, 32%, 0.1);
+    --dwt-core-color-red-7-alpha-25: hsla(358, 74%, 32%, 0.25);
+    --dwt-core-color-red-7-alpha-50: hsla(358, 74%, 32%, 0.5);
+    --dwt-core-color-red-7-alpha-75: hsla(358, 74%, 32%, 0.75);
+    --dwt-core-color-red-7-alpha-90: hsla(358, 74%, 32%, 0.9);
+    --dwt-core-color-red-7: hsl(358, 74%, 32%);
+
+    --dwt-core-color-red-8-alpha-10: hsla(356, 89%, 21%, 0.1);
+    --dwt-core-color-red-8-alpha-25: hsla(356, 89%, 21%, 0.25);
+    --dwt-core-color-red-8-alpha-50: hsla(356, 89%, 21%, 0.5);
+    --dwt-core-color-red-8-alpha-75: hsla(356, 89%, 21%, 0.75);
+    --dwt-core-color-red-8-alpha-90: hsla(356, 89%, 21%, 0.9);
+    --dwt-core-color-red-8: hsl(356, 89%, 21%);
+
+    --dwt-core-color-red-9-alpha-10: hsla(0, 95%, 15%, 0.1);
+    --dwt-core-color-red-9-alpha-25: hsla(0, 95%, 15%, 0.25);
+    --dwt-core-color-red-9-alpha-50: hsla(0, 95%, 15%, 0.5);
+    --dwt-core-color-red-9-alpha-75: hsla(0, 95%, 15%, 0.75);
+    --dwt-core-color-red-9-alpha-90: hsla(0, 95%, 15%, 0.9);
+    --dwt-core-color-red-9: hsl(0, 95%, 15%);
+
+    --dwt-core-color-purple-0-alpha-10: hsla(267, 100%, 94%, 0.1);
+    --dwt-core-color-purple-0-alpha-25: hsla(267, 100%, 94%, 0.25);
+    --dwt-core-color-purple-0-alpha-50: hsla(267, 100%, 94%, 0.5);
+    --dwt-core-color-purple-0-alpha-75: hsla(267, 100%, 94%, 0.75);
+    --dwt-core-color-purple-0-alpha-90: hsla(267, 100%, 94%, 0.9);
+    --dwt-core-color-purple-0: hsl(267, 100%, 94%);
+
+    --dwt-core-color-purple-1-alpha-10: hsla(270, 100%, 89%, 0.1);
+    --dwt-core-color-purple-1-alpha-25: hsla(270, 100%, 89%, 0.25);
+    --dwt-core-color-purple-1-alpha-50: hsla(270, 100%, 89%, 0.5);
+    --dwt-core-color-purple-1-alpha-75: hsla(270, 100%, 89%, 0.75);
+    --dwt-core-color-purple-1-alpha-90: hsla(270, 100%, 89%, 0.9);
+    --dwt-core-color-purple-1: hsl(270, 100%, 89%);
+
+    --dwt-core-color-purple-2-alpha-10: hsla(269, 100%, 83%, 0.1);
+    --dwt-core-color-purple-2-alpha-25: hsla(269, 100%, 83%, 0.25);
+    --dwt-core-color-purple-2-alpha-50: hsla(269, 100%, 83%, 0.5);
+    --dwt-core-color-purple-2-alpha-75: hsla(269, 100%, 83%, 0.75);
+    --dwt-core-color-purple-2-alpha-90: hsla(269, 100%, 83%, 0.9);
+    --dwt-core-color-purple-2: hsl(269, 100%, 83%);
+
+    --dwt-core-color-purple-3-alpha-10: hsla(265, 100%, 77%, 0.1);
+    --dwt-core-color-purple-3-alpha-25: hsla(265, 100%, 77%, 0.25);
+    --dwt-core-color-purple-3-alpha-50: hsla(265, 100%, 77%, 0.5);
+    --dwt-core-color-purple-3-alpha-75: hsla(265, 100%, 77%, 0.75);
+    --dwt-core-color-purple-3-alpha-90: hsla(265, 100%, 77%, 0.9);
+    --dwt-core-color-purple-3: hsl(265, 100%, 77%);
+
+    --dwt-core-color-purple-4-alpha-10: hsla(262, 89%, 71%, 0.1);
+    --dwt-core-color-purple-4-alpha-25: hsla(262, 89%, 71%, 0.25);
+    --dwt-core-color-purple-4-alpha-50: hsla(262, 89%, 71%, 0.5);
+    --dwt-core-color-purple-4-alpha-75: hsla(262, 89%, 71%, 0.75);
+    --dwt-core-color-purple-4-alpha-90: hsla(262, 89%, 71%, 0.9);
+    --dwt-core-color-purple-4: hsl(262, 89%, 71%);
+
+    --dwt-core-color-purple-5-alpha-10: hsla(261, 73%, 62%, 0.1);
+    --dwt-core-color-purple-5-alpha-25: hsla(261, 73%, 62%, 0.25);
+    --dwt-core-color-purple-5-alpha-50: hsla(261, 73%, 62%, 0.5);
+    --dwt-core-color-purple-5-alpha-75: hsla(261, 73%, 62%, 0.75);
+    --dwt-core-color-purple-5-alpha-90: hsla(261, 73%, 62%, 0.9);
+    --dwt-core-color-purple-5: hsl(261, 73%, 62%);
+
+    --dwt-core-color-purple-6-alpha-10: hsla(260, 56%, 52%, 0.1);
+    --dwt-core-color-purple-6-alpha-25: hsla(260, 56%, 52%, 0.25);
+    --dwt-core-color-purple-6-alpha-50: hsla(260, 56%, 52%, 0.5);
+    --dwt-core-color-purple-6-alpha-75: hsla(260, 56%, 52%, 0.75);
+    --dwt-core-color-purple-6-alpha-90: hsla(260, 56%, 52%, 0.9);
+    --dwt-core-color-purple-6: hsl(260, 56%, 52%);
+
+    --dwt-core-color-purple-7-alpha-10: hsla(261, 52%, 39%, 0.1);
+    --dwt-core-color-purple-7-alpha-25: hsla(261, 52%, 39%, 0.25);
+    --dwt-core-color-purple-7-alpha-50: hsla(261, 52%, 39%, 0.5);
+    --dwt-core-color-purple-7-alpha-75: hsla(261, 52%, 39%, 0.75);
+    --dwt-core-color-purple-7-alpha-90: hsla(261, 52%, 39%, 0.9);
+    --dwt-core-color-purple-7: hsl(261, 52%, 39%);
+
+    --dwt-core-color-purple-8-alpha-10: hsla(262, 58%, 28%, 0.1);
+    --dwt-core-color-purple-8-alpha-25: hsla(262, 58%, 28%, 0.25);
+    --dwt-core-color-purple-8-alpha-50: hsla(262, 58%, 28%, 0.5);
+    --dwt-core-color-purple-8-alpha-75: hsla(262, 58%, 28%, 0.75);
+    --dwt-core-color-purple-8-alpha-90: hsla(262, 58%, 28%, 0.9);
+    --dwt-core-color-purple-8: hsl(262, 58%, 28%);
+
+    --dwt-core-color-purple-9-alpha-10: hsla(261, 67%, 19%, 0.1);
+    --dwt-core-color-purple-9-alpha-25: hsla(261, 67%, 19%, 0.25);
+    --dwt-core-color-purple-9-alpha-50: hsla(261, 67%, 19%, 0.5);
+    --dwt-core-color-purple-9-alpha-75: hsla(261, 67%, 19%, 0.75);
+    --dwt-core-color-purple-9-alpha-90: hsla(261, 67%, 19%, 0.9);
+    --dwt-core-color-purple-9: hsl(261, 67%, 19%);
+
+    --dwt-core-color-pink-0-alpha-10: hsla(331, 100%, 93%, 0.1);
+    --dwt-core-color-pink-0-alpha-25: hsla(331, 100%, 93%, 0.25);
+    --dwt-core-color-pink-0-alpha-50: hsla(331, 100%, 93%, 0.5);
+    --dwt-core-color-pink-0-alpha-75: hsla(331, 100%, 93%, 0.75);
+    --dwt-core-color-pink-0-alpha-90: hsla(331, 100%, 93%, 0.9);
+    --dwt-core-color-pink-0: hsl(331, 100%, 93%);
+
+    --dwt-core-color-pink-1-alpha-10: hsla(331, 100%, 87%, 0.1);
+    --dwt-core-color-pink-1-alpha-25: hsla(331, 100%, 87%, 0.25);
+    --dwt-core-color-pink-1-alpha-50: hsla(331, 100%, 87%, 0.5);
+    --dwt-core-color-pink-1-alpha-75: hsla(331, 100%, 87%, 0.75);
+    --dwt-core-color-pink-1-alpha-90: hsla(331, 100%, 87%, 0.9);
+    --dwt-core-color-pink-1: hsl(331, 100%, 87%);
+
+    --dwt-core-color-pink-2-alpha-10: hsla(329, 100%, 80%, 0.1);
+    --dwt-core-color-pink-2-alpha-25: hsla(329, 100%, 80%, 0.25);
+    --dwt-core-color-pink-2-alpha-50: hsla(329, 100%, 80%, 0.5);
+    --dwt-core-color-pink-2-alpha-75: hsla(329, 100%, 80%, 0.75);
+    --dwt-core-color-pink-2-alpha-90: hsla(329, 100%, 80%, 0.9);
+    --dwt-core-color-pink-2: hsl(329, 100%, 80%);
+
+    --dwt-core-color-pink-3-alpha-10: hsla(329, 100%, 72%, 0.1);
+    --dwt-core-color-pink-3-alpha-25: hsla(329, 100%, 72%, 0.25);
+    --dwt-core-color-pink-3-alpha-50: hsla(329, 100%, 72%, 0.5);
+    --dwt-core-color-pink-3-alpha-75: hsla(329, 100%, 72%, 0.75);
+    --dwt-core-color-pink-3-alpha-90: hsla(329, 100%, 72%, 0.9);
+    --dwt-core-color-pink-3: hsl(329, 89%, 72%);
+
+    --dwt-core-color-pink-4-alpha-10: hsla(328, 63%, 62%, 0.1);
+    --dwt-core-color-pink-4-alpha-25: hsla(328, 63%, 62%, 0.25);
+    --dwt-core-color-pink-4-alpha-50: hsla(328, 63%, 62%, 0.5);
+    --dwt-core-color-pink-4-alpha-75: hsla(328, 63%, 62%, 0.75);
+    --dwt-core-color-pink-4-alpha-90: hsla(328, 63%, 62%, 0.9);
+    --dwt-core-color-pink-4: hsl(328, 63%, 62%);
+
+    --dwt-core-color-pink-5-alpha-10: hsla(327, 48%, 52%, 0.1);
+    --dwt-core-color-pink-5-alpha-25: hsla(327, 48%, 52%, 0.25);
+    --dwt-core-color-pink-5-alpha-50: hsla(327, 48%, 52%, 0.5);
+    --dwt-core-color-pink-5-alpha-75: hsla(327, 48%, 52%, 0.75);
+    --dwt-core-color-pink-5-alpha-90: hsla(327, 48%, 52%, 0.9);
+    --dwt-core-color-pink-5: hsl(327, 48%, 52%);
+
+    --dwt-core-color-pink-6-alpha-10: hsla(327, 49%, 42%, 0.1);
+    --dwt-core-color-pink-6-alpha-25: hsla(327, 49%, 42%, 0.25);
+    --dwt-core-color-pink-6-alpha-50: hsla(327, 49%, 42%, 0.5);
+    --dwt-core-color-pink-6-alpha-75: hsla(327, 49%, 42%, 0.75);
+    --dwt-core-color-pink-6-alpha-90: hsla(327, 49%, 42%, 0.9);
+    --dwt-core-color-pink-6: hsl(327, 49%, 42%);
+
+    --dwt-core-color-pink-7-alpha-10: hsla(326, 55%, 32%, 0.1);
+    --dwt-core-color-pink-7-alpha-25: hsla(326, 55%, 32%, 0.25);
+    --dwt-core-color-pink-7-alpha-50: hsla(326, 55%, 32%, 0.5);
+    --dwt-core-color-pink-7-alpha-75: hsla(326, 55%, 32%, 0.75);
+    --dwt-core-color-pink-7-alpha-90: hsla(326, 55%, 32%, 0.9);
+    --dwt-core-color-pink-7: hsl(326, 55%, 32%);
+
+    --dwt-core-color-pink-8-alpha-10: hsla(325, 71%, 22%, 0.1);
+    --dwt-core-color-pink-8-alpha-25: hsla(325, 71%, 22%, 0.25);
+    --dwt-core-color-pink-8-alpha-50: hsla(325, 71%, 22%, 0.5);
+    --dwt-core-color-pink-8-alpha-75: hsla(325, 71%, 22%, 0.75);
+    --dwt-core-color-pink-8-alpha-90: hsla(325, 71%, 22%, 0.9);
+    --dwt-core-color-pink-8: hsl(325, 71%, 22%);
+
+    --dwt-core-color-pink-9-alpha-10: hsla(324, 83%, 14%, 0.1);
+    --dwt-core-color-pink-9-alpha-25: hsla(324, 83%, 14%, 0.25);
+    --dwt-core-color-pink-9-alpha-50: hsla(324, 83%, 14%, 0.5);
+    --dwt-core-color-pink-9-alpha-75: hsla(324, 83%, 14%, 0.75);
+    --dwt-core-color-pink-9-alpha-90: hsla(324, 83%, 14%, 0.9);
+    --dwt-core-color-pink-9: hsl(324, 83%, 14%);
 }

@@ -1,0 +1,104 @@
+.workspace-tabs {
+    $size-tab-header: 35px;
+    $size-svg-icon: 15px;
+
+    background-color: var(--background-primary-alt);
+
+    .workspace-leaf {
+        background-color: var(--background-primary-alt);
+    }
+
+    // Workspace Tab Header Container
+    .workspace-tab-header-container {
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+        padding: $space-s 0 $space-s;
+        background-color: var(--background-primary-alt);
+
+        // Workspace Tab Container
+        .workspace-tab-container-inner {
+            min-height: $size-tab-header;
+            background-color: var(--background-primary-alt);
+            border-radius: $border-radius-default;
+            flex-wrap: wrap;
+
+            // Workspace Tab Header
+            .workspace-tab-header {
+                border: $border-width-default solid var(--dwt-core-color-transparent);
+                color: var(--text-muted);
+                cursor: pointer;
+
+                svg {
+                    width: $size-svg-icon;
+                    height: $size-svg-icon;
+                }
+
+                &.is-active {
+                    background-color: var(--interactive-accent);
+                    color: var(--text-on-accent);
+
+                    border-radius: $border-radius-default;
+                    border: $border-width-default solid var(--interactive-accent-hover);
+
+                    svg {
+                        // Keep this block
+                    }
+
+                    &:hover {
+                        svg {
+                            // Keep this block
+                        }
+                    }
+                }
+
+                &:not(.is-active):hover {
+                    color: var(--interactive-accent-hover);
+                }
+
+                // Workspace Tab Header Inner
+                .workspace-tab-header-inner {
+                    width: $size-tab-header;
+                    align-items: center;
+                    justify-content: center;
+                    margin: auto;
+
+                    .workspace-tab-header-inner-icon {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+
+    // TODO: Resolve this
+    .workspace-tab-header.is-after-active,
+    .workspace-tab-header.is-after-active .workspace-tab-header-inner,
+    .workspace-tab-header.is-before-active,
+    .workspace-tab-header.is-before-active .workspace-tab-header-inner {
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: $border-radius-m;
+    }
+
+    .workspace-tab-container-after,
+    .workspace-tab-container-before,
+    .workspace-tab-container-after.is-after-active,
+    .workspace-tab-container-after.is-after-active,
+    .workspace-tab-container-before.is-before-active {
+        display: none;
+    }
+}
+
+@include if-body-has($style-setting-disable-dark-sidebars-class) {
+    .workspace-tabs {
+        background-color: var(--background-primary);
+
+        .workspace-leaf,
+        .workspace-tab-header-container,
+        .workspace-tab-container-inner {
+            background-color: var(--background-primary);
+        }
+    }
+}
