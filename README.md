@@ -4,12 +4,9 @@
     Please note that the development of this theme has <strong>stopped</strong>, since I am concentrating my limited time on another project.
     Development slowed down due to personal time issues, and the new changes for 0.16.0. These changes are very good, but I don't have the time to update this project.
     I rather use my limited personal free time to work on my [new project](https://github.com/terra-theme), which will also include a Obsidian Theme, which will be much easier to maintain with the new changes.
-
-    <br />
-    <br />
-
-    I want to thank everyone, who enjoyed this theme.
-
+  </p>
+  <p align="center">
+    <strong>I want to thank everyone, who enjoyed this theme.</strong>
   </p>
 </div>
 
