@@ -1,9 +1,15 @@
 <div>
   <h1 align=center>⚠️  Development Status ⚠️ </h1>
   <p align="center">
-    Please note that the development of this theme has <strong>currently on hold</strong>, since I am concentrating my limited time on <a href="https://github.com/terra-theme">another project</a>.
+    Please note that the development of this theme has <strong>stopped</strong>, since I am concentrating my limited time on another project.
+    Development slowed down due to personal time issues, and the new changes for 0.16.0. These changes are very good, but I don't have the time to update this project.
+    I rather use my limited personal free time to work on my [new project](https://github.com/terra-theme), which will also include a Obsidian Theme, which will be much easier to maintain with the new changes.
+
     <br />
-    I will try to update it when I can, but also accept contributions.
+    <br />
+
+    I want to thank everyone, who enjoyed this theme.
+
   </p>
 </div>
 
@@ -21,7 +27,6 @@
   <p align="center">
     <img src="screenshot.png"/>
   </p>
-
 
   <p align="center">
     <a href="https://www.buymeacoffee.com/nikbrunner" target="_blank">
@@ -55,6 +60,7 @@ The font-family declarations are taken directly from GitHub.
   /* ... */
 }
 ```
+
 ## Respected PlugIns
 
 - Calendar
