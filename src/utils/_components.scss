@@ -1,23 +1,46 @@
-@mixin ui-component {
-  body {
-    @content;
-  }
+// TODO Remove second block and null default when every usage is converted
+@mixin ui-component($selector: null) {
+    @if $selector {
+        body #{$selector} {
+            @content;
+        }
+    }
+
+    body {
+        @content;
+    }
 }
 
-@mixin editor-preview-component {
-  body .markdown-preview-view {
-    @content;
-  }
+// TODO Rename to editor-reading-component
+// TODO Remove second block and null default when every usage is converted
+@mixin editor-preview-component($selector: null) {
+    @if $selector {
+        body #{$selector} {
+            @content;
+        }
+    }
+
+    body .markdown-preview-view {
+        @content;
+    }
 }
 
-@mixin editor-source-component {
-  body .markdown-source-view .CodeMirror {
-    @content;
-  }
+// TODO Remove second block and null default when every usage is converted
+@mixin editor-source-component($selector: null) {
+    @if $selector {
+        body #{$selector} {
+            @content;
+        }
+    }
+
+    body .markdown-source-view .CodeMirror {
+        @content;
+    }
 }
 
+// TODO Remove second block and null default when every usage is converted
 @mixin editor-live-preview-component {
-  body .markdown-source-view.mod-cm6 {
-    @content;
-  }
+    body .markdown-source-view.mod-cm6 {
+        @content;
+    }
 }

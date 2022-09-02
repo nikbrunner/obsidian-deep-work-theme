@@ -1,0 +1,17 @@
+.workspace-ribbon {
+    background-color: var(--background-primary-alt);
+
+    &.is-collapsed {
+        background-color: var(--background-primary-alt);
+    }
+}
+
+@include if-body-has($style-setting-disable-dark-sidebars-class) {
+    .workspace-ribbon {
+        background-color: var(--background-primary);
+
+        &.is-collapsed {
+            background-color: var(--background-primary);
+        }
+    }
+}

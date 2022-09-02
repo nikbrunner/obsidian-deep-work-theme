@@ -1,0 +1,133 @@
+.theme-dark.dark-default {
+    /* DWT Semantic Variables
+     * Need to be based on DWT Core Variables
+     */
+
+    // DWT Semantics - Tier 1
+    --dwt-semantic-color-accent: var(--dwt-core-color-blue-4);
+    --dwt-semantic-color-accent-light: var(--dwt-core-color-blue-3);
+    --dwt-semantic-color-accent-dark: var(--dwt-core-color-blue-5);
+
+    --dwt-semantic-color-accent-secondary: var(--dwt-core-color-green-4);
+    --dwt-semantic-color-accent-secondary-light: var(--dwt-core-color-green-3);
+    --dwt-semantic-color-accent-secondary-dark: var(--dwt-core-color-green-5);
+
+    --dwt-semantic-color-success: var(--dwt-core-color-green-4);
+    --dwt-semantic-color-success-light: var(--dwt-core-color-green-3);
+    --dwt-semantic-color-success-dark: var(--dwt-core-color-green-5);
+
+    --dwt-semantic-color-muted: var(--dwt-core-color-gray-4);
+    --dwt-semantic-color-muted-light: var(--dwt-core-color-gray-3);
+    --dwt-semantic-color-muted-dark: var(--dwt-core-color-gray-5);
+
+    --dwt-semantic-color-error: var(--dwt-core-color-red-4);
+    --dwt-semantic-color-error-light: var(--dwt-core-color-red-3);
+    --dwt-semantic-color-error-dark: var(--dwt-core-color-red-5);
+
+    --dwt-semantic-color-action: var(--dwt-core-color-gray-7);
+    --dwt-semantic-color-action-hover: var(--dwt-core-color-gray-5);
+    --dwt-semantic-color-action-accent: var(--dwt-semantic-color-accent-secondary);
+    --dwt-semantic-color-action-accent-hover: var(--dwt-semantic-color-accent-secondary-light);
+    --dwt-semantic-color-action-success: var(--dwt-semantic-color-accent-light);
+
+    // Color FG Primary
+    --dwt-semantic-color-fg-primary: var(--dwt-core-color-gray-1);
+    --dwt-semantic-color-fg-primary-invert: var(--dwt-core-color-gray-8);
+    --dwt-semantic-color-fg-primary-light: var(--dwt-core-color-gray-0);
+    --dwt-semantic-color-fg-primary-light-invert: var(--dwt-core-color-gray-9);
+    --dwt-semantic-color-fg-primary-dark: var(--dwt-core-color-gray-2);
+    --dwt-semantic-color-fg-primary-dark-invert: var(--dwt-core-color-gray-8);
+
+    // Color FG Secondary
+    --dwt-semantic-color-fg-secondary: var(--dwt-semantic-color-muted);
+    --dwt-semantic-color-fg-secondary-light: var(--dwt-semantic-color-muted-light);
+    --dwt-semantic-color-fg-secondary-dark: var(--dwt-semantic-color-muted-dark);
+
+    // Color FG Accent
+    --dwt-semantic-color-fg-accent: var(--dwt-semantic-color-accent);
+    --dwt-semantic-color-fg-accent-light: var(--dwt-semantic-color-accent-light);
+    --dwt-semantic-color-fg-accent-dark: var(--dwt-semantic-color-accent-dark);
+    --dwt-semantic-color-fg-accent-hover: var(--dwt-semantic-color-accent-light);
+
+    // Color FG Error
+    --dwt-semantic-color-fg-error: var(--dwt-semantic-color-error);
+    --dwt-semantic-color-fg-error-light: var(--dwt-semantic-color-error-light);
+    --dwt-semantic-color-fg-error-dark: var(--dwt-semantic-color-error-dark);
+
+    // Color BG Primary
+    --dwt-semantic-color-bg-primary: var(--dwt-core-color-gray-9);
+    --dwt-semantic-color-bg-primary-invert: var(--dwt-core-color-gray-1);
+    --dwt-semantic-color-bg-primary-light: var(--dwt-core-color-gray-8);
+    --dwt-semantic-color-bg-primary-light-invert: var(--dwt-core-color-gray-2);
+    --dwt-semantic-color-bg-primary-dark: var(--dwt-core-color-black);
+    --dwt-semantic-color-bg-primary-dark-invert: var(--dwt-core-color-white);
+
+    // Color BG Secondary
+    --dwt-semantic-color-bg-secondary: var(--dwt-core-color-gray-8);
+    --dwt-semantic-color-bg-secondary-light: var(--dwt-core-color-gray-7);
+    --dwt-semantic-color-bg-secondary-dark: var(--dwt-core-color-gray-9);
+
+    // Color BG Accent
+    --dwt-semantic-color-bg-accent: var(--dwt-semantic-color-accent);
+    --dwt-semantic-color-bg-accent-light: var(--dwt-semantic-color-accent-light);
+    --dwt-semantic-color-bg-accent-dark: var(--dwt-semantic-color-accent-dark);
+
+    // DWT Components
+    --dwt-component-cursor-color-bg: var(--dwt-semantic-color-accent-light);
+    --dwt-component-activeLine-color-bg: var(--dwt-semantic-color-bg-secondary);
+    --dwt-component-activeLine-color-fg: var(--dwt-semantic-color-fg-primary-light);
+    --dwt-component-tag-color-bg: var(--dwt-semantic-color-bg-secondary);
+    --dwt-component-checkbox-color-bg-unchecked: var(--dwt-semantic-color-bg-primary-dark-invert);
+    --dwt-component-code-color-fg: var(--dwt-semantic-color-fg-primary-light);
+    --dwt-component-code-color-bg: var(--dwt-semantic-color-bg-secondary);
+
+    /* Obsidian Variables
+     * Need to be based on semantic variables
+     */
+
+    // Obsidian Text Variables
+    --text-accent: var(--dwt-semantic-color-accent);
+    --text-accent-hover: var(--dwt-semantic-color-accent-light);
+    --text-normal: var(--dwt-semantic-color-fg-primary);
+    --text-muted: var(--dwt-semantic-color-fg-secondary);
+    --text-muted-rgb: 153, 153, 153;
+    --text-faint: var(--dwt-semantic-color-fg-secondary-light);
+    --text-error: var(--dwt-semantic-color-fg-error);
+    --text-error-hover: var(--dwt-semantic-color-fg-error-light);
+    --text-highlight-bg: var(--dwt-semantic-color-highlight);
+    --text-highlight-bg-active: var(--dwt-semantic-color-highlight-light);
+    --text-selection: var(--dwt-semantic-color-highlight-light);
+    --text-on-accent: var(--dwt-semantic-color-accent-contrast);
+
+    // Obsidian Background Variables
+    --background-primary: var(--dwt-semantic-color-bg-primary);
+    --background-primary-alt: var(--dwt-semantic-color-bg-primary-dark);
+    --background-secondary: var(--dwt-semantic-color-bg-secondary);
+    --background-secondary-alt: var(--dwt-semantic-color-bg-secondary-light);
+
+    --background-modifier-border: var(--dwt-semantic-color-bg-secondary-light);
+    --background-modifier-form-field: var(--dwt-semantic-color-bg-secondary);
+    --background-modifier-form-field-highlighted: var(--dwt-semantic-color-bg-secondary-light);
+    --background-modifier-box-shadow: var(--dwt-core-color-black-alpha-25);
+    --background-modifier-success: var(--dwt-semantic-color-success);
+    --background-modifier-error: var(--dwt-semantic-color-error);
+    --background-modifier-error-rgb: 61, 0, 0; // TODO Do i need to change this?
+    --background-modifier-error-hover: var(--dwt-semantic-color-error-light);
+    --background-modifier-cover: var(--dwt-core-color-black-alpha-10);
+
+    // Obsidian Native Interactive Colors
+    --interactive-normal: var(--dwt-semantic-color-action);
+    --interactive-hover: var(--dwt-semantic-color-action-hover);
+    --interactive-accent: var(--dwt-semantic-color-action-accent);
+    --interactive-accent-rgb: 46, 160, 67; // TODO Do i need to change this?
+    --interactive-accent-hover: var(--dwt-semantic-color-action-accent-hover);
+    --interactive-success: var(--dwt-semantic-color-action-success);
+
+    // Obsidian Native Scrollbar Colors
+    --scrollbar-active-thumb-bg: var(--dwt-semantic-color-accent);
+    --scrollbar-bg: var(--background-primary);
+    --scrollbar-thumb-bg: var(--background-primary-alt);
+
+    // Obsidian Native Misc
+    --highlight-mix-blend-mode: screen; // TODO Do i need to change this?
+}

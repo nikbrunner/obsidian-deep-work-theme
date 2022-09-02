@@ -1,5 +1,13 @@
 @include editor-source-component {
-  .CodeMirror-activeline {
-    background: var(--active-line-bg);
-  }
+    .CodeMirror-activeline {
+        background: var(--dwt-component-activeLine-color-bg);
+        color: var(--dwt-component-activeLine-color-fg);
+    }
+}
+
+@include editor-live-preview-component {
+    .cm-line.cm-active {
+        background: var(--dwt-component-activeLine-color-bg);
+        color: var(--dwt-component-activeLine-color-fg);
+    }
 }

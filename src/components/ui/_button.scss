@@ -1,7 +1,5 @@
-@include ui-component {
-  button {
+button {
     border-radius: $border-radius-default;
-    border: border($border-width-s, var(--color-border));
+    border: border($border-width-s, var(--dwt-semantic-color-bg-secondary));
     font-weight: $font-weight-medium;
-  }
 }
